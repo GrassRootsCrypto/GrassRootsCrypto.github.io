@@ -3,18 +3,18 @@ title: "Impermanent Loss Concept Explained"
 categories:
   - Defi
 tags:
-  - Impermanent Loss
+  - "Impermanent Loss"
+  - "Liquidity Provider"
+  - BepSwap
+  - "Liquidity Pool"
 author_profile: false
 classes: wide
-  
+toc: true
 ---
 
-# Impermanent Loss
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/OfnXC4N5OUw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-## Introduction (slide 1)
 Impermanent Loss (IL), or in simple speak, not yet a permeant loss, it is one of the hardest concepts in Defi for most people for most people to understand. 
+
+{% include video id="OfnXC4N5OUw" provider="youtube" %}
 
 Why really is IL and why all the fuss, and what do I need to know. 
 In this video, I will explain what Impermanent Loss is using a simple example and easy to understand pictures. 
@@ -30,9 +30,7 @@ As with my previous video, this concept applies to most decentralised exchanges 
 
 I’ll put all the links, plus some additional resources down in the description below for your reference. 
 
-Lets get started
-
-## Greater Intro (slide 2)
+### Greater Intro (slide 2)
 Impermanent Loss (IL) is a risk Liquidly Providers have when staking their assets in a liquidity pool. It is the potential difference in gains between holding and being a Liquidly Provider. 
 
 Most people seem to freak out about it because it sounds scary, hard to understand and explain.
@@ -50,23 +48,23 @@ As a Liquidity Provider, I can get paid for staking my $2000 by collecting fees 
 
 However, like with most things, this has risks, one of which is called Impermeant Loss. Lets look at an example
 
-## Example (Slide 4)
+### Example (Slide 4)
 Here is my liquidly pool made up of Rune and BNB - that is a 50 / 50 split of a $1000 each - I've simplified this for purpose of explaining the key concepts of IL.
 (Nice round unrealistic figures.)
 
 In crypto, you may have heard, price is volatile, and sometimes it changes (joke). 
 
-## (Slide 5) So let's say the BNB price goes up. The liquidity pool is no longer balanced at a 50/50 split.
+### (Slide 5) So let's say the BNB price goes up. The liquidity pool is no longer balanced at a 50/50 split.
 Something like BepSwap is known as an Automated Market Maker (AMM) and they are programmed to hold and maintain a 50/50 split of a liquidity pool. TBH other ratios do exist, but let's just work with 50/50 split for now. 
 
 So in this case the rebalancing process will sell BNB and buy RUNE to rebalance the liquidity pool, back to a 50/50 split. 
 
-## (Slide 6) During the Rebalancing process, funds are lost (e.g. water splashes out of the pool). So while you might think the new value would be $2200, when the pool rebalances it is less than that. This is called IL.
+### (Slide 6) During the Rebalancing process, funds are lost (e.g. water splashes out of the pool). So while you might think the new value would be $2200, when the pool rebalances it is less than that. This is called IL.
 In our example we lost $2.5 in rebalancing process - it is not the real number, just using it as an example. (lots of algebra to explain how it happens).
 
 So let's compare this against holding. 
 
-## (Slide 7) If you were to withdraw from the liquidity pool now (e.g. post rebalancing), you would get $2197.50, plus whatever fees you were paid (for being a liquidity provider). 
+### (Slide 7) If you were to withdraw from the liquidity pool now (e.g. post rebalancing), you would get $2197.50, plus whatever fees you were paid (for being a liquidity provider). 
 Thus you have missed out on the full benefits of the price gain, if you were holding by about $2.50, or 11% in our this example. 
 
 This 'missing out' on the price gain is called Impermanent Loss. 
@@ -79,7 +77,7 @@ A few things that need to pointed out here.
 
  (New slide 8) (person asking why)
 
-## So why do it? Why become a Liquidity Provider if I am exposed to the risk of Impermeant Loss?
+### So why do it? Why become a Liquidity Provider if I am exposed to the risk of Impermeant Loss?
 
 AMM platforms like BepSwap (ThorChain) need Liquidity Providers to operate, so they make it very lucrative for Liquidity Providers by giving them a good share of the fees, offering them additional 'network benefits' and some provide additional tokens for providing liquidly, which also have value. 
 It is risk many are willing to take as handsome rewards are on offer. 
@@ -95,7 +93,7 @@ Key questions to ask yourself
 Remembering Impermeant Loss only be becomes permanent when you withdraw! 
 
 
-## Summing up (Slide 9)
+### Summing up 
 
 IL or in simple speak, not yet a permeant loss, happens during the rebalances process of the liquidity pool, which is caused by price movements. 
 It is a risk Liquidly Providers have when staking their assets in a Liquidity Pool. 
