@@ -1,0 +1,16 @@
+# main links
+main:
+  - title: "About"
+    url: /About/
+  - title: Posts  
+    url: /categories/
+  - title: "Services"
+    url: /Services/
+  - title: "Sitemap"
+    url: /sitemap/    
+  - title: "Search"
+    url: /search/  
+    
+  #   url: /year-archive/
+  # - title: "Sample Collections"
+  #   url: /collection-archive/
