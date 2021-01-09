@@ -2,7 +2,7 @@ source "https://rubygems.org"
 #gemspec
 
 gem "jekyll"
-gem "minimal-mistakes-jekyll"
+#gem "minimal-mistakes-jekyll"
 gem "github-pages"
 gem 'tzinfo-data'
 
