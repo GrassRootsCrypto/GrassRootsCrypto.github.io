@@ -1,5 +1,5 @@
 ---
-title: "Impermanent Loss Concept Explained"
+title: "Impermanent Loss Explained"
 categories:
   - Defi
 tags:
@@ -11,6 +11,7 @@ author_profile: false
 classes: wide
 toc: true
 ---
+This video helps people understand what Impermanent Loss is and ask hey questions when considering your exposure to Impermanent Loss. 
 
 Impermanent Loss (IL), or in simple speak, not yet a permeant loss, it is one of the hardest concepts in Defi for most people for most people to understand.  See the video below.
 

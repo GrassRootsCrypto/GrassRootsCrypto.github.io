@@ -2,6 +2,7 @@
 title: "Understanding Liquidity Pools and Liquidity Providers"
 categories:
   - Defi
+  - THORChain
 tags:
   - "Liquidity Provider"
   - BepSwap

@@ -27,4 +27,4 @@ If you are new to the crypto space, it can be hard to get to make sense of it al
 
 All sessions are by bookings only, please contact us via email to enquire about bookings.
 
-GrassRoots Crypto is located in Darwin and work with Blockchain Darwin to run weekly Blockchain/Crypto meet ups. In this modern world, traning and consulting and happen in any location - just ask. 
+GrassRoots Crypto is located in Darwin and works with Blockchain Darwin to run weekly Blockchain/Crypto meet ups. In this modern world, traning and consulting can happen in any location - just ask. 

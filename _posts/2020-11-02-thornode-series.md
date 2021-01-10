@@ -1,14 +1,13 @@
 ---
 title: "THORNode Instructional Series"
 categories:
-  - THORNode 
+  - THORNode
 tags:
   - THORNode
   - THORChain
   - Guides
 author_profile: false
 toc: true
-#classes: wide
 ---
 
 This was the first series of videos I made for the THORChain team / community.
