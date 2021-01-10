@@ -6,7 +6,6 @@ tags:
   - "Liquidity Provider"
   - BepSwap
   - "Liquidity Pool"
-
 author_profile: false
 classes: wide
 ---
