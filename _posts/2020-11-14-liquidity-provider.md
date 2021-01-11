@@ -9,6 +9,7 @@ tags:
   - "Liquidity Pool"
 author_profile: false
 classes: wide
+toc: true
 ---
 
 I will break down the basic concepts for beginners to understand - as these terms a not common terms used every day by most people. See the video or have a read below. 
