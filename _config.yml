@@ -95,8 +95,8 @@ analytics:
 author:
   name             : "Chris"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am just a guy interested in Crypto"
-  location         : "Australia"
+  bio              : "A guy interested in Crypto"
+  location         : "Darwin, Australia"
   email            :
   links:
     - label: "Email"

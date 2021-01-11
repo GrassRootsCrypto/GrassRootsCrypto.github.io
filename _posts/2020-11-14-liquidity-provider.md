@@ -12,13 +12,9 @@ classes: wide
 toc: true
 ---
 
-I will break down the basic concepts for beginners to understand - as these terms a not common terms used every day by most people. See the video or have a read below. 
-
+Liquidity Providers can add or sometimes called stake assets into a liquidity pool which allow traders to swap assets.  Liquidity Providers stake assets as they can get a good return on the amount they invest. 
 
 {% include video id="08Mwe93Tb1o" provider="youtube" %}
-
-BepSwap is a decentralised exchange where you can stake, swap and withdraw BEP2 assets. 
-Liquidity Providers can add or sometimes called stake assets into a liquidity pool which allow traders to swap assets.  Liquidity Providers stake assets as they can get a good return on the amount they invest. 
 
 ### General Terms
 First, what is a Liquidity Pool?

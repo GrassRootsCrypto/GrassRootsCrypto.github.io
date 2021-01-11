@@ -54,3 +54,17 @@ The more the price moves (e.g. the more the liquidity pool becomes out of balanc
 AMM platforms need Liquidity Providers to operate, so some may give benefits/rewards to Liquidity providers (particularly when they are new).
 
 I don't know your situation or what is best for you, whatever you decide to do, I hope you have a better understanding of IL.
+
+
+### Bonus - not in the video
+
+##Arbitraging - how it works?
+How is this magic rebalancing process done when a pool becomes out of balance?
+When you stake into a Liquidity Provider, it is done at the market price - like the retail price. But once in the pool, assets have their own price, let's call it the pool price.
+When there is an imbalance in the pool, due to price movements, the price of the assets (pool price) become different to the market price to encourage people to buy or sell assets in the pool to bring it back into balance. This is known as an arbitrage.
+
+
+##Quick and dirty example
+Say there is a BNB:RUNE pool and the price of BNB rises - the pool becomes out of balance. 
+
+To rebalance the pool, some BNB needs to be removed so the pool returns to a 50 / 50 split and this is done by putting BNB on sale, e.g. allowing the traders to buy BNB at a discount, or below the market price. Remember, that Liquidity Pools can set their own price, known as the pool price. Someone can basically buy the cheap BNB from this pool, then sell it at retail and pocket the difference. This is known as an arbitrage - and there are computer bots that do this all the time, so the rebalancing is kind of an automatic process. Bots may have to work on a pool for a period of time, first making big trades, then getting smaller till balance is restored. Bots do this as they get to pocket the Impermeant Loss.

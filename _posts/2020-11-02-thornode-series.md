@@ -10,7 +10,7 @@ author_profile: false
 toc: true
 ---
 
-This was the first series of videos I made for the THORChain team / community.
+This was the first series of videos I made for the THORChain team / community. It is more technical / developer focused. 
 
 I have grouped them on one page here for reference. These videos apply to 'single chain' Chaosnet / test net only. 
 
