@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "About"
-    url: /About/
   - title: Posts  
     url: /categories/
   - title: "Services"
     url: /Services/
+  - title: "About"
+    url: /About/
   - title: "Sitemap"
     url: /sitemap/    
   - title: "Search"

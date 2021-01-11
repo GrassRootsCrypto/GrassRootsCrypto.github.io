@@ -1,19 +1,18 @@
 ---
 title: "THORNode Instructional Series"
 categories:
-  - THORNode 
+  - THORNode
 tags:
   - THORNode
   - THORChain
   - Guides
 author_profile: false
 toc: true
-#classes: wide
 ---
 
-This was the first series of videos I made for the THORChain team / community.
+This was the first series of videos I made for the THORChain team / community. It is more technical / developer focused. 
 
-I have grouped them on one page here for reference. These videos apply to 'single chain' chaosnet / test only. 
+I have grouped them on one page here for reference. These videos apply to 'single chain' Chaosnet / test net only. 
 
 ## Creating form scratch
 {% include video id="RpUexLug_zs" provider="youtube" %}

@@ -10,22 +10,22 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
-theme                  : "minimal-mistakes-jekyll"
-# remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
+#theme                  : "minimal-mistakes-jekyll"
+remote_theme           : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : air #"default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+# I like default, air, dark
 # Site Settings
 locale                   : "en-US"
 title                    : "GrassRoots Crypto"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "GrassRoots Crypto"
-description              : "An amazing website."
+description              : "Blockchain and Crypto Education."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "GrassRootsCrypto/GrassRootsCrypto.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : https://image.shutterstock.com/image-vector/number-8-distinctive-side-cut-260nw-763800685.jpg # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -70,7 +70,7 @@ naver_site_verification  :
 
 # Social Sharing
 twitter:
-  username               :
+  username               : GrassRootsio
 facebook:
   username               :
   app_id                 :
@@ -95,22 +95,25 @@ analytics:
 author:
   name             : "Chris"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am just a guy interested in Crypto"
-  location         : "Australia"
+  bio              : "A guy interested in Crypto"
+  location         : "Darwin, Australia"
   email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
+#      url: "mailto:your.name@email.com"
+    - label: "YouTube"
+      icon: "fab fa-fw fa-youtube"
+      url: "https://www.youtube.com/channel/UCuC_PiCEsNIT6HH88r7vCsw/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/GrassRootsio"
+    - label: "Telegram"
+      icon: "fab fa-telegram-plane"
+      url: "https://t.me/GrassRootsCrypto"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+#      url: "https://github.com/"
 
 # Site Footer
 footer:
