@@ -22,5 +22,5 @@ If you just add the asset, the swap is done under the hood for you.
 {% include video id="pcwx27k1u4c" provider="youtube" %}
 
 BepSwap is a decentralised exchange where you can stake, swap and withdraw BEP2 tokens. 
-BepSwap is apart of THORCHain
+BepSwap is apart of THORCHain.
 

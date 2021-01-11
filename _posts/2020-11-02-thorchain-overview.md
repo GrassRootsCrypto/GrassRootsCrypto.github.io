@@ -15,7 +15,7 @@ author_profile: false
 I created two videos an overveiw for people that are new to THORChain. I wanted to explain with simple pictures how it all hangs together. 
 
 ### THORChain Overview
-First video is a general overview regarding the THORChain explaning where funds are stored and how funds are access within the THORChain network. This applies to THORChain regardless of which chaosnet or mainnet. 
+First video is a general overview regarding the THORChain explaining where funds are stored and how funds are access within the THORChain network. This applies to THORChain regardless of which Chaosnet or Mainnet.
 
 {% include video id="OH0_oq5DtT8" provider="youtube" %}
 

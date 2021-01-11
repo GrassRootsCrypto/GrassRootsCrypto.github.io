@@ -17,29 +17,10 @@ Impermanent Loss (IL), or in simple speak, not yet a permeant loss, it is one of
 
 {% include video id="OfnXC4N5OUw" provider="youtube" %}
 
-Why really is IL and why all the fuss, and what do I need to know. 
-In this video, I will explain what Impermanent Loss is using a simple example and easy to understand pictures. 
-This one took effort, please watch all the video as I sum it up at the end. 
-
-Intro
-Here at GrassRootsCrypto, I like to keep it simple for the new users, as I can relate to the struggle new people have trying to understand all of this DeFi Cypto stuff.
-
-Impermanent Loss (IL) It is a complex subject and there are many other videos on it showing the maths and formulas - I won't be doing that too much that. 
-I want to be able give a basic understanding of the concept, without going into details, so you can decide what is best for you to do.
-
-As with my previous video, this concept applies to most decentralised exchanges or DexExs within Defi but I will use BepSwap as an example. Check my video on basic concepts if you have not already. 
-
-I’ll put all the links, plus some additional resources down in the description below for your reference. 
-
 ### The Risk
 Impermanent Loss (IL) is a risk Liquidly Providers have when staking their assets in a liquidity pool. It is the potential difference in gains between holding and being a Liquidly Provider. 
 
 Most people seem to freak out about it because it sounds scary, hard to understand and explain.
-
-As a Liquidity Provider, I can get paid for staking my $2000 by collecting fees for people swapping assets, e.g. when swapping BNB for Rune or the other way. the rates are good,  Checking BepSwap - between 15% and 100%+ APY. 
-
-However, like with most things, this has risks, one of which is called Impermeant Loss. Lets look at an example
-
 
 A few things that need to pointed out here.
 	1. The 'loss' is on paper only, and is not final - hence not yet permeant - it will likely change tomorrow e.g. BNB could go back to it's original price and therefore there will be no IL. It becomes permeant when you withdraw from the Liquidity Pool.
@@ -60,9 +41,9 @@ Or put another way, when price movements are small, generally the income generat
 
 Key questions to ask yourself
 	1. What are you trying to achieve? e.g. hold assets in the hope they will go up - trying to somehow capitalise on every potential price increase OR provide a service and get paid for it - and not worrying too much about trying to get every potential temporary price increase.
-	2. What is your time preference - are you in it for the short term or the long term? Are you interested in short trading OR long term asset appreciation and not concerned with short term volatility?
+	2. What is your time preference - are you in it for the short term or the long term? Are you interested in short trading OR long-term asset appreciation and not concerned with short term volatility?
 
-Remembering Impermeant Loss only be becomes permanent when you withdraw! 
+Remembering Impermeant Loss only becomes permanent when you withdraw! 
 
 
 ### Summing up 

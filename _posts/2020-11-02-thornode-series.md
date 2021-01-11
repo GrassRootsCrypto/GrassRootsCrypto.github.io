@@ -12,7 +12,7 @@ toc: true
 
 This was the first series of videos I made for the THORChain team / community.
 
-I have grouped them on one page here for reference. These videos apply to 'single chain' chaosnet / test only. 
+I have grouped them on one page here for reference. These videos apply to 'single chain' Chaosnet / test net only. 
 
 ## Creating form scratch
 {% include video id="RpUexLug_zs" provider="youtube" %}
