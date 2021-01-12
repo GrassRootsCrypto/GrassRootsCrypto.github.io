@@ -9,15 +9,13 @@ tags:
   - Guides
   - "Liquidity Pool"
   - THORChain
-
 author_profile: false
 classes: wide
 ---
 
-Below is a video guide to the BepSwap interface. This covere how to add, swap and remove funds using a real wallet I created. 
-I add funds into the BNB:Rune pool - the process is the same for any other pool. Remember there needs to be a 50%/50% split of the asset and Rune in order to add to the Liquidity Pool.
-If you just add the asset, the swap is done under the hood for you. 
+Below is a video guide to THORChain's BepSwap interface. This covers how to add, swap and remove funds using a real wallet.
 
+In the video funds are added into the BNB:Rune pool, however the process is the same for any other pool. Remember there needs to be a 50/50 split of the asset and Rune in order to add to the Liquidity Pool.
 
 {% include video id="pcwx27k1u4c" provider="youtube" %}
 

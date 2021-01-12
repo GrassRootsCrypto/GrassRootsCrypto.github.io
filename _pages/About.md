@@ -6,7 +6,6 @@ author_profile: ture
 ---
 
 ## Education, Training, Consulting, Advice
-
 GrassRoots Crypto is a company dedicated to education to users in the crypto space. I understand how difficult it can be to find what you need to know, even with the power of google. 
 
 If you are new to the crypto space, it can be hard to get to make sense of it all. There is so much to lean, it is hard to know where to start. 
@@ -20,10 +19,10 @@ GrassRoots Crypto is located in Darwin and works with <a href="https://blockchai
 ---
 
 ## About Me
-
-GrassRoots Crypto was started to educate new users to the world of blockchain / Crypto. I understand the challenge / frustration new people go through trying to lean and understand. There is so much information out there, it is hard to know where to start. I found the videos I watched used a lot of the jarken I am use to but new people didn't understand. I wanted to do something different. 
-
-I have been in the blockchain Crypto space for over 2 years increasing my knowledge via books, paid courses, pod casts, group chats and talking to other likeminded people. Getting more interested into crypto, I did UI tested 
+I have an IT / Software background and have been been in the Blockchain / Crypto space for over 2 years increasing my knowledge via books, paid courses, pod casts, group chats and talking to other likeminded people. 
+I have given presentations and work and for the Australian Computer Society nationally. 
+---
+GrassRoots Crypto was started to educate new users to the world of Blockchain / Crypto. I understand the challenge / frustration new people go through trying to lean and understand. There is so much information out there, it is hard to know where to start. I found the videos I watched used a lot of the jarken I am use to but new people didn't understand. I wanted to do something different. 
 
 I am here to give you the information you need to know to make the best decisions for yourself.
 
