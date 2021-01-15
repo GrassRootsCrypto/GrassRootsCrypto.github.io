@@ -9,7 +9,7 @@ tags:
 author_profile: false
 ---
 
-This video layouts the path to THORChain Multichain Chaosnet. 
+This video lays out the path to THORChain Multichain Chaosnet. 
 
-Road to THORChain Multi Chain. What is it? What does it mean? How will it work? 
+Road to THORChain Multichain. What is it? What does it mean? How will it work? See the video below for the answers. 
 {% include video id="MsfhQJdADP4" provider="youtube" %}

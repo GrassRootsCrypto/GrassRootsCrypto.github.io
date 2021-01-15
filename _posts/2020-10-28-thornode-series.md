@@ -14,15 +14,15 @@ This was the first series of videos I made for the THORChain team / community. I
 
 I have grouped them on one page here for reference. These videos apply to 'single chain' Chaosnet / test net only. 
 
-## Creating form scratch
+## Creating from scratch
 {% include video id="RpUexLug_zs" provider="youtube" %}
 ## Bonding and Joining
 {% include video id="PXmbupxRlPg" provider="youtube" %}
 
 ## Management
-## Updating 
+### Updating 
 {% include video id="N18Jbns1pVg" provider="youtube" %}
-### Need to Knows
+### Need to Know
 Add Bond, Mindset, Debug/Logs of a THORNode operator
 {% include video id="w4DFaXTRxBI" provider="youtube" %}
 ### Monitoring using Slack
