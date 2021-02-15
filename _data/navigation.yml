@@ -4,12 +4,13 @@ main:
     url: /categories/
   - title: "Services"
     url: /Services/
+    description: "What GrassRoots Crypto can do for you"
   - title: "About"
-    url: /About/
-  - title: "Sitemap"
-    url: /sitemap/    
+    url: /About/ 
   - title: "Search"
     url: /search/  
+  - title: "Sitemap"
+    url: /sitemap/  
     
   #   url: /year-archive/
   # - title: "Sample Collections"
