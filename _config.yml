@@ -97,11 +97,11 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "A guy interested in Crypto"
   location         : "Darwin, Australia"
-  email            :
+  email            : "info@grassrootscrypto.io"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-#      url: "mailto:your.name@email.com"
+ #   - label: "Email"
+ #     url: "info@grassrootscrypto.io"
+ #     icon: "fab fa-fw envelope"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/channel/UCuC_PiCEsNIT6HH88r7vCsw/"
@@ -118,6 +118,9 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      url: "info@grassrootscrypto.io"
+      icon: "fab fa-fw fa-mail"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/GrassRootsio"

@@ -1,6 +1,6 @@
 ---
-permalink: /GetStarted/
-title: "Getting Started and Referral Links"
+permalink: /ReferralLinks/
+title: "Referral Links"
 layout: splash
 author_profile: false
 toc: false
