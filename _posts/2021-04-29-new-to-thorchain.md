@@ -1,5 +1,5 @@
 ---
-title: "Begineer's Guide to THORChain"
+title: "Beginner's Guide to THORChain"
 categories:
   - Defi
   - THORChain
