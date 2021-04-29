@@ -21,5 +21,5 @@ toc: true
 [See this page for more information]({% post_url 2020-11-21-impermanent-loss-explained %})
 
 ###  Understanding Chains and Tokens
-{% include video id="OfnXC4N5OUw" provider="youtube" %}
+{% include video id="Y-5v6EOHyBA" provider="youtube" %}
 [See this page for more information]({% post_url 2021-01-08-chains-tokens %})
