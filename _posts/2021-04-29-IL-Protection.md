@@ -28,14 +28,15 @@ THORChain works out from the asset amounts only. It can put a price on it as des
 ### More Detailed information about Impermanent Loss
 I have previously explained that Impermanent Loss is cause due to the rebalancing process, e.g. arbs taking funds from the pool. While at the basic level, it is good way to think about it, it is not really true. Like with most things in Crypto, the deeper you go, the more complex it becomes and the more high-level explanations become false. 
 
-To be specific, Impermanent Loss is strictly caused by a change of price of one more assets in the pool. This will change the ratio of asset to rune in the pool, which will change the pool price. This one side will be selling at discount, and the other will be at premium, this then incentives arbs to take advantage of the price different, as explained in my Liquidity Pooling video, which takes will then baring the pool back into balance. 
+To be specific, Impermanent Loss is strictly caused by a change of price of one more assets in the pool. This will change the ratio of asset to rune in the pool, which will change the pool price. So one side will be selling at discount, and the other will be at premium, this then incentives arbs to take advantage of the price different, as explained in my Liquidity Pooling video, which will then bring the pool back into balance. It is the change of the Pool price (due to the change of price) that causes IL, not the arb process. 
 There are a number of distinct steps here, let’s use a BTC/RUNE pool here, but the process is the same for any pool 2 asset pool in an any AMM. 
 
 1. Price of an asset in the pool changes.
 1. Ratio of BTC to Rune Pool changes in response to the price change
-1. Due to ratio change, the price of BTC and RUNE is changed (either up or down, depending on the price movement).
-1. At this point Impermanent Loss has occurred.
+1. Due to ratio change, the price of BTC and RUNE is changed (either up or down, depending on the price movement). At this point Impermanent Loss has occurred.
 1. Now an opportunity is presented to arbs – however they are not forced to take it. 
+
+Hope that helps!
 
 
 
