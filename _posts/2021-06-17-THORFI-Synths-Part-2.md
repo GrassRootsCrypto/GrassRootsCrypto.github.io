@@ -25,4 +25,4 @@ This video explains more how synths work, building on the [first video. ]({{ sit
 ### Grapics and Spreadsheet Used
 You can download the grapics used in part 2 [here ]({{ site.baseurl }}/assets/documents/THORFI-Synths-Part-2-Graphics.pdf)
 
-Spreadsheet will come a little later. 
+The Excel Spreadsheet is located [here ]({{ site.baseurl }}/assets/documents/THORFI-Synths-Data.xlsx) 
