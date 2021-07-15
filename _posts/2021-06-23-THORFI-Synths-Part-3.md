@@ -18,7 +18,7 @@ This is my third and last video on THORFI where I wanted to bring it all togethe
 I feel and believe if you truly understand Synths, you will understand Synths is a tool to grow the protocol, serve the less informed and really benefit liquidity providers. The truth is, LPs and the protocol directly benefit from the synth collateral but the Synths holders do not, they get a fixed return – so the bigger the Synth uptake, the better it is for LPs and the protocol. This is an understanding few people will know without watching this video or obtaining very detailed knowledge. I hope you find it useful. 
 
 
-### THORFI Synths Part 3 - An Conclusion
+### THORFI Synths Part 3 - A Conclusion
 {% include video id="dR8s0YeAQ8M" provider="youtube" %}
 
 
