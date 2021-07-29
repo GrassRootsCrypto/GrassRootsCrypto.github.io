@@ -24,4 +24,3 @@ I feel and believe if you truly understand Synths, you will understand Synths is
 
 ### Grapics Used
 These are the grapics used in part 3. [I have saved it to PDF here.]({{ site.baseurl }}/assets/documents/THORFI-Synths-Part-3.pdf)
-

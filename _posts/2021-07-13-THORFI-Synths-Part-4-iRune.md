@@ -19,6 +19,3 @@ I thought Part 3 was going to be my last then iRune spec came out. Because of my
 
 ### THORFI Synths Part 4 - iRune
 {% include video id="nlb8hcQDFAw" provider="youtube" %}
-
-
-
