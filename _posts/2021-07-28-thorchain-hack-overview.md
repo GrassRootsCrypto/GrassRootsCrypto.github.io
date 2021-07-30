@@ -3,13 +3,14 @@ title: "THORChain - Hacks - What you want to know!"
 categories:
   - Defi
   - THORChain
-  - THORFI
-  - Hack
+  - THORFI  
 tags:
   - MCCN  
     - "Liquidity Provider"
   - "Liquidity Pool"
   - "Cross Chain Swaps"
+  - Hack
+  - "Ethereum Hacks"
 author_profile: false
 classes: wide
 ---
@@ -24,7 +25,7 @@ classes: wide
 2. Solvency checker for the Asgard vault (YGG vaults are protected by the node operators and the incentive pendulum).  (#999)
 3. Ability to stop single chains, instead of halting the entire network (#1013)
 4. Halborn progress updates released. [Here](https://www.runebase.org/news/halborn-security-issues-first-progress-update)
-5. Halborn Report on latest Hack here (https://github.com/HalbornSecurity/PublicReports/blob/master/Incident%20Reports/Thorchain_Incident_Analysis_July_23_2021.pdf)
+5. Halborn Report on latest Hack [here](https://github.com/HalbornSecurity/PublicReports/blob/master/Incident%20Reports/Thorchain_Incident_Analysis_July_23_2021.pdf)
 
 ### What is happening. 
 
@@ -43,6 +44,7 @@ classes: wide
 1. **When will THORChain restart?**
 
 	When it is safe to do so. Depends on how the security audits are ready. Current timeframe is about 6-8 weeks, thus about mid September.  A lot is happening in the background. Everyone wants it now but this is why it is called Chosnet, so please be patient while the team and the community works through this. Mods will post updates from the devs, so keep an eye on the pinned messages. Honestly, I think it is better to take the time now than rush it. 
+  Draft timeline frin the team is [here]({{ site.baseurl }}/assets/images/Screen_Shot_2021-07-29_at_12.30.59_AM.png)
 2. **What happened to my uncompleted swaps or withdraws?**
 
 	The chain is halted so nothing is being processed. Everything is recorded, so if you have transactions, they should be processed when the protocol is fully restarted. The restart will happen in stages, look for details in the pinned messages. Won’t be able to do anything till then. 
@@ -51,7 +53,7 @@ classes: wide
 	Yes, THORChain will credit the pools with Rune while the chain is halted so LPs do not lose out. The Rune you get is based on your position so it is fair.
 4. **Do I still get ILP?**
 
-	Yes, however it is measured in blockchain time, not in time passed, e.g. duration. Thus the time to 100 days is paused while the chain is paused. E.g., if the chain is paused for 5 days, you need to wait 105 days duration.
+	Yes, however it is measured in blockchain time, not in time passed, e.g. duration. Thus the time to 100 days is paused while the chain is paused. E.g., if the chain is paused for 5 days, you need to wait 105 days duration. 
 5. **What happened to my RUNEYield? It’s showing $8k ETH price and -99.9% APY vs HODL for my ETH pool!**
 
 	Firstly, don't stress, this is not reflective of your actual position. The pools are currently out of balance which effects their price. Pools have their own price which is unrelated to the market price, and this is upset when the pool is out of balance, this is why everything looks strange. It will return to normal when, in this example, the ETH chain restarts. Then RUNEYield will start to look normal again. 
@@ -63,3 +65,6 @@ classes: wide
    This has been suggested but it is too early to tell. The outcome of the security audits and the white/grey hacker review will help determine the path and timeframe moving forward. There will be more detail released once that has occurred. 
 
 
+### Previous video
+This video was on the first ETH Hack (the first one described in the video above) where I look at the code, if you want more information. 
+{% include video id="IaT6wCu_Vgg" provider="youtube" %}

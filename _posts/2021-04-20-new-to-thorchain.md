@@ -8,6 +8,9 @@ tags:
   - THORChain
   - AsgardEx
   - "Cross Chain Swaps"
+  - "Asymmetrical Depost"
+  - "Symmetrical Depost"
+  - "Impermanent Loss"
 classes: wide
 toc: true
 ---
