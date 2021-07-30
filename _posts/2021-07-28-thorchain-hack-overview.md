@@ -41,6 +41,8 @@ classes: wide
 
 ### Frequently Asked Questions
 
+Official Medium Article with more information [here](https://medium.com/thorchain/post-mortem-eth-router-exploits-1-2-and-premature-return-to-trading-incident-2908928c5fb)
+
 1. **When will THORChain restart?**
 
 	When it is safe to do so. Depends on how the security audits are ready. Current timeframe is about 6-8 weeks, thus about mid September.  A lot is happening in the background. Everyone wants it now but this is why it is called Chosnet, so please be patient while the team and the community works through this. Mods will post updates from the devs, so keep an eye on the pinned messages. Honestly, I think it is better to take the time now than rush it. 
