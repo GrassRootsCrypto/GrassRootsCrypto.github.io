@@ -10,8 +10,7 @@ tags:
   - "Liquidity Provider"
   - "Liquidity Pool"
   - "Cross Chain Swaps"
-  - "Synthetics"
-author_profile: false
+  author_profile: false
 classes: wide
 ---
 
