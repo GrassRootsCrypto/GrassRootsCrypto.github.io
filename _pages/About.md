@@ -34,3 +34,12 @@ I wanted to do something different and that's how GrassRoots Crypto was born. My
 After learning so much, I decided to create more videos on THORChain which then evolved into explaining basic Defi concepts like Liquidity Pools for new people. 
 
 This, along with helping many new people understand and start their journey into crypto over the last 12 months has given me the purpose that is GrassRoots Crypto. 
+
+### Donations
+If you like my videos and want to go beyond a like and a sub, you can tip me using the below;
+Binance Address (BEP-2) -          bnb14fl4tudhfjxrhtvwx3mspsjrq2ncn3rwunnekr
+Ethereum Address (ERC-20) -    0x9647b2c35df9394172c30478be6b3c373d92fd84
+Native RUNE - THOR Address -  thor1mjyg60v0jw04jka8vzzlvh5nknhrepl8lwaf7z
+Bitcoin Address -                          bc1qdh8n9h0xu4cxwkkc0pem73j66ckqsyy8sva24r
+Litecoin Address -                         ltc1qtwusm7pk5l0d72wm8uc32h9ateh2ryufdz282j
+Bitcoin Cash Address  -                qpqgqr73y9w997fdk4d467k7ugrk3xzp35lsa9gt4f
