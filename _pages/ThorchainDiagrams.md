@@ -1,7 +1,8 @@
 ---
 permalink: /THORChainDiagrams/
-title: "THORChain Diagrams"
+title: "THORChain Diagrams and Code Flow"
 layout: splash
+classes: wide
 toc: true
 ---
 
@@ -39,7 +40,7 @@ In this example, there is no outboud message.
 
 ---
 
-### Write up by HildisvíniÓttar Regarding MsgSend and MsgDeposit. 
+### Write up by HildisvíniÓttar on MsgSend and MsgDeposit. 
 
 In handler.go there are various ways of receiving incoming. You basically have Bifrost observations that require 2/3 consensus, cli node functions (require auth), and the two generic ones (i.e. supported by Ledger): ~`MsgSend` and `MsgDeposit`
 
@@ -110,7 +111,7 @@ The other side of THORChain is "Bifrost". This is where a user use an external c
 This is a process that reads every block (and sometimes mempool) from all the supported chains: ETH, BNB, BTC, BCH, LTC. Call it a block scanner. It also has the ability to sign transactions out.
 
 
-For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BNB.RUNE-B1A to the BNB vault with memo `"switch:<my rune address>"`. Bifrost reads this and goes "Yep that's legit" and sends a MsgObservedTxIn to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send MsgObservedTxIn to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
+For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BNB.RUNE-B1A to the BNB vault with memo `"switch:<my rune address>"`. Bifrost reads this and goes "Yep that's legit" and sends a `MsgObservedTxIn` to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send MsgObservedTxIn to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
 
 ### Message Types
 ```go
@@ -153,3 +154,6 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain Cod
 
 
 Some memo types like `swap` will create an outbound message. In the example of a swap, the outbound liquidity requirement is written to the`TxOutStorage` then turned into a `MsgOutboundTx` message and then handled accordingly - by the `ObservedTxOutHandler`. 
+
+
+See more information here https://docs.google.com/document/d/1WQLvP8DTDEyCZ6JVoeiGO3U-sZZhRFu9dp7zG8UsqME 
