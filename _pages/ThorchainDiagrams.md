@@ -10,7 +10,7 @@ Working pictures of THORChain. Work in progress. Please put feedback in the Dev 
 
 ### High Level App Overview
 ![High Level App View]({{ site.baseurl }}/assets/images/TCALHL.png)
-These are the major compoents within THORChain. 
+These are the major components within THORChain. 
 THORChain extends the Cosmos BaseApp and has its own module for specific msg handling and processing.
 
 
@@ -19,10 +19,10 @@ Example BTC to ETH Swap overview.
 
 
 ![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
-See PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
+See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 Some points on the Diagram. 
-1.	THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the blockscanner which can see the mempool of the full BTC node. This is where witness transactions are created then sent to THORChain for processing (via the bridge)
+1.	THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the `blockscanner` which can see the mempool of the full BTC node. This is where witness transactions are created then sent to THORChain for processing (via the bridge)
 1.	Inbound funds are sent to Asgard. 
 1.	VM does not apply to THORChain, is a blockchain application or a replicated state machine. 
 1.	THORChain has two levels of processing – external and internal. Consensus is needed for each one – thus, from what I understand, a Swap will create 4 msgs in THORChain, each one needed consensus – and consensus is definitely checked in the Inbound and Outbound handlers. This 2 layered approach, separates external THORChain msg handling from internal msg handling.
@@ -39,14 +39,11 @@ In this example, there is no outboud message.
 
 ---
 
-## Details
+### Write up by HildisvíniÓttar Regarding MsgSend and MsgDeposit. 
 
-### THORChain Handler
-In handler.go there are various ways of receiving incoming. You basically have Bifrost observations that require 2/3 consensus, cli node functions (require auth), and the two generic ones (i.e. supported by Ledger): MsgSend and MsgDeposit <br>
+In handler.go there are various ways of receiving incoming. You basically have Bifrost observations that require 2/3 consensus, cli node functions (require auth), and the two generic ones (i.e. supported by Ledger): ~`MsgSend` and `MsgDeposit`
 
-Below are the message types THORChain can get. These are routed by the `ExternalHandler`.
 ```go
-
 // consensus handlers
 m[MsgTssPool{}.Type()] = NewTssHandler(mgr)
 m[MsgObservedTxIn{}.Type()] = NewObservedTxInHandler(mgr)
@@ -66,15 +63,21 @@ m[MsgSetIPAddress{}.Type()] = NewIPAddressHandler(mgr)
 m[MsgSend{}.Type()] = NewSendHandler(mgr)
 m[MsgDeposit{}.Type()] = NewDepositHandler(mgr)
 m[MsgSolvency{}.Type()] = NewSolvencyHandler(mgr)
-
 ```
+External Message Mapping for the THORChain Module. These are received and routed by the `ExternalHandler`.
 
-Anybody can post a MsgSend or MsgDeposit to the /txs endpoint. It's just some JSON. Cosmos does require you have a valid signature for one of the fields, e.g. from_address or signer. This ensures you are authorised to perform the function.
-### THORNode
-At its heart, THORChain is a key-value database containing everybodies balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state. Until you get to the current state. Cosmos/Tendermint handles the underlying message stuff. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
+
+Anybody can post a MsgSend or MsgDeposit to the /txs endpoint - see `x\thorchain\client\rest`. It's just some JSON. Cosmos does require you have a valid signature for one of the fields, e.g. from_address or signer. This ensures you are authorised to perform the function.
+
+### Deposit Msg
+
+Note: Depost Msg is when Rune gets sent in, e.g. Bond - it does not come via Bifrost. 
+
+At its heart, THORChain is a key-value database containing everybody’s balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state. Until you get to the current state. Cosmos/Tendermint handles the underlying message stuff. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
 
 In MsgSend handler, it just checks the KV database to ensure you have enough balance for what you asked to send, subtracts fee and sends balance to whomever you specified. Done. At the beginning it stops early if "HaltTHORChain" is enabled. Which is currently set.
- HildisvíniÓttar: In MsgDeposit handler (handler_deposit.go) it's a little more complex. It deducts the coins you sent in with MsgDeposit from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, LEAVE, .....
+
+In MsgDeposit handler (handler_deposit.go) it's a little more complex. It deducts the coins you sent in with MsgDeposit from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, LEAVE, .....
 
 ```go
     m[MsgOutboundTx{}.Type()] = NewOutboundTxHandler(mgr)
@@ -95,13 +98,58 @@ In MsgSend handler, it just checks the KV database to ensure you have enough bal
     m[MsgConsolidate{}.Type()] = NewConsolidateHandler(mgr)
     m[MsgManageTHORName{}.Type()] = NewManageTHORNameHandler(mgr)
 ```
+Internal Message Mapping. This is handled by `InternalHandler`
 
 Some of these are disabled by MsgDeposit handler, so you only have a finite list of things you can do. These are the things being audited now.
 So that's thornode. Basically send it a MsgSend or MsgDeposit and it authorises you via digital signature and reads your memo and tries to perform the function. Plus you can send it Set IP Address, Node Keys and Version via CLI tools (but these require signer to be an active node, etc).
 
 ### Bifrost
-The other side of THORChain is "Bifrost". 
+The other side of THORChain is "Bifrost". This is where a user use an external chain to interact with THORChain
+
+
 This is a process that reads every block (and sometimes mempool) from all the supported chains: ETH, BNB, BTC, BCH, LTC. Call it a block scanner. It also has the ability to sign transactions out.
+
+
 For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BNB.RUNE-B1A to the BNB vault with memo `"switch:<my rune address>"`. Bifrost reads this and goes "Yep that's legit" and sends a MsgObservedTxIn to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send MsgObservedTxIn to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
 
+### Message Types
+```go
+func (tx TxType) IsOutbound() bool {
+    switch tx {
+    case TxOutbound, TxRefund, TxRagnarok:
+        return true
+    default:
+        return false
+    }
+}
 
+func (tx TxType) IsInternal() bool {
+    switch tx {
+    case TxYggdrasilFund, TxYggdrasilReturn, TxMigrate, TxConsolidate:
+        return true
+    default:
+        return false
+    }
+}
+
+// HasOutbound whether the txtype might trigger outbound tx
+func (tx TxType) HasOutbound() bool {
+    switch tx {
+    case TxAdd, TxBond, TxDonate, TxYggdrasilReturn, TxReserve, TxMigrate, TxRagnarok, TxSwitch:
+        return false
+    default:
+        return true
+    }
+}
+```
+
+
+### Code Flow for Add Liquidity
+Example and somewhat simplified code flow. This shows a Tx going throw three layers. Bifrost, External Hander and then Internal Handler. 
+
+
+![Code Execition Flow]({{ site.baseurl }}/assets/images/THORChain Code Flow.jpg)
+See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain Code Flow.pdf)
+
+
+Some memo types like `swap` will create an outbound message. In the example of a swap, the outbound liquidity requirement is written to the`TxOutStorage` then turned into a `MsgOutboundTx` message and then handled accordingly - by the `ObservedTxOutHandler`. 
