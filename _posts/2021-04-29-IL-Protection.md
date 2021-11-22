@@ -40,7 +40,7 @@ There are a number of distinct steps here, let’s use a BTC/RUNE pool here, but
 Hope that helps!
 
 
-### Extra details form a write THORChain Dev Discord. (Added 22nd Nov 21)
+### Extra details form a write up in THORChain Dev Discord. (Added 22nd Nov 21)
 Below is as of version 75 of the code. 
 
 ILP is calculated within the withdraw_handler and does not care at all how liquidity has been added or how is going to be withdrawn. ILP is calculated in RUNE (like everything else in THORChain) making it impartial to all/any assets. Only the ratio of the pool at the time of the withdraw is important. 
