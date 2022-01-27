@@ -80,4 +80,6 @@ Thus, given the following situation
 
 **A:** You will get the ratio at the time you withdraw. So 2 and 3 apply. This is done so it is a proper comparison against holding - at the time of withdraw.
 
-Last note for the pedantic. V75 did update the ILP calculation to `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1) => ((A0 * R1/A1) + R0) - (R1 + R1)` but it works out the same as `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1)`. V75 is just adding an additional check to see if `R1*2` is greater than to or equal to `((A1 * P1) + R1)`, as `(A1 * P1)` the asset value into RUNE at the time of withdraw.
+Last note for the pedantic. V75 did update the ILP calculation to `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1) => ((A0 * R1/A1) + R0) - (R1 + R1)`. (https://gitlab.com/thorchain/thornode/-/merge_requests/1993) 
+
+This works out the same as `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1)`. V75 is just adding an additional check to see if `R1*2` is greater than to or equal to `((A1 * P1) + R1)`, as `(A1 * P1)` the asset value into RUNE at the time of withdraw.

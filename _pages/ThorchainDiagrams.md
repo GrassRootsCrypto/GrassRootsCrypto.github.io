@@ -9,37 +9,46 @@ toc: true
 Working pictures of THORChain. Work in progress. Please put feedback in the Dev discord server - DevOps channel. 
 
 
-### High Level App Overview
+## High Level App Overview
 ![High Level App View]({{ site.baseurl }}/assets/images/TCALHL.png)
 These are the major components within THORChain. 
 THORChain extends the Cosmos BaseApp and has its own module for specific msg handling and processing.
 
-
 ### Swap Example
-Example BTC to ETH Swap overview.
-
+Example BTC to ETH Swap overview - High Level.
 
 ![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 Some points on the Diagram. 
-1.	THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the `blockscanner` which can see the mempool of the full BTC node. This is where witness transactions are created then sent to THORChain for processing (via the bridge)
-1.	Inbound funds are sent to Asgard. 
+1.	THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the `blockscanner` which can see the mempool of the full BTC node. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packahged, signed and sent to THORChain for processing (via the bridge).
+1.	Inbound funds are sent to the Asgard Vault. 
 1.	VM does not apply to THORChain, is a blockchain application or a replicated state machine. 
-1.	THORChain has two levels of processing – external and internal. Consensus is needed for each one – thus, from what I understand, a Swap will create 4 msgs in THORChain, each one needed consensus – and consensus is definitely checked in the Inbound and Outbound handlers. This 2 layered approach, separates external THORChain msg handling from internal msg handling.
+1.	THORChain has two levels of processing – external and internal.
 1.	Tendermint broadcasts messages via the Gossip protocol (same as flooding) and gets consensus on the txs, but it is up to THORChain to check everything is good, e.g. Tx Out matches Swap Tx In, BlockHeight is correct and so on.
-1.	Nodes agree on the outbound tx (as per above) but only one node is selected to send the ETH Tx. 
+1.	Nodes agree on the `out tx` (as per above) but only one node is selected to send the ETH Tx.
 1.	Asgard/TSS is not required for outbound Txs, usually sent to a Ygg vault. Asgard will send funds if 1. Outbound is too large for a node to do it or the node failed to do it within a timely fashion (like 2 minutes but I forget the exact time), in which case, 2/3 of TSS Key Gen set would be required to sign the outgoing ETH Tx. 
 1.	Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when a node send an ETH Tx, it already has 2/3 consensus. That said, as a node has the private key to its own YGG vault, the node does not need consensus to send from it's own vault (but it will be slashed 1.5x value if it does).
 1.	Yep, Tx goes to ETH’s mempool as normal. 
+1.  Once finds leave THORChain, it creates an OutboundTx which is then sent THORChain. This ensures that what was sent is what was meant to be sent. 
+
+Some memo types like `swap` will create an outbound message, others like `add` do not. 
+### Swap Example Code Flow
+This follows in inbound only. There would be a seperate flow for the outbound `MsgOutboundTx` once the ETH is sent.
+![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Swap-CodeFlow.jpg)
+See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 
-### High Level Add Liquidity Example Flow
+## High Level Add Liquidity Example
 ![High Level App View]({{ site.baseurl }}/assets/images/TC-AddLiq-Flow.png)
 In this example, there is no outboud message.
 
----
+### Add Liquidity Example Code Flow
+![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Add-CodeFlow.jpg)
+See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Add.pdf)
 
+
+---
 ### Write up by HildisvíniÓttar on MsgSend and MsgDeposit. 
 
 In handler.go there are various ways of receiving incoming. You basically have Bifrost observations that require 2/3 consensus, cli node functions (require auth), and the two generic ones (i.e. supported by Ledger): ~`MsgSend` and `MsgDeposit`
@@ -143,17 +152,3 @@ func (tx TxType) HasOutbound() bool {
     }
 }
 ```
-
-
-### Code Flow for Add Liquidity
-Example and somewhat simplified code flow. This shows a Tx going throw three layers. Bifrost, External Hander and then Internal Handler. 
-
-
-![Code Execition Flow]({{ site.baseurl }}/assets/images/THORChain Code Flow.jpg)
-See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain Code Flow.pdf)
-
-
-Some memo types like `swap` will create an outbound message. In the example of a swap, the outbound liquidity requirement is written to the`TxOutStorage` then turned into a `MsgOutboundTx` message and then handled accordingly - by the `ObservedTxOutHandler`. 
-
-
-See more information here https://docs.google.com/document/d/1WQLvP8DTDEyCZ6JVoeiGO3U-sZZhRFu9dp7zG8UsqME 
