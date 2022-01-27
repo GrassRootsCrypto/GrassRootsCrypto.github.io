@@ -44,7 +44,6 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swa
 In this example, there is no outboud message.
 
 ### Add Liquidity Example Code Flow
-![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Add-CodeFlow.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Add.pdf)
 
 
