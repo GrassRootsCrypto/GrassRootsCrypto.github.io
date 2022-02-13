@@ -5,12 +5,15 @@ main:
   - title: "Services"
     url: /Services/
     description: "What GrassRoots Crypto can do for you"
+  - title: "Diagrams"
+    url: /ThorchainDiagrams/  
+    description: "Diagrams"
   - title:  "Referral Links"
     url: /ReferralLinks/
-  - title: "About"
-    url: /About/ 
   - title: "Search"
     url: /search/  
+  - title: "About"
+    url: /About/ 
   - title: "Sitemap"
     url: /sitemap/ 
   - title: Disclaimer
