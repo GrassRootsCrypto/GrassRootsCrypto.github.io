@@ -6,7 +6,7 @@ main:
     url: /Services/
     description: "What GrassRoots Crypto can do for you"
   - title: "Diagrams"
-    url: /ThorchainDiagrams/  
+    url: /THORChainDiagrams/  
     description: "Diagrams"
   - title:  "Referral Links"
     url: /ReferralLinks/
