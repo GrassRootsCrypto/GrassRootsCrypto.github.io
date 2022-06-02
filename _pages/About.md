@@ -13,13 +13,12 @@ If you are new to the crypto space, it can be hard to get to make sense of it al
 GrassRoots Crypto aims to explain what you need to know using common relatable examples. Check out my video series avaliable on Youtube. 
 
 ---
-All sessions are by booking only, please contact me via Twitter/Telegram to enquire about bookings.
-GrassRoots Crypto is located in Darwin and works with <a href="https://blockchaindarwin.com/">  Blockchain Darwin </a> to run weekly Blockchain/Crypto meet ups. In this modern world, training and consulting can happen in any location - just ask.
+All sessions are by booking only, please contact me via Twitter/Telegram to enquire about bookings. In this modern world, training and consulting can happen in any location - just ask.
 
 ## About Me
-I have over 15 years experience in the IT industry, with over 2 years experience in the Blockchain / Crypto space. Over this time I have attended seminars, read books, undertaken courses and presented at the Australian Computer Society on Blockchain with a Blockchain Darwin colleague. 
+I have over 15 years experience in the IT industry, with over 3 years experience in the Blockchain / Crypto space. Over this time I have attended seminars, read books, undertaken courses and presented. Currently I am deep in the mulit-chain Defi space.
 
-I have a very good understanding of Bitcoin, played in the Ethereum Defi space using UniSwap, Compound, mStable and Balancer and keeped any eye on the industry. 
+I have a very good understanding of Bitcoin, played in the Ethereum Defi space using UniSwap, Compound, mStable and Balancer and keep an eye on the industry. 
 I started by testing THORChain's BepSwap interface during testnet then decided to run a testnode for myself - just to lean had have some fun. 
 
 I am here to give you the information you need to know to make the best decisions for yourself.
