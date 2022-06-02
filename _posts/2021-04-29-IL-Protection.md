@@ -38,3 +38,48 @@ There are a number of distinct steps here, let’s use a BTC/RUNE pool here, but
 1. Now an opportunity is presented to arbs – however they are not forced to take it. 
 
 Hope that helps!
+
+
+### Extra details form a write up in THORChain Dev Discord. (Added 22nd Nov 21)
+Below is as of version 75 of the code. 
+
+ILP is calculated within the withdraw_handler and does not care at all how liquidity has been added or how is going to be withdrawn. ILP is calculated in RUNE (like everything else in THORChain) making it impartial to all/any assets. Only the ratio of the pool at the time of the withdraw is important. 
+Let me lay it out.
+
+The line [`if fullProtectionLine > 0 && pool.Status == PoolAvailable`](https://gitlab.com/thorchain/thornode/-/blob/develop/x/thorchain/withdraw_current.go#L83) sees if ILP is active (protection line is taken from the constants (`FullImpLossProtectionBlocks`)) and if the pool is active. 
+ILP is calculated within [`calcImpLossV75`](https://gitlab.com/thorchain/thornode/-/blob/develop/x/thorchain/withdraw_current.go#L222) and uses the formular `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1)` – this puts all the values into rune. The Calculation is then as simple as:  rune value when deposited take rune value when withdrawing. If the result is > 0, there is going to be a payout.
+
+
+ `protectionBasisPoints` (calculated previously form `protectionBasisPoints := calcImpLossProtectionAmtV1(ctx, lastAddHeight, fullProtectionLine`) is used to work out the [`coverage`](https://gitlab.com/thorchain/thornode/-/blob/develop/x/thorchain/withdraw_current.go#L243) e.g. how many days the LPer has been in the pool. 100 days or more equals 100%. 
+
+
+If there is going to be an ILP payout, THORChain  [adds](https://gitlab.com/thorchain/thornode/-/blob/develop/x/thorchain/withdraw_current.go#L100) the liquidity (the rune value of the ILP) to the LPer BEFORE the actual withdraw is done - thus their position (Liquidity Units) are updated before withdraw.
+
+<b>Note:</b> Liquidity Units are denoted in RUNE (like everything is) so by incrementing someone’s liquidity units (e.g. RUNE) you are by consequence adding the corresponding asset value to the LPer taking into consideration the ratio of the pool at the time. Thus, in general (at least at deposit and in this context), a LPer’s Liquidity Units is going to be the Rune side of the pool. Again, making THORChain processing impartial to all assets. That is how I understand it anyway 😊 See [`calculating-pool-ownership` in the docs](https://docs.thorchain.org/thorchain-finance/continuous-liquidity-pools#calculating-pool-ownership) for the exact details. 
+
+After the ILP Payout is calculated, how the withdraw is going to be done, e.g. Asym or Sym (done in `calculateWithdrawV75`) and the gas requirements for the withdraw are calculated. The actual withdraw of liquidity is then done.
+
+Given this, it is clear ILP is irrespective of how liquidity is added, removed or even what asset is in question. Also if there is a payout, a LPer’s position is updated before the withdraw process is done. 
+I created this video going through a detailed example following the same process, if anyone wants to know more or see a working example. https://www.youtube.com/watch?v=C8cYaugKSFw
+YouTube.
+
+### What happens if you withdraw part of your liquidity?
+`withdrawBasisPoints` is used to work out how much you are withdrawing, everything is actually calculated form that. 
+
+``
+    // taking withdrawBasisPoints, calculate how much of the coverage the user should receives
+    coverage = common.GetSafeShare(withdrawBasisPoints, cosmos.NewUint(10000), coverage)
+``
+
+Thus, given the following situation
+1. 1 April - Deposit RUNE+ETH @ 200:1
+1. 1 Aug - Withdraw 50% of LP @ 300:1 (ILP given)
+1. 1 Sep - Withdraw balance @ 400:1
+
+**Q:** Will the protocol will give ILP based on 400:1 vs 200:1 and not 400:1 vs 300:1 right?
+
+**A:** You will get the ratio at the time you withdraw. So 2 and 3 apply. This is done so it is a proper comparison against holding - at the time of withdraw.
+
+Last note for the pedantic. V75 did update the ILP calculation to `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1) => ((A0 * R1/A1) + R0) - (R1 + R1)`. (https://gitlab.com/thorchain/thornode/-/merge_requests/1993) 
+
+This works out the same as `coverage = ((A0 * P1) + R0) - ((A1 * P1) + R1)`. V75 is just adding an additional check to see if `R1*2` is greater than to or equal to `((A1 * P1) + R1)`, as `(A1 * P1)` the asset value into RUNE at the time of withdraw.
