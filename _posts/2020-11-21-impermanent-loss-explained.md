@@ -13,6 +13,8 @@ toc: true
 ---
 This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, [check out my video explaining it. ]({{ site.baseurl }}{% link _posts/2020-11-14-liquidity-provider.md %})
 
+NOTE: ILP as been sunset in THORChain.
+
 Impermanent Loss (IL), or in simple speak, not yet a permeant loss, is one of the hardest concepts in Defi for most people to understand.  See the video below.
 
 {% include video id="OfnXC4N5OUw" provider="youtube" %}

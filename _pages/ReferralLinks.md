@@ -25,14 +25,6 @@ Binance is the world's largest exchange by market cap. They have very cheap fees
 <a href="https://www.binance.com/en-AU/register?ref=ICX9L9FZ">Click here to get Started with Binance.</a> Ref code is ICX9L9FZ
 
 
-### Celsius Network
-Celsius is a deposit and lending platform. They offer over 10% interest on (like a high interest account) and loans from 1%. I believe they are the future bank of the world. 
-Highly recommended as they will give you better deposit or loan rates than any bank!
-"Join Celsius Network and earn $30 USD in BTC with your first transfer of $200 or more! #UnbankYourself"
-
-<a href="https://celsiusnetwork.app.link/194223258a">Click here to join the Celsius Network.</a> Ref code is 194223258a
-
- 
 ### Cryptro.com
 Crypto.com is similar to Celsius Network however it also has a Visa Debit Card. You can top up your card from either Crypto or another Credit/Debit card for no fees. Visa Debit Card comes with loads of benefits - recommended for all Crypto users. "Use my referral link and we both get $25 USD :)"
 
