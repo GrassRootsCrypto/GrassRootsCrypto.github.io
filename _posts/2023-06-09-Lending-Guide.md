@@ -26,8 +26,6 @@ Examples using numbers based based on the latest design detailed in the video ab
 - [Lending Docs]( https://docs.thorchain.org/thorchain-finance/lending ) 
 
 ## Older videos, good knowledge but may be out of date. 
-
-### THORFi Lending with Numbers and Examples
 {% include video id="glY_RVYdsfM" provider="youtube" %}
 
 {% include video id="2jA4DDWxAbk" provider="youtube" %}
