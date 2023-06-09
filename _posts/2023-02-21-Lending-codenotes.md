@@ -1,5 +1,5 @@
 ---
-title: "THORNode Lending Code Walkthrough notes"
+title: "THORChain Lending Code Walkthrough notes"
 categories:
   - Defi
   - THORChain
