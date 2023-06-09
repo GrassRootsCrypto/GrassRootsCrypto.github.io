@@ -17,8 +17,9 @@ THORFi Lending is coming and I have makde several videos about it. I hope people
 Details the latest design.
 {% include video id="AaqHG00RJks" provider="youtube" %}
 
-### THORFi Lending with Numbers and Examples
-Examples using numbers based based on the latest design detailed in the video above.
+### Lending with Numbers and Examples
+Examples using numbers based based on the latest design detailed in the video above. 
+<br> Play with the spreadsheet [here]( https://docs.google.com/spreadsheets/d/1PerBtQ4I273W0BX9YiOPx9IYJKjLzXT_YA9aWqrTP4Y/edit#gid=1607074855 )
 {% include video id="PVpYU5kCOHI" provider="youtube" %}
 
 ### Other Resources
