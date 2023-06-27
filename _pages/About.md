@@ -19,6 +19,7 @@ I have an excellent understanding of Bitcoin, have participated in the Ethereum 
 In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn had have some fun. 
 
  My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
+
 ---
 ### How it all started
 GrassRoots Crypto was founded in 2019 with the mission of providing educational support to newcomers in the world of Blockchain / Crypto. I understand the challenges and frustration newcommers may go through when starting in the Crypto space. There is so much information out there, it is hard to know where to begin. So much new terminology/jargon!
@@ -28,6 +29,7 @@ When I started helping new people enter into Crypto, I noticed many videos used 
 As my knowledge expanded, I felt compelled to delve deeper into various aspects of THORChain and expand my content to encompass fundamental DeFi concepts like Liquidity Pools, catering to newcomers seeking clarity.
 
 Over the years, I have had the privilege of guiding numerous individuals on their journey into the crypto realm. This fulfilling experience has reinforced the purpose and vision of GrassRoots Crypto – to empower individuals through education and support as they navigate the exciting world of cryptocurrencies.
+
 ---
 ### Donations
 If you like my videos and want to go beyond a like and a subscription, you can tip me using the below;
