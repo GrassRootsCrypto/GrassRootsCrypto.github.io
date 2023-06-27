@@ -6,8 +6,7 @@ author_profile: false
 toc: false
 ---
 ### Donations and Tips
-If you like my videos and you want to tip me, below are the address.
-
+If you enjoy my videos and would like to show your support, you can consider tipping me using the addresses below:
 
 1. Binance Address (BEP-2)
 bnb14fl4tudhfjxrhtvwx3mspsjrq2ncn3rwunnekr

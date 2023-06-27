@@ -12,9 +12,9 @@ author_profile: false
 classes: wide
 ---
 
-Single sided Savings is coming to THORChain using Synths. See my orginal Synth Series here to understand them in detail.
+Single Sided Savings is coming to THORChain, leveraging Synths. If you want to delve into the intricacies of Synths, I recommend checking out my original Synth Series for a comprehensive understanding.
 
-This video covers THORFi Savings with Yield Bearing Synths. As the minting Synths is capped, POL has been introduced to work around this.
+In this video, I cover THORFi Savings with Yield Bearing Synths. To address the capped minting of Synths, the introduction of POL has proven to be a viable solution.
 
 ### Yield Bearing Synths and POL
 {% include video id="Up2-arSzH5k" provider="youtube" %} 

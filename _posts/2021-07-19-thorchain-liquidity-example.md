@@ -17,9 +17,7 @@ author_profile: false
 classes: wide
 ---
 
-This is a video I wanted to do as there is confusion regarding Asymmetrical vs Symmetrical Deposits, Impermanent Loss and Impermanent Loss Protection in THORChain.
-So I created an example to demonstrate these concepts, first at the high level for beginners and second, (yet to create) at the more detailed level, where I can show how assets are prices in a pool and why Impermanent Loss - few properly understand this and, googling, there is not much info out there to properly explains it.
-I hope you find it useful. 
+This is a video I wanted to do because there is confusion regarding Asymmetrical vs Symmetrical Deposits, Impermanent Loss, and Impermanent Loss Protection in THORChain. So I created an example to demonstrate these concepts, first at a high level for beginners, and secondly (yet to be created) at a more detailed level, where I can show how assets are priced in a pool and why Impermanent Loss is not properly understood. Googling, there isn't much information out there to properly explain it. I hope you find it useful."
 
 ### Part 1 - A Liquidity Pooling Example - High Level
 {% include video id="Kzt9SAQRvUQ" provider="youtube" %}
