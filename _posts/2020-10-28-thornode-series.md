@@ -10,9 +10,9 @@ author_profile: false
 toc: true
 ---
 
-This was the first series of videos I made for the THORChain team / community. It is more technical / developer focused. 
+These videos mark the first series I've created specifically for the THORChain team and community, with a technical and developer-focused approach. 
 
-I have grouped them on one page here for reference. These videos apply to 'single chain' Chaosnet / test net only. 
+I have conveniently grouped them on a single page for easy reference. Please note that these videos are applicable to the 'Single Chain' Chaosnet/test net only.
 
 [Also see my THORNode video 101 here.]({% post_url 2022-01-31-thornode-operator-101 %})
 

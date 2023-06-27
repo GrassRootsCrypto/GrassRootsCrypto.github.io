@@ -18,6 +18,7 @@ I wanted to create a video to clear the confusion and get everyone on the same p
 What are your thoughts?
 
 ADR 006 is currently open to enable POL, you can read that here: https://gitlab.com/thorchain/thornode/-/blob/develop/docs/architecture/adr-006-enable-pol.md 
+Update, this vote was passed. 
 
 ### THORFi Risks and Concerns
 {% include video id="glY_RVYdsfM" provider="youtube" %} 

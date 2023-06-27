@@ -6,13 +6,13 @@ classes: wide
 toc: true
 ---
 
-Working pictures of THORChain. Work in progress. Please put feedback in the Dev discord server - DevOps channel. 
+Working pictures of THORChain. Work in progress. Please provide feedback in the Dev discord server - DevOps channel. 
 
 
 ## High Level App Overview
 ![High Level App View]({{ site.baseurl }}/assets/images/TCALHL.png)
 These are the major components within THORChain. 
-THORChain extends the Cosmos BaseApp and has its own module for specific msg handling and processing.
+THORChain extends the Cosmos BaseApp and has its own module for specific message handling and processing.
 
 ### Swap Example
 Example BTC to ETH Swap overview - High Level.

@@ -1,24 +1,24 @@
 # main links
 main:
-  - title: Posts  
+  - title: Posts
     url: /categories/
   - title: "Services"
     url: /Services/
-    description: "What GrassRoots Crypto can do for you"
+    description: "What GrassRoots Crypto can do for you?"
   - title: "Diagrams"
-    url: /THORChainDiagrams/  
+    url: /THORChainDiagrams/
     description: "Diagrams"
   - title:  "Referral Links"
     url: /ReferralLinks/
   - title: "Search"
-    url: /search/  
+    url: /search/
   - title: "About"
-    url: /About/ 
+    url: /About/
   - title: "Sitemap"
-    url: /sitemap/ 
+    url: /sitemap/
   - title: Disclaimer
     url: /Disclaimer/
-    
+
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/

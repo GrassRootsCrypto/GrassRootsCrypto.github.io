@@ -12,9 +12,9 @@ author_profile: false
 classes: wide
 ---
 
-THORChain has new landing design. I walk through the lending design step by step in this video. 
+THORChain has introduced a new landing design, and in this video, I guide you through the lending design step by step.
 
-What are your thoughts about lending?
+Now, let's discuss lending. What are your thoughts on this topic? Let me know in the comments of the video.
 
 ### THORFi Lending
 {% include video id="2jA4DDWxAbk" provider="youtube" %} 
