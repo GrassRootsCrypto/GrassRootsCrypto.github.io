@@ -3,21 +3,23 @@ main:
   - title: Posts
     url: /categories/
   - title: "Services"
-    url: /Services/
+    url: /services/
     description: "What GrassRoots Crypto can do for you?"
-  - title: "Diagrams"
-    url: /THORChainDiagrams/
-    description: "Diagrams"
   - title:  "Referral Links"
     url: /ReferralLinks/
+  - title: "About"
+    url: /about/
   - title: "Search"
     url: /search/
-  - title: "About"
-    url: /About/
+  - title: Disclaimer
+    url: /disclaimer/
+    description: "Disclaimer, Disclosre and Copyright!"
   - title: "Sitemap"
     url: /sitemap/
-  - title: Disclaimer
-    url: /Disclaimer/
+  - title: "Diagrams"
+    url: /THORChainDiagrams/
+    description: "THORChain Diagrams"
+
 
   #   url: /year-archive/
   # - title: "Sample Collections"

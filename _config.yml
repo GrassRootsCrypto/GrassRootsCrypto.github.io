@@ -12,20 +12,20 @@
 
 #theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : air #"default" # grc "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "grc" # air #"default" "grc" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # I like default, air, dark
 # Site Settings
 locale                   : "en-US"
 title                    : "GrassRoots Crypto"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
+subtitle                 : "Teaching people about Crypto!" # site tagline that appears below site title in masthead
 name                     : "GrassRoots Crypto"
-description              : "Blockchain and Crypto Education."
-url                      : https://grassrootscrypto.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+description              : "Crypto Education"
+url                      : https://grassrootscrypto.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "GrassRootsCrypto/GrassRootsCrypto.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "./assets/images/Grassroots_Crypto_Logo_397px.jpg" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+logo                     : "./assets/images/Grassroots_Crypto_Logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -35,11 +35,11 @@ comments:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
+  # facebook:
     # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
+#     appid                :
+#    num_posts            : # 5 (default)
+#    colorscheme          : # "light" (default), "dark"
   utterances:
     theme                : # "github-light" (default), "github-dark"
     issue_term           : # "pathname" (default)
@@ -51,8 +51,8 @@ reCaptcha:
   secret                 :
 atom_feed:
   path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
+search                   : true, false (default)
+search_full_content      : true, false (default)
 search_provider          : # lunr (default), algolia, google
 algolia:
   application_id         : # YOUR_APPLICATION_ID
@@ -71,17 +71,20 @@ naver_site_verification  :
 # Social Sharing
 twitter:
   username               : GrassRootsio
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
+# facebook:
+#  username               :
+#  app_id                 :
+#  publisher              :
+# og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+# youtube:
+#  type                   : "GrassRoots Crypto"
+#  links                  : https://www.youtube.com/c/grassrootscrypto
+# social:
+#  type                   : # Person or Organization (defaults to Person)
+  #name                   : # If the user or organization name differs from the site's name
+  #links: # An array of links to social media profiles
 
 # Analytics
 analytics:
@@ -95,13 +98,10 @@ analytics:
 author:
   name             : "Chris"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "A guy interested in Crypto"
+  bio              : # "I like to teach people about Crypto"
   location         : "Australia"
   email            : "info@grassrootscrypto.io"
   links:
- #   - label: "Email"
- #     url: "info@grassrootscrypto.io"
- #     icon: "fab fa-fw envelope"
     - label: "YouTube"
       icon: "fab fa-fw fa-youtube"
       url: "https://www.youtube.com/c/grassrootscrypto"
@@ -113,14 +113,10 @@ author:
       url: "https://t.me/GrassRootsCrypto"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-#      url: "https://github.com/"
 
 # Site Footer
 footer:
   links:
-#    - label: "Email"
-#      url: "info@grassrootscrypto.io"
-#      icon: "fab fa-fw fa-mail"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/GrassRootsio"
@@ -274,6 +270,6 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: false # true
-      share: true
+      comments: true # true
+      share: false
       related: true

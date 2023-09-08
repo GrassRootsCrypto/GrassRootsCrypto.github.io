@@ -1,9 +1,11 @@
 ---
-permalink: /Services/
+permalink: /services/
 title: "Services"
 layout: splash
 toc: false
 ---
+
+## Services
 
 GrassRoots Crypto is a company dedicated to providing education for newcomers in the crypto space. I understand how challenging it can be to find the information you need, even with the power of Google. Sorting through the noise and finding the facts can be frustrating!
 
@@ -13,8 +15,10 @@ Whether you're interested in expanding your understanding of cryptocurrencies, s
 
 About the only thing I can’t do is provide investment advice or specific tax information :)
 
-### GrassRoots Crypto offers assistance in various areas to support your crypto journey. 
+### GrassRoots Crypto offers assistance in various areas to support your crypto journey
+
 We can help you with:
+
 1. Understanding Bitcoin and Ethereum: Gain insights into the fundamentals of Bitcoin and Ethereum, the two leading cryptocurrencies.
 1. Blockchain Strategy: Learn how to develop effective strategies for leveraging blockchain technology in various industries and use cases.
 1. Defi - Liquidity Pools / Impermanent Loss: Explore the world of Decentralized Finance (DeFi), including concepts such as liquidity pools and understanding impermanent loss.
