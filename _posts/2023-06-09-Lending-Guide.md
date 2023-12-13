@@ -22,7 +22,8 @@ In this detailed video, we delve into the latest design of THORFi Lending. I cov
 
 ### Lending with Numbers and Examples
 
-To provide practical clarity, we present real-world examples and numerical scenarios based on the latest design discussed in the previous video. By exploring these examples, you'll gain a deeper understanding of how THORFi Lending functions and how it can potentially benefit you. Additionally, I provide a spreadsheet for you to experiment with different numbers and explore lending possibilities. <br>
+To provide practical clarity, we present real-world examples and numerical scenarios based on the latest design discussed in the previous video. By exploring these examples, you'll gain a deeper understanding of how THORFi Lending functions and how it can potentially benefit you. Additionally, I provide a spreadsheet for you to experiment with different numbers and explore lending possibilities.
+
 Play with the spreadsheet [here]( https://docs.google.com/spreadsheets/d/1PerBtQ4I273W0BX9YiOPx9IYJKjLzXT_YA9aWqrTP4Y/edit#gid=1607074855 )
 {% include video id="PVpYU5kCOHI" provider="youtube" %}
 
@@ -33,7 +34,7 @@ Also, there are older videos that contain valuable knowledge, although they may 
 - [LP University Basic Lending 101 Write-up]( https://crypto-university.medium.com/under-the-hood-lending-101-f934e1c22792 )
 - [Lending Docs]( https://docs.thorchain.org/thorchain-finance/lending )
 
-## Older videos, good knowledge but may be out of date.
+## Older videos, good knowledge but may be out of date
 
 {% include video id="glY_RVYdsfM" provider="youtube" %}
 
