@@ -1,11 +1,12 @@
 ---
-permalink: /Donations/
+permalink: /donations/
 title: "Donations"
 layout: splash
 author_profile: false
 toc: false
 ---
 ### Donations and Tips
+
 If you enjoy my videos and would like to show your support, you can consider tipping me using the addresses below:
 
 1. Binance Address (BEP-2)
