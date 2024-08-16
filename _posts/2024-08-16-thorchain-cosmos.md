@@ -17,26 +17,9 @@ A lot is happening with THORChain, so I've been doing research to understand it 
 
 THORChain is a Cosmos-based blockchain designed for cross-chain liquidity and decentralized finance (DeFi) applications. It is primarily known for enabling the swapping of native assets across different blockchains without the need for wrapped tokens or centralized exchanges. THORChain's native asset, RUNE, plays a crucial role in liquidity provision, security, and the overall functionality of the network.
 
-## Kujira Integration
-
-### Kujira's Features
-
-Kujira brings a suite of DeFi protocols that will be integrated into THORChain's Ecosystem:
-
-- **FIN**: The first on-chain order book for Cosmos, allowing decentralized trading with a 100% on-chain order book.
-- **Orca**: A liquidation platform that allows users to participate in liquidations, providing more decentralized opportunities for trading.
-- **Ghost**: A money market with significant TVL (Total Value Locked) that will take over THORChain's Lending feature, offering a more robust platform for borrowing and lending.
-- **Pilot**: A launchpad that will benefit from THORChain's larger liquidity pool, enabling more capital to participate in new project launches.
-
-### Benefits of the Integration
-
-- **Increased Liquidity**: Kujira's platforms will gain access to THORChain's deep liquidity pools, solving their current liquidity challenges.
-- **Native Assets**: Kujira will benefit from THORChain's native asset support, moving away from reliance on wrapped assets.
-- **User Acquisition**: THORChain's larger user base and decentralized liquidity will help Kujira overcome its challenges with user acquisition and volume generation.
-
 ## COSMWASM and Its Role
 
-COSMWASM is a smart contract platform built for the Cosmos Ecosystem, enabling Rust-based smart contracts within THORChain. It allows for the development of decentralized applications (dApps) and DeFi protocols on THORChain's layer 2 (L2).
+COSMWASM is a smart contract platform built for the Cosmos ecosystem, enabling Rust-based smart contracts within THORChain. It allows for the development of decentralized applications (dApps) and DeFi protocols on THORChain's layer 2 (L2).
 
 ### Benefits of COSMWASM
 
@@ -48,13 +31,27 @@ COSMWASM is a smart contract platform built for the Cosmos Ecosystem, enabling R
 
 By adding features in the L2 space through COSMWASM, THORChain can de-risk changes to the L1 base layer. Experimental and innovative features can be implemented more quickly in the L2 space without compromising the stability of the L1 layer. This risk separation ensures that THORChain's L1 remains stable, while the L2 layer can evolve with new features.
 
-### Price Feeds
+## Kujira Integration
 
-L1 price feeds, such as the asset_tor_price found on pools endpoint, will be piped into the WASM layer. However, USDC will likely be used instead of TOR for pricing assets, providing a more stable and widely accepted pricing mechanism.
+### Kujira's Features
+
+Kujira brings a suite of DeFi protocols that will be integrated into THORChain's ecosystem through COSMWASM:
+
+- **FIN**: The first on-chain order book for Cosmos, allowing decentralized trading with a 100% on-chain order book.
+- **Orca**: A liquidation platform that allows users to participate in liquidations, providing more decentralized opportunities for trading.
+- **Ghost**: A money market with significant TVL (Total Value Locked) that will take over THORChain's Lending feature, offering a more robust platform for borrowing and lending.
+- **Pilot**: A launchpad that will benefit from THORChain's larger liquidity pool, enabling more capital to participate in new project launches.
+
+### Benefits of the Integration
+
+- **DeFi on L2**: Kujira's DeFi protocols will run on top of THORChain's base layer, acting as the application layer, and will be the first L2 on THORChain.
+- **Increased Liquidity**: Kujira's platforms will gain access to THORChain's deep liquidity pools, solving their current liquidity challenges.
+- **Native Assets**: Kujira will benefit from THORChain's native asset support, moving away from reliance on wrapped assets.
+- **User Acquisition**: THORChain's larger user base and decentralized liquidity will help Kujira overcome its challenges in user acquisition and volume generation.
 
 ## Inter-Blockchain Communication (IBC) and Its Role
 
-IBC is a protocol for transferring tokens and data across different blockchains within the Cosmos ecosystem. It enables interoperability between different blockchains, allowing them to communicate and transfer assets securely.
+THORChain will also enable IBC for the first time. IBC is a protocol for transferring tokens and data across different blockchains within the Cosmos ecosystem. It enables interoperability between different blockchains, allowing them to communicate and transfer assets securely. Learn more about IBC [below](#ibc-in-detail).
 
 ### Benefits of IBC
 
@@ -68,7 +65,7 @@ THORChain's upcoming integration with the Keplr chain registry means it will be 
 
 ## Strategic Implications
 
-- **Cosmos Integration**: By enabling COSMWASM and IBC, THORChain significantly enhances its capabilities, supporting complex DeFi protocols and interacting with a broader range of blockchains. This positions THORChain as a more versatile and interconnected platform within the Cosmos Ecosystem.
+- **Cosmos Integration**: By enabling COSMWASM and IBC, THORChain significantly enhances its capabilities, supporting complex DeFi protocols and interacting with a broader range of blockchains. This positions THORChain as a more versatile and interconnected platform within the Cosmos ecosystem.
 - **L2 Development**: The development of L2 applications using COSMWASM will drive innovation on THORChain, potentially leading to a diverse range of DeFi products that leverage TOR and contribute to the overall ecosystem's growth.
 - **De-Risking L1**: By focusing on L2 development, THORChain can maintain the stability and security of its L1 base layer while enabling rapid innovation in the L2 space.
 
@@ -77,7 +74,7 @@ THORChain's upcoming integration with the Keplr chain registry means it will be 
 - **Hard Forks**: THORChain’s first hard fork is imminent, followed by another to integrate COSMWASM and Kujira. Full integration of Kujira’s apps is expected by September, after which focus will shift to expanding the ecosystem and enhancing user experience.
 - **RUNE and KUJI Incentives**: Both the THORChain and Kujira teams are incentivized for long-term development, with plans to align RUNE and KUJI holders with the success of the integrated ecosystem.
 
-In conclusion, the integration of COSMWASM and IBC will position THORChain as a more powerful and interconnected player within the Cosmos Ecosystem, with significant implications for DeFi development, cross-chain interoperability, and the value proposition of RUNE and TOR.
+In conclusion, the integration of COSMWASM and IBC will position THORChain as a more powerful and interconnected player within the Cosmos ecosystem, with significant implications for DeFi development, cross-chain interoperability.
 
 ## Sources
 
@@ -134,4 +131,4 @@ Note: At this stage USDC is being considered to price assets instead of TOR. [So
   1. Cross-Chain Liquidity: IBC allows THORChain to access and provide liquidity for assets from other blockchains within the Cosmos Ecosystem, expanding the range of assets and markets available on THORChain.
   2. Interoperability: IBC enables THORChain to interact with other blockchains, supporting cross-chain applications, data sharing, and decentralized exchanges.
   3. Decentralization and Security: IBC’s reliance on light clients and cryptographic proofs ensures that asset transfers are secure and do not depend on centralized intermediaries.
-  4. Expansion of Ecosystem: With IBC, THORChain can integrate with a broader range of blockchains, bringing in more users, assets, and applications into its ecosystem, thereby increasing its overall utility and value proposition.
+  4. Expansion of the Ecosystem: With IBC, THORChain can integrate with a broader range of blockchains, bringing in more users, assets, and applications into its ecosystem, thereby increasing its overall utility and value proposition.
