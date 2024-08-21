@@ -81,19 +81,19 @@ m[MsgSend{}.Type()] = NewSendHandler(mgr)
 m[MsgDeposit{}.Type()] = NewDepositHandler(mgr)
 ```
 
-External Message Mapping for the THORChain Module. These are received and routed by the `ExternalHandler`.
+External Message Mapping for the THORChain Module are received and routed by the `ExternalHandler`.
 
-Anybody can post a MsgSend or MsgDeposit to the /txs endpoint - see `x\thorchain\client\rest`. It's just some JSON. Cosmos does require you have a valid signature for one of the fields, e.g. from_address or signer. This ensures you are authorised to perform the function.
+Anybody can post a `MsgSend` or `MsgDeposit` to the /txs endpoint - see `x\thorchain\client\rest`. It's just some JSON. Cosmos does require a valid signature for one of the fields, e.g. `from_address` or signer. This ensures you are authorised to perform the function.
 
 ### Deposit Msg
 
 Note: Deposit Msg is when Rune gets sent in, e.g. Bond - it does not come via Bifrost.
 
-At its heart, THORChain is a key-value database containing everybody’s balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state. Until you get to the current state. Cosmos/Tendermint handles the underlying message stuff. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
+At its heart, THORChain is a key-value database containing everybody’s balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state until you get to the current state. Cosmos/Tendermint handles the underlying messages for deposit, send etc. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
 
-In MsgSend handler, it just checks the KV database to ensure you have enough balance for what you asked to send, subtracts fee and sends balance to whomever you specified. Done. At the beginning it stops early if "HaltTHORChain" is enabled. Which is currently set.
+In the `MsgSend` handler, it just checks the KV database to ensure you have enough balance for what you are trying to send, subtracts fee and sends balance to whomever you specified as recipient. At the beginning it stops early if "HaltTHORChain" is enabled. Which is currently set.
 
-In MsgDeposit handler (handler_deposit.go) it's a little more complex. It deducts the coins you sent in with MsgDeposit from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, LEAVE, .....
+In the `MsgDeposit` handler (handler_deposit.go) it's a little more complex. It deducts the tokens you sent in with `MsgDeposit` from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, Leave, etc.
 
 ```go
 	m := make(map[string]MsgHandler)
@@ -134,6 +134,8 @@ This is a process that reads every block (and sometimes mempool) from all the su
 For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BNB.RUNE-B1A to the BNB vault with memo `"switch:<my rune address>"`. Bifrost reads this and goes "Yep that's legit" and sends a `MsgObservedTxIn` to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send MsgObservedTxIn to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
 
 ### Message Types
+
+To mpa the inbound and outbound message types by function:
 
 ```go
 func (tx TxType) IsOutbound() bool {
