@@ -31,7 +31,7 @@ Some points on the Diagram:
 1. Nodes agree on the `out tx` (as per above) but only one node is selected to send the ETH Tx.
 1. Asgard/TSS is used for outbount txs. 2/3 of TSS Key Gen set is rrequired to sign the outgoing ETH Tx.
 1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault send an ETH Tx, it already has 2/3 consensus.
-1. Yep, Tx goes to ETH’s mempool as normal.
+1. Tx goes to ETH’s mempool as normal.
 1. Once the funds leave THORChain, it creates an OutboundTx which is then observed by THORChain (Brifrost). This ensures that what was sent is what was meant to be sent.
 
 Some memo types like `swap` will create an outbound message, others like `add` do not.
