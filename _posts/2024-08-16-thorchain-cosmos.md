@@ -40,6 +40,7 @@ Kujira brings a suite of DeFi protocols that will be integrated into THORChain's
 - **FIN**: The first on-chain order book for Cosmos, allowing decentralized trading with a 100% on-chain order book.
 - **Orca**: A liquidation platform that allows users to participate in liquidations, providing more decentralized opportunities for trading.
 - **Ghost**: A money market with significant TVL (Total Value Locked) that will take over THORChain's Lending feature, offering a more robust platform for borrowing and lending.
+- **BLUE**: An overview of the user's portfolio on Kujira, a full list of governance proposals as well as the ability to vote, and ability to mint USK
 - **Pilot**: A launchpad that will benefit from THORChain's larger liquidity pool, enabling more capital to participate in new project launches.
 
 ### Benefits of the Integration
