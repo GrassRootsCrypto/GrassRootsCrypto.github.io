@@ -21,24 +21,24 @@ Example BTC to ETH Swap overview - High Level.
 ![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
-Some points on the Diagram:
+Key points in the diagram:
 
-1. THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the `blockscanner` which can see the mempool of the full BTC node. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
+1. THORChain will see the BTC Tx in the Mempool  However, wait times are applied before processing based on the swap size (inbound liquidity). THORChain will only process confirmed transactions. This is seen by the `blockscanner` which has access to a full BTC node running within the THORNode cluster. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
 1. Inbound funds are sent to the Asgard Vault.
 1. VM does not apply to THORChain, is a blockchain application or a replicated state machine.
 1. THORChain has two levels of processing – external and internal.
 1. Tendermint broadcasts messages via the Gossip protocol (same as flooding) and gets consensus on the txs, but it is up to THORChain to check everything is good, e.g. Tx Out matches Swap Tx In, BlockHeight is correct and so on.
 1. Nodes agree on the `out tx` (as per above) but only one node is selected to send the ETH Tx.
-1. Asgard/TSS is used for outbount txs. 2/3 of TSS Key Gen set is rrequired to sign the outgoing ETH Tx.
-1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault send an ETH Tx, it already has 2/3 consensus.
+1. Asgard/TSS is used for outbound txs. 2/3 of TSS Key Gen set is required to sign the outgoing ETH Tx.
+1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault send an ETH transaction, it already has 2/3 consensus.
 1. Tx goes to ETH’s mempool as normal.
-1. Once the funds leave THORChain, it creates an OutboundTx which is then observed by THORChain (Brifrost). This ensures that what was sent is what was meant to be sent.
+1. Once the funds leave THORChain, it creates an OutboundTx which is then observed by THORChain (Bifrost). This ensures that what was sent is what was meant to be sent.
 
 Some memo types like `swap` will create an outbound message, others like `add` do not.
 
 ### Swap Example Code Flow
 
-This follows in inbound only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
+This diagram follows the inbound process only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
 ![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Swap-CodeFlow.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
@@ -135,7 +135,7 @@ For observations, Bifrost will "see" a transaction inbound to one of its monitor
 
 ### Message Types
 
-To mpa the inbound and outbound message types by function:
+The following code snippets show how different transaction types are classified.
 
 ```go
 func (tx TxType) IsOutbound() bool {
