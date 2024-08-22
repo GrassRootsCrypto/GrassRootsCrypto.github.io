@@ -21,24 +21,24 @@ Example BTC to ETH Swap overview - High Level.
 ![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
-Some points on the Diagram:
+Key points in the diagram:
 
-1. THORChain will see the BTC Tx in the Mempool – but wait times are applied before processing (depending on the size of the swap (inbound liquidity)). This is seen by the `blockscanner` which can see the mempool of the full BTC node. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
+1. THORChain will see the BTC Tx in the Mempool  However, wait times are applied before processing based on the swap size (inbound liquidity). THORChain will only process confirmed transactions. This is seen by the `blockscanner` which has access to a full BTC node running within the THORNode cluster. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
 1. Inbound funds are sent to the Asgard Vault.
 1. VM does not apply to THORChain, is a blockchain application or a replicated state machine.
 1. THORChain has two levels of processing – external and internal.
 1. Tendermint broadcasts messages via the Gossip protocol (same as flooding) and gets consensus on the txs, but it is up to THORChain to check everything is good, e.g. Tx Out matches Swap Tx In, BlockHeight is correct and so on.
 1. Nodes agree on the `out tx` (as per above) but only one node is selected to send the ETH Tx.
-1. Asgard/TSS is not required for outbound Txs, usually sent to a Ygg vault. Asgard will send funds if 1. Outbound is too large for a node to do it or the node failed to do it within a timely fashion (like 2 minutes but I forget the exact time), in which case, 2/3 of TSS Key Gen set would be required to sign the outgoing ETH Tx.
-1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when a node send an ETH Tx, it already has 2/3 consensus. That said, as a node has the private key to its own YGG vault, the node does not need consensus to send from it's own vault (but it will be slashed 1.5x value if it does).
-1. Yep, Tx goes to ETH’s mempool as normal.
-1. Once finds leave THORChain, it creates an OutboundTx which is then sent THORChain. This ensures that what was sent is what was meant to be sent.
+1. Asgard/TSS is used for outbound txs. 2/3 of TSS Key Gen set is required to sign the outgoing ETH Tx.
+1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault send an ETH transaction, it already has 2/3 consensus.
+1. Tx goes to ETH’s mempool as normal.
+1. Once the funds leave THORChain, it creates an OutboundTx which is then observed by THORChain (Bifrost). This ensures that what was sent is what was meant to be sent.
 
 Some memo types like `swap` will create an outbound message, others like `add` do not.
 
 ### Swap Example Code Flow
 
-This follows in inbound only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
+This diagram follows the inbound process only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
 ![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Swap-CodeFlow.jpg)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
@@ -58,25 +58,27 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Add
 In handler.go there are various ways of receiving incoming. You basically have Bifrost observations that require 2/3 consensus, cli node functions (require auth), and the two generic ones (i.e. supported by Ledger): ~`MsgSend` and `MsgDeposit`
 
 ```go
-// consensus handlers
+// Consensus handlers - can only be sent by addresses in
+//   the active validator set.
 m[MsgTssPool{}.Type()] = NewTssHandler(mgr)
 m[MsgObservedTxIn{}.Type()] = NewObservedTxInHandler(mgr)
 m[MsgObservedTxOut{}.Type()] = NewObservedTxOutHandler(mgr)
 m[MsgTssKeysignFail{}.Type()] = NewTssKeysignHandler(mgr)
 m[MsgErrataTx{}.Type()] = NewErrataTxHandler(mgr)
-m[MsgMimir{}.Type()] = NewMimirHandler(mgr)
 m[MsgBan{}.Type()] = NewBanHandler(mgr)
 m[MsgNetworkFee{}.Type()] = NewNetworkFeeHandler(mgr)
+m[MsgSolvency{}.Type()] = NewSolvencyHandler(mgr)
 
 // cli handlers (non-consensus)
+m[MsgMimir{}.Type()] = NewMimirHandler(mgr)
 m[MsgSetNodeKeys{}.Type()] = NewSetNodeKeysHandler(mgr)
 m[MsgSetVersion{}.Type()] = NewVersionHandler(mgr)
 m[MsgSetIPAddress{}.Type()] = NewIPAddressHandler(mgr)
+m[MsgNodePauseChain{}.Type()] = NewNodePauseChainHandler(mgr)
 
 // native handlers (non-consensus)
 m[MsgSend{}.Type()] = NewSendHandler(mgr)
 m[MsgDeposit{}.Type()] = NewDepositHandler(mgr)
-m[MsgSolvency{}.Type()] = NewSolvencyHandler(mgr)
 ```
 
 External Message Mapping for the THORChain Module. These are received and routed by the `ExternalHandler`.
@@ -94,23 +96,28 @@ In MsgSend handler, it just checks the KV database to ensure you have enough bal
 In MsgDeposit handler (handler_deposit.go) it's a little more complex. It deducts the coins you sent in with MsgDeposit from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, LEAVE, .....
 
 ```go
-    m[MsgOutboundTx{}.Type()] = NewOutboundTxHandler(mgr)
-    m[MsgYggdrasil{}.Type()] = NewYggdrasilHandler(mgr)
-    m[MsgSwap{}.Type()] = NewSwapHandler(mgr)
-    m[MsgReserveContributor{}.Type()] = NewReserveContributorHandler(mgr)
-    m[MsgBond{}.Type()] = NewBondHandler(mgr)
-    m[MsgUnBond{}.Type()] = NewUnBondHandler(mgr)
-    m[MsgLeave{}.Type()] = NewLeaveHandler(mgr)
-    m[MsgDonate{}.Type()] = NewDonateHandler(mgr)
-    m[MsgWithdrawLiquidity{}.Type()] = NewWithdrawLiquidityHandler(mgr)
-    m[MsgAddLiquidity{}.Type()] = NewAddLiquidityHandler(mgr)
-    m[MsgRefundTx{}.Type()] = NewRefundHandler(mgr)
-    m[MsgMigrate{}.Type()] = NewMigrateHandler(mgr)
-    m[MsgRagnarok{}.Type()] = NewRagnarokHandler(mgr)
-    m[MsgSwitch{}.Type()] = NewSwitchHandler(mgr)
-    m[MsgNoOp{}.Type()] = NewNoOpHandler(mgr)
-    m[MsgConsolidate{}.Type()] = NewConsolidateHandler(mgr)
-    m[MsgManageTHORName{}.Type()] = NewManageTHORNameHandler(mgr)
+	m := make(map[string]MsgHandler)
+	m[MsgOutboundTx{}.Type()] = NewOutboundTxHandler(mgr)
+	m[MsgSwap{}.Type()] = NewSwapHandler(mgr)
+	m[MsgReserveContributor{}.Type()] = NewReserveContributorHandler(mgr)
+	m[MsgBond{}.Type()] = NewBondHandler(mgr)
+	m[MsgUnBond{}.Type()] = NewUnBondHandler(mgr)
+	m[MsgLeave{}.Type()] = NewLeaveHandler(mgr)
+	m[MsgDonate{}.Type()] = NewDonateHandler(mgr)
+	m[MsgWithdrawLiquidity{}.Type()] = NewWithdrawLiquidityHandler(mgr)
+	m[MsgAddLiquidity{}.Type()] = NewAddLiquidityHandler(mgr)
+	m[MsgRefundTx{}.Type()] = NewRefundHandler(mgr)
+	m[MsgMigrate{}.Type()] = NewMigrateHandler(mgr)
+	m[MsgRagnarok{}.Type()] = NewRagnarokHandler(mgr)
+	m[MsgNoOp{}.Type()] = NewNoOpHandler(mgr)
+	m[MsgConsolidate{}.Type()] = NewConsolidateHandler(mgr)
+	m[MsgManageTHORName{}.Type()] = NewManageTHORNameHandler(mgr)
+	m[MsgLoanOpen{}.Type()] = NewLoanOpenHandler(mgr)
+	m[MsgLoanRepayment{}.Type()] = NewLoanRepaymentHandler(mgr)
+	m[MsgTradeAccountDeposit{}.Type()] = NewTradeAccountDepositHandler(mgr)
+	m[MsgTradeAccountWithdrawal{}.Type()] = NewTradeAccountWithdrawalHandler(mgr)
+	m[MsgRunePoolDeposit{}.Type()] = NewRunePoolDepositHandler(mgr)
+	m[MsgRunePoolWithdraw{}.Type()] = NewRunePoolWithdrawHandler(mgr)
 ```
 
 Internal Message Mapping. This is handled by `InternalHandler`
@@ -128,32 +135,34 @@ For observations, Bifrost will "see" a transaction inbound to one of its monitor
 
 ### Message Types
 
+The following code snippets show how different transaction types are classified.
+
 ```go
 func (tx TxType) IsOutbound() bool {
-    switch tx {
-    case TxOutbound, TxRefund, TxRagnarok:
-        return true
-    default:
-        return false
-    }
+	switch tx {
+	case TxOutbound, TxRefund, TxRagnarok:
+		return true
+	default:
+		return false
+	}
 }
 
 func (tx TxType) IsInternal() bool {
-    switch tx {
-    case TxYggdrasilFund, TxYggdrasilReturn, TxMigrate, TxConsolidate:
-        return true
-    default:
-        return false
-    }
+	switch tx {
+	case TxMigrate, TxConsolidate:
+		return true
+	default:
+		return false
+	}
 }
 
 // HasOutbound whether the txtype might trigger outbound tx
 func (tx TxType) HasOutbound() bool {
-    switch tx {
-    case TxAdd, TxBond, TxDonate, TxYggdrasilReturn, TxReserve, TxMigrate, TxRagnarok, TxSwitch:
-        return false
-    default:
-        return true
-    }
+	switch tx {
+	case TxAdd, TxBond, TxTradeAccountDeposit, TxRunePoolDeposit, TxDonate, TxReserve, TxMigrate, TxRagnarok:
+		return false
+	default:
+		return true
+	}
 }
 ```
