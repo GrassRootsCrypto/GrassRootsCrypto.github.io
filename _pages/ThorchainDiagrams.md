@@ -81,19 +81,19 @@ m[MsgSend{}.Type()] = NewSendHandler(mgr)
 m[MsgDeposit{}.Type()] = NewDepositHandler(mgr)
 ```
 
-External Message Mapping for the THORChain Module. These are received and routed by the `ExternalHandler`.
+External Message Mapping for the THORChain Module are received and routed by the `ExternalHandler`.
 
-Anybody can post a MsgSend or MsgDeposit to the /txs endpoint - see `x\thorchain\client\rest`. It's just some JSON. Cosmos does require you have a valid signature for one of the fields, e.g. from_address or signer. This ensures you are authorised to perform the function.
+Anybody can post a `MsgSend` or `MsgDeposit` to the /txs endpoint - see `x\thorchain\client\rest`. It's just some JSON. Cosmos does require a valid signature for one of the fields, e.g. `from_address` or signer. This ensures you are authorised to perform the function.
 
 ### Deposit Msg
 
 Note: Deposit Msg is when Rune gets sent in, e.g. Bond - it does not come via Bifrost.
 
-At its heart, THORChain is a key-value database containing everybody’s balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state. Until you get to the current state. Cosmos/Tendermint handles the underlying message stuff. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
+At its heart, THORChain is a key-value database containing everybody’s balances, plus a bunch of other stuff. It starts at genesis state, and processes every Msg sent to it in order, and mutates the state until you get to the current state. Cosmos/Tendermint handles the underlying messages for deposit, send etc. Thornode is the bit that reads these messages and mutates its database to keep track of everything.
 
-In MsgSend handler, it just checks the KV database to ensure you have enough balance for what you asked to send, subtracts fee and sends balance to whomever you specified. Done. At the beginning it stops early if "HaltTHORChain" is enabled. Which is currently set.
+In the `MsgSend` handler, it just checks the KV database to ensure you have enough balance for what you are trying to send, subtracts fee and sends balance to whomever you specified as recipient. At the beginning it stops early if "HaltTHORChain" is enabled. Which is currently set.
 
-In MsgDeposit handler (handler_deposit.go) it's a little more complex. It deducts the coins you sent in with MsgDeposit from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, LEAVE, .....
+In the `MsgDeposit` handler (handler_deposit.go) it's a little more complex. It deducts the tokens you sent in with `MsgDeposit` from your balance, then reads the MEMO you sent, works out what kind of "internal" message (function) you are trying to perform, and executes one of the internal handlers, such as Bond, Unbond, Leave, etc.
 
 ```go
 	m := make(map[string]MsgHandler)
