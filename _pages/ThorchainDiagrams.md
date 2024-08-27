@@ -14,11 +14,11 @@ Working pictures of THORChain. Work in progress. Please provide feedback in the 
 These are the major components within THORChain.
 THORChain extends the Cosmos BaseApp and has its own module for specific message handling and processing.
 
-### Swap Example
+### Swap Example - Inbound and Outbound
 
 Example BTC to ETH Swap overview - High Level.
 
-![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
+![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.png)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 Key points in the diagram:
@@ -36,7 +36,12 @@ Key points in the diagram:
 
 Some memo types like `swap` will create an outbound message, others like `add` do not.
 
-### Swap Example Code Flow
+### Swap Example - Msg Flow
+
+Another look at the same swap as above but looking the message flow.
+![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap Msg.png)
+
+### Swap Example Detailed Code Flow
 
 This diagram follows the inbound process only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
 ![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Swap-CodeFlow.jpg)
