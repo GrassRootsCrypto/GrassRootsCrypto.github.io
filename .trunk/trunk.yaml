@@ -4,6 +4,8 @@ version: 0.1
 cli:
   version: 1.18.0
 # Trunk provides extensibility via plugins. (https://docs.trunk.io/plugins)
+repo:
+  trunk_branch: main
 plugins:
   sources:
     - id: trunk
