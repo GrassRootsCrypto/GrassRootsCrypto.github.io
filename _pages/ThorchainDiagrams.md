@@ -14,29 +14,36 @@ Working pictures of THORChain. Work in progress. Please provide feedback in the 
 These are the major components within THORChain.
 THORChain extends the Cosmos BaseApp and has its own module for specific message handling and processing.
 
-### Swap Example
+See my [Develop on THORChain - Full Guide](https://youtu.be/Qowrasst2UQ) video for more detailed information.
+
+### Swap Example - Inbound and Outbound
 
 Example BTC to ETH Swap overview - High Level.
 
-![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.jpg)
+![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.png)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 Key points in the diagram:
 
-1. THORChain will see the BTC Tx in the Mempool  However, wait times are applied before processing based on the swap size (inbound liquidity). THORChain will only process confirmed transactions. This is seen by the `blockscanner` which has access to a full BTC node running within the THORNode cluster. This Tx is translated to a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
-1. Inbound funds are sent to the Asgard Vault.
-1. VM does not apply to THORChain, is a blockchain application or a replicated state machine.
-1. THORChain has two levels of processing – external and internal.
+1. THORChain will see the BTC transaction in the Mempool. However, transactions must be confirmed and wait times are applied before processing based on the swap size (inbound liquidity). This is seen by the `blockscanner` which has access to a full BTC node running within the THORNode cluster. THORChain translates this transaction into a standard witness transaction and sent to the `Observer` service. From there they are packaged, signed and sent to THORChain for processing (via the bridge).
+1. Inbound funds are sent to the [Asgard Vault](https://thornode.ninerealms.com/thorchain/inbound_addresses).
+1. Virtual Machines (VMs) does not apply to THORChain, it is a blockchain application or a replicated state machine.
+1. THORChain has two levels of processing – external (TSS) and internal (Tendermint).
 1. Tendermint broadcasts messages via the Gossip protocol (same as flooding) and gets consensus on the txs, but it is up to THORChain to check everything is good, e.g. Tx Out matches Swap Tx In, BlockHeight is correct and so on.
-1. Nodes agree on the `out tx` (as per above) but only one node is selected to send the ETH Tx.
+1. Nodes agree on the `out tx` (as per above). A TSS vault is selected to send the ETH Transaction.
 1. Asgard/TSS is used for outbound txs. 2/3 of TSS Key Gen set is required to sign the outgoing ETH Tx.
-1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault send an ETH transaction, it already has 2/3 consensus.
-1. Tx goes to ETH’s mempool as normal.
-1. Once the funds leave THORChain, it creates an OutboundTx which is then observed by THORChain (Bifrost). This ensures that what was sent is what was meant to be sent.
+1. Bifrost can only send messages that it gets from the THORChain bridge, so indirectly when the Asgard Vault sends an ETH transaction, it already has 2/3 consensus.
+1. Transaction goes to ETH’s mempool as normal.
+1. Once the funds leave THORChain, it creates an `OutboundTx` which is then observed by THORChain (Bifrost). This ensures that what was sent is what was meant to be sent.
 
-Some memo types like `swap` will create an outbound message, others like `add` do not.
+Memos types like `swap` will create an outbound message, others like `add` or `RUNEPool+` do not. See [Transaction Memos](https://dev.thorchain.org/concepts/memos.html) for a full list of memos. 
 
-### Swap Example Code Flow
+### Swap Example - Msg Flow
+
+Another look at the same swap as above but looking the message flow.
+![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap Msg.png)
+
+### Swap Example Detailed Code Flow
 
 This diagram follows the inbound process only. There would be a separate flow for the outbound `MsgOutboundTx` once the ETH is sent.
 ![Swap Code Flow]({{ site.baseurl }}/assets/images/THORChain-Swap-CodeFlow.jpg)
@@ -45,6 +52,11 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swa
 ## High Level Add Liquidity Example
 
 ![High Level App View]({{ site.baseurl }}/assets/images/TC-AddLiq-Flow.png)
+
+## Add Liquidity  Example Detailed Code Flow
+
+![High Level App View]({{ site.baseurl }}/assets/images/TC-AddLiq-Msg-Flow.png)
+
 In this example, there is no outbound message.
 
 ### Add Liquidity Example Code Flow
@@ -129,15 +141,24 @@ So that's thornode. Basically send it a MsgSend or MsgDeposit and it authorises 
 
 The other side of THORChain is "Bifrost". This is where a user use an external chain to interact with THORChain
 
-This is a process that reads every block (and sometimes mempool) from all the supported chains: ETH, BNB, BTC, BCH, LTC. Call it a block scanner. It also has the ability to sign transactions out.
+This is a process that reads every block (and sometimes mempool) from all the supported chains: BTC, ETH, BCH, LTC, GIA, AVAX, BSC and DOGE. Call it a block scanner. It also has the ability to sign transactions out.
 
-For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BNB.RUNE-B1A to the BNB vault with memo `"switch:<my rune address>"`. Bifrost reads this and goes "Yep that's legit" and sends a `MsgObservedTxIn` to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send MsgObservedTxIn to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
+For observations, Bifrost will "see" a transaction inbound to one of its monitored addresses. Say you send some BTC to the BTC vault with memo `"BTC/BTC+"` (savers addition). Bifrost reads this and goes "Yep that's legit" and sends a `MsgObservedTxIn` to Thornode. This gets passed to the observed_txin handler. The first thing it does is "vote" on this transaction being legit. If you are the first bifrost to "see" this, nothing happens - you actually get slashed. Then the next 1-2 seconds as all the other Bifrost also "see" this tx in, and send `MsgObservedTxIn` to their thornodes, the "vote count" increases, until 2/3 of active nodes have seen this tx, and it's considered legit. You get your slash removed, and your tx in handler processes the rest of the transaction.
 
 ### Message Types
 
 The following code snippets show how different transaction types are classified.
 
 ```go
+func (tx TxType) IsInbound() bool {
+	switch tx {
+	case TxAdd, TxWithdraw, TxTradeAccountDeposit, TxRunePoolDeposit, TxRunePoolWithdraw, TxSwap, TxLimitOrder, TxDonate, TxBond, TxUnbond, TxLeave, TxReserve, TxNoOp, TxTHORName, TxLoanOpen, TxLoanRepayment:
+		return true
+	default:
+		return false
+	}
+}
+
 func (tx TxType) IsOutbound() bool {
 	switch tx {
 	case TxOutbound, TxRefund, TxRagnarok:
@@ -153,16 +174,6 @@ func (tx TxType) IsInternal() bool {
 		return true
 	default:
 		return false
-	}
-}
-
-// HasOutbound whether the txtype might trigger outbound tx
-func (tx TxType) HasOutbound() bool {
-	switch tx {
-	case TxAdd, TxBond, TxTradeAccountDeposit, TxRunePoolDeposit, TxDonate, TxReserve, TxMigrate, TxRagnarok:
-		return false
-	default:
-		return true
 	}
 }
 ```
