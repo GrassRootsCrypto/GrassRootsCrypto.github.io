@@ -2,14 +2,14 @@
 # To learn more about the format of this file, see https://docs.trunk.io/reference/trunk-yaml
 version: 0.1
 cli:
-  version: 1.18.0
+  version: 1.22.1
 # Trunk provides extensibility via plugins. (https://docs.trunk.io/plugins)
 repo:
   trunk_branch: main
 plugins:
   sources:
     - id: trunk
-      ref: v1.4.5
+      ref: v1.5.0
       uri: https://github.com/trunk-io/plugins
 # Many linters and tools depend on runtimes - configure them here. (https://docs.trunk.io/runtimes)
 runtimes:

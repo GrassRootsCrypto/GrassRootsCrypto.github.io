@@ -36,7 +36,7 @@ Key points in the diagram:
 1. Transaction goes to ETH’s mempool as normal.
 1. Once the funds leave THORChain, it creates an `OutboundTx` which is then observed by THORChain (Bifrost). This ensures that what was sent is what was meant to be sent.
 
-Memos types like `swap` will create an outbound message, others like `add` or `RUNEPool+` do not. See [Transaction Memos](https://dev.thorchain.org/concepts/memos.html) for a full list of memos. 
+Memos types like `swap` will create an outbound message, others like `add` or `RUNEPool+` do not. See [Transaction Memos](https://dev.thorchain.org/concepts/memos.html) for a full list of memos.
 
 ### Swap Example - Msg Flow
 
