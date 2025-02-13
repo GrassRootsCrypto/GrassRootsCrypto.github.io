@@ -96,7 +96,7 @@ Proposal 6 outlines a comprehensive approach to addressing the approx $200 milli
 The implementation of Proposal 6 will follow a structured process that ensures transparency, community involvement, and adherence to the Architecture Decision Record (ADR) process. The steps are as follows:
 
 1. Based on the outcomes of the discussion, any required changes will be formalised in an ADR and voted on by Nodes.
-1. Developers will make the necessary code updates to implement the approved ADR, including the $TCY claim process and revenue model changes.
+1. Developers will make the necessary code updates to implement the approved ADR, including the $TCY claim process and revenue model changes. [MR3924](https://gitlab.com/thorchain/thornode/-/merge_requests/3924) is being developed to add $TCY.
 1. Nodes will adopt the updated code in a new THORNode release.
 1. Users will be able to claim their $TCY tokens once the implementation is live.
 
@@ -143,7 +143,6 @@ The THORFi unwind represents a pivotal moment in THORChain's evolution. The netw
 
 * [Nodes final vote (67% consensus), block 19692752](https://discord.com/channels/838986635756044328/906262316457263144/1335531469761806338)
 * [Nine Realms announcement](https://discord.com/channels/838986635756044328/839001804812451873/1335532896416432200)
-
 
 ### February 11, 2025: Emission Curve Change
 
