@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://grassrootscrypto.io/feed.xml" rel="self" type="application/atom+xml" /><link href="https://grassrootscrypto.io/" rel="alternate" type="text/html" /><updated>2025-02-25T10:44:15+10:30</updated><id>https://grassrootscrypto.io/feed.xml</id><title type="html">GrassRoots Crypto</title><subtitle>Crypto Education</subtitle><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><entry><title type="html">THORChain Feburary Update</title><link href="https://grassrootscrypto.io/thorchain/Feburary-Update/" rel="alternate" type="text/html" title="THORChain Feburary Update" /><published>2025-02-11T00:00:00+10:30</published><updated>2025-02-11T00:00:00+10:30</updated><id>https://grassrootscrypto.io/thorchain/Feburary-Update</id><content type="html" xml:base="https://grassrootscrypto.io/thorchain/Feburary-Update/"><![CDATA[<p>I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave it to the article below to do that.</p>
+
+<h2 id="introduction">Introduction</h2>
+
+<p>THORChain has paused THORFi features and initiated the process of unwinding its lending and savings programs to resolve outstanding liabilities and stabilise the network. This article provides an objective and detailed account of the events, key decisions, and technical actions undertaken to stabilise the network and chart a path forward.</p>
+
+<h2 id="thorfi-background">THORFi Background</h2>
+
+<p>The THORFi suite, which includes Savers and Lending, was designed to expand the utility of the THORChain ecosystem. Over time, however, concerns about the growing liabilities and potential risks to network stability intensified. By January 2025, these concerns culminated in critical events that have reshaped the network’s future.</p>
+
+<p>Both Savers and Lending relied on the assumption that RUNE would outperform, or at least not significantly underperform, major assets used within THORFi. Specifically:</p>
+
+<ul>
+  <li>
+    <p>Savers: Savers introduced leverage into the pool, which is a double-edged sword. If the pool grew, Dual Liquidity Providers (DLPs) would receive greater returns than they normally would. Conversely, if the pool shrank due to impermanent loss (IL), DLPs would be disproportionately impacted. IL is a slippery slope—when RUNE underperforms relative to other assets like Bitcoin and Ethereum, IL worsens, negatively affecting both DLPs and the overall pool.</p>
+  </li>
+  <li>
+    <p>Lending: The lending mechanism involved burning RUNE to create loans and minting RUNE to close them. The ratio of RUNE to the collateral asset was set at loan opening and closure. If RUNE performed poorly after loans were opened, more RUNE would be minted upon closure than was initially burned. While a circuit breaker was in place to cap the minting, the absence of deadlines and the 0% interest rate meant that for lending to succeed long-term, RUNE needed to maintain its value relative to Bitcoin and Ethereum.</p>
+  </li>
+</ul>
+
+<p>As altcoins, including RUNE, began disconnecting from Bitcoin, concerns about THORFi grew. This sparked widespread debate regarding RUNE’s price and ways to stabilize it, along with the impact a declining RUNE price was having on THORFi. Negative discussions on platforms like Twitter and within Discord fueled uncertainty, which led to further price disconnection. This decline quickly became a self-fulfilling prophecy, compounding the situation beyond market trends alone.</p>
+
+<p>Despite THORChain continuing to operate as intended during this period, RUNE’s price decline was driven primarily by panic selling fueled by speculation and negative chatter, rather than any underlying technical or operational issues. This feedback loop of fear and misinformation spiraled further, creating a price drop detached from the network’s actual performance.</p>
+
+<h2 id="timeline-of-key-events">Timeline of Key Events</h2>
+
+<h3 id="january-9-2025-jp-thors-temporary-thorfi-pause">January 9, 2025: JP THOR’s Temporary THORFi Pause</h3>
+
+<p>JP THOR used an admin key to temporarily pause Lending and Savers at 08:27 (UTC). He outlined a plan while giving Node Operators the option to reverse the pause.The pause was overturned by Node Operators at 15:07 (UTC) on the same day..</p>
+
+<p>The event raised concerns about use of an Admin key within a decentralisation network. In response, development efforts were accelerated to permanently remove all Admin keys from THORChain. The code change was submitted in GitLab (merge request 3886), and is scheduled for release in THORNode version 3.2.0, pending adoption by Node Operators.</p>
+
+<p>Additionally, the event intensified the debate over the risks posed by THORFi and contributed to market instability.</p>
+
+<h3 id="january-24-2025-thorfi-pause-by-node-vote">January 24, 2025: THORFi Pause by Node Vote</h3>
+
+<p>As concerns escalated over price volatility and declining liquidity, at 01:51 (UTC), four Nodes independently voted to pause Lending. Less than a minute later, Nine Realms proposed  pausing THORFi via Node Vote. Multiple Nodes further voted to suspend both Lending and Savers, with Savers being successfully paused at 01:52 (UTC).</p>
+
+<p>The justification was rooted in the risk that loan closures would trigger significant RUNE minting, increasing supply and consequently reducing its price. This price reduction would lead to impermanent loss (IL) in the liquidity pools, exacerbated by synthetic asset leverage, which magnifies impermanent loss incurred by Dual Liquidity Providers (DLPs), significantly increasing the likelihood of DLPs suffering substantial losses or being left with nothing.</p>
+
+<p>At the time of the pause, THORChain had accrued approximately $200 million in outstanding liabilities:</p>
+
+<ul>
+  <li>Savers: $96.22 million
+    <ul>
+      <li>BTC: $55.66 million</li>
+      <li>ETH: $16.11 million</li>
+      <li>Stablecoins: $9.94 million</li>
+      <li>Other Native Assets: $14.49 million</li>
+    </ul>
+  </li>
+  <li>Lending: $105.66 million
+    <ul>
+      <li>BTC: $84.96 million</li>
+      <li>ETH: $20.7 million</li>
+    </ul>
+  </li>
+</ul>
+
+<p>A full list of liabilities and tracking can be found here <a href="https://thorfi-unwind.vercel.app/">https://thorfi-unwind.vercel.app/</a>. A <a href="https://replit.com/@Orion9R/TCY-Claim-Calculation-Process?v=1">Replit</a> has also been created.</p>
+
+<h3 id="january-30-2025-synth-yield-redirection">January 30, 2025: Synth Yield Redirection</h3>
+
+<p>To reduce the impact Savers have on DLPers during the discussion period, at 17:52 (UTC), it was proposed that <code class="language-plaintext highlighter-rouge">MaxSynthsForSaversYield</code> and <code class="language-plaintext highlighter-rouge">SynthYieldBasisPoints</code> network parameters be set to 0.</p>
+
+<p>This would ensure that all yield generated from Savers collateral was directed back to Liquidity Providers (LPs) instead of Savers. These changes took effect via Node Vote on January 31, 2025, at 23:46 (UTC).</p>
+
+<h3 id="february-2-2025-community-proposals-and-node-vote">February 2, 2025: Community Proposals and Node Vote</h3>
+
+<p>Following the pause, a discussion period began, during which any community member could submit a proposal to resolve the outstanding liabilities, unwind THORFi, and establish a path forward.</p>
+
+<p>After discussions, a total of 8 independent proposals were presented to Node Operators to vote on. This was issued on February 2, 2025, at 00:25 (UTC).</p>
+
+<h3 id="february-3-2025-proposal-6-approval">February 3, 2025: Proposal 6 Approval</h3>
+
+<p>On February 3, 2025, at 08:45 (UTC), a majority of 67% of Node Operators formally approved Proposal 6 (author: AaluxxMyth, founder of Maya Protocol). An announcement was made approximately 5 minutes later.</p>
+
+<h2 id="overview-of-proposal-6">Overview of Proposal 6</h2>
+
+<p><a href="https://gitlab.com/-/snippets/4801556">Convert defaulted debt to $TCY equity with no private raise</a></p>
+
+<p>Proposal 6 outlines a comprehensive approach to addressing the approx $200 million in liabilities and unwinding THORFi:</p>
+
+<ul>
+  <li><strong>Debt to Equity Conversion:</strong> $TCY, a new token, will be issued with a fixed supply of 200 million. Borrowers and Savers can claim one $TCY per $1 of their owed liability.</li>
+  <li><strong>Revenue Sharing:</strong> $TCY holders will receive 10% of the network’s revenue in perpetuity, distributed daily in RUNE.</li>
+  <li><strong>Liquidity Pool &amp; Market Exit:</strong> A RUNE/$TCY liquidity pool will be created, and seeded by the THORChain treasury. The treasury will also allocate $5 million to buybacks. As market demand for a share of THORChain’s revenue materialises in $TCY’s price, holders will have the flexibility to exit on their terms or hold for long-term revenue distributions.</li>
+  <li><strong>Elimination of THORFi Products:</strong> Lending, Savers, PoL, and RUNEPool will be retired, and Liquidity Nodes will be introduced to increase capital efficiency and offset the revenue share allocated to $TCY holders.</li>
+</ul>
+
+<h3 id="implementation-details-of-proposal-6">Implementation Details of Proposal 6</h3>
+
+<ol>
+  <li>The full implementation details have been <a href="https://gitlab.com/thorchain/thornode/-/issues/2152">published on GitLab</a> with an <a href="https://gitlab.com/thorchain/thornode/-/issues/2154">amendment</a>.</li>
+  <li>A node vote changed the Emission Curve to reduce the block rewards. This will reduce the block emssions from approx. This changes emissions form approx 25,000 RUNE a day to 2 RUNE a day, or 750 RUNE per year.</li>
+  <li>To support the amendment to proposal 6, <a href="https://gitlab.com/thorchain/thornode/-/merge_requests/3926">MR3926</a> has been created to allow LP deposits to be paused on a specific chain.</li>
+</ol>
+
+<h2 id="next-steps">Next Steps</h2>
+
+<p>The implementation of Proposal 6 will follow a structured process that ensures transparency, community involvement, and adherence to the Architecture Decision Record (ADR) process. The steps are as follows:</p>
+
+<ol>
+  <li>Based on the outcomes of the discussion, any required changes will be formalised in an ADR and voted on by Nodes.</li>
+  <li>Developers will make the necessary code updates to implement the approved ADR, including the $TCY claim process and revenue model changes. <a href="https://gitlab.com/thorchain/thornode/-/merge_requests/3924">MR3924</a> is being developed to add $TCY.</li>
+  <li>Nodes will adopt the updated code in a new THORNode release.</li>
+  <li>Users will be able to claim their $TCY tokens once the implementation is live.</li>
+</ol>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>The THORFi unwind represents a pivotal moment in THORChain’s evolution. The network has demonstrated resilience and adaptability, navigating a complex and challenging situation while maintaining operational integrity. With Proposal 6 approved and development efforts underway, THORChain is positioned to emerge stronger and more robust.</p>
+
+<h2 id="references">References</h2>
+
+<h3 id="january-9-2025-jp-thors-temporary-thorfi-pause-1">January 9, 2025: JP THOR’s Temporary THORFi Pause</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1326829796919087148">JP THOR pauses Lending, block 19355522</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1326829881165877278">JP THOR pauses Savers, block 19355525</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/839001804812451873/1326830072681992203">JP THOR announcement</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1326930357572079730">Nodes resume Lending, block 19359390</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1326930483510116353">Nodes resume Savers, block 19359395</a></li>
+  <li><a href="https://gitlab.com/thorchain/thornode/-/merge_requests/3886">GitLab: THORNode merge request 3886: remove admin mimir</a></li>
+</ul>
+
+<h3 id="january-24-2025-thorfi-pause-by-node-vote-1">January 24, 2025: THORFi Pause by Node Vote</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/839002619481554955/1332166055950417981">Nine Realms announcement</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1332165912807346257">Nodes pause Lending, block 19562019</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1332166167963631636">Nodes pause Savers, block 19562029</a></li>
+</ul>
+
+<h3 id="january-30-2025-synth-yield-redirection-1">January 30, 2025: Synth Yield Redirection</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/839001804812451873/1334581970709123132">Nine Realms announcement</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1335033334534766632">Nodes set SynthYieldBasisPoints=0, block 19673423</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1335033420040110182">Nodes set MaxSynthsForSaversYield=0, block 19673426</a></li>
+</ul>
+
+<h3 id="february-2-2025-community-proposals-and-node-vote-1">February 2, 2025: Community Proposals and Node Vote</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/839001804812451873/1335405811240796273">Nine Realms announcement</a></li>
+  <li><a href="https://gitlab.com/-/snippets/4801524">Proposal 1: Indefinite freeze until the price threshold is reached, author: DoSmart BorrowDohuya</a> (deleted by author)</li>
+  <li><a href="https://gitlab.com/-/snippets/4801514">Proposal 2: Thorchain Restructure Proposal, author: Crypto_XZ</a> (deleted by author)</li>
+  <li><a href="https://gitlab.com/-/snippets/4801491">Proposal 3: THORFi Restructure Proposal: Painful V2, author: Steve</a></li>
+  <li><a href="https://gitlab.com/-/snippets/4801269">Proposal 4 (“9RProposal”): Priority Haircuts, author: Nine Realms</a></li>
+  <li><a href="https://gitlab.com/thorchain/thornode/-/issues/2144">Proposal 5: Restructuring ThorFi, author: TCB</a></li>
+  <li><a href="https://gitlab.com/-/snippets/4801556">Proposal 6: Convert defaulted debt to $TCY equity with no private raise (V1), author: AaluxxMyth</a></li>
+  <li><a href="https://gitlab.com/-/snippets/4801554">Proposal 7: TCB V2.1, author: Boone</a></li>
+  <li><a href="https://gitlab.com/thorchain/thornode/-/issues/2143">Proposal 8: ADD: THORFi Unwind Module and Manager, author: JP THOR</a></li>
+</ul>
+
+<h3 id="february-3-2025-proposal-6-approval-1">February 3, 2025: Proposal 6 Approval</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1335531469761806338">Nodes final vote (67% consensus), block 19692752</a></li>
+  <li><a href="https://discord.com/channels/838986635756044328/839001804812451873/1335532896416432200">Nine Realms announcement</a></li>
+</ul>
+
+<h3 id="february-11-2025-emission-curve-change">February 11, 2025: Emission Curve Change</h3>
+
+<ul>
+  <li><a href="https://discord.com/channels/838986635756044328/906262316457263144/1338793965956370433">Change of Emission Curve Mimir</a></li>
+</ul>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="THORFi" /><summary type="html"><![CDATA[I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave it to the article below to do that.]]></summary></entry><entry><title type="html">THORChain + Ruji Trade</title><link href="https://grassrootscrypto.io/thorchain/rujira/thorchain-rujitrade/" rel="alternate" type="text/html" title="THORChain + Ruji Trade" /><published>2025-01-29T00:00:00+10:30</published><updated>2025-01-29T00:00:00+10:30</updated><id>https://grassrootscrypto.io/thorchain/rujira/thorchain-rujitrade</id><content type="html" xml:base="https://grassrootscrypto.io/thorchain/rujira/thorchain-rujitrade/"><![CDATA[<p>I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.</p>
+
+<h3 id="ruji-trade">Ruji Trade</h3>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/sGBNbV5z2cc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="updated-version-of-the-picture-used">Updated Version of the picture used</h3>
+
+<p>See the full image <a href="/assets/images/RujiTrade.jpg">here</a></p>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="Rujira" /><category term="THORChain" /><category term="Rujira" /><summary type="html"><![CDATA[I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.]]></summary></entry><entry><title type="html">THORChain + Cosmos Update</title><link href="https://grassrootscrypto.io/thorchain/thorchain-cosmos/" rel="alternate" type="text/html" title="THORChain + Cosmos Update" /><published>2024-08-16T00:00:00+09:30</published><updated>2024-08-16T00:00:00+09:30</updated><id>https://grassrootscrypto.io/thorchain/thorchain-cosmos</id><content type="html" xml:base="https://grassrootscrypto.io/thorchain/thorchain-cosmos/"><![CDATA[<p>A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.</p>
+
+<h1 id="thorchain-x-kujira-integration-summary">THORChain x Kujira Integration Summary</h1>
+
+<h2 id="thorchain-overview">THORChain Overview</h2>
+
+<p>THORChain is a Cosmos-based blockchain designed for cross-chain liquidity and decentralized finance (DeFi) applications. It is primarily known for enabling the swapping of native assets across different blockchains without the need for wrapped tokens or centralized exchanges. THORChain’s native asset, RUNE, plays a crucial role in liquidity provision, security, and the overall functionality of the network.</p>
+
+<h2 id="cosmwasm-and-its-role">COSMWASM and Its Role</h2>
+
+<p>COSMWASM is a smart contract platform built for the Cosmos ecosystem, enabling Rust-based smart contracts within THORChain. It allows for the development of decentralized applications (dApps) and DeFi protocols on THORChain’s layer 2 (L2).</p>
+
+<h3 id="benefits-of-cosmwasm">Benefits of COSMWASM</h3>
+
+<ul>
+  <li><strong>Custom DeFi Apps</strong>: COSMWASM enables the deployment of DeFi applications directly on THORChain. This includes decentralized exchanges (DEXs), lending platforms, and more.</li>
+  <li><strong>Modular Contracts</strong>: Contracts can be deployed and updated modularly, with testing on a staging network before going live on the mainnet.</li>
+  <li><strong>Native Asset Support</strong>: COSMWASM supports all native tokens within THORChain, allowing them to interact seamlessly within the smart contract environment.</li>
+</ul>
+
+<h3 id="risk-separation">Risk Separation</h3>
+
+<p>By adding features in the L2 space through COSMWASM, THORChain can de-risk changes to the L1 base layer. Experimental and innovative features can be implemented more quickly in the L2 space without compromising the stability of the L1 layer. This risk separation ensures that THORChain’s L1 remains stable, while the L2 layer can evolve with new features.</p>
+
+<h2 id="kujira-integration">Kujira Integration</h2>
+
+<h3 id="kujiras-features">Kujira’s Features</h3>
+
+<p>Kujira brings a suite of DeFi protocols that will be integrated into THORChain’s ecosystem through COSMWASM:</p>
+
+<ul>
+  <li><strong>FIN</strong>: The first on-chain order book for Cosmos, allowing decentralized trading with a 100% on-chain order book.</li>
+  <li><strong>Orca</strong>: A liquidation platform that allows users to participate in liquidations, providing more decentralized opportunities for trading.</li>
+  <li><strong>Ghost</strong>: A money market with significant TVL (Total Value Locked) that will take over THORChain’s Lending feature, offering a more robust platform for borrowing and lending.</li>
+  <li><strong>BLUE</strong>: An overview of the user’s portfolio on Kujira, a full list of governance proposals as well as the ability to vote, and ability to mint USK</li>
+  <li><strong>Pilot</strong>: A launchpad that will benefit from THORChain’s larger liquidity pool, enabling more capital to participate in new project launches.</li>
+</ul>
+
+<h3 id="benefits-of-the-integration">Benefits of the Integration</h3>
+
+<ul>
+  <li><strong>DeFi on L2</strong>: Kujira’s DeFi protocols will run on top of THORChain’s base layer, acting as the application layer, and will be the first L2 on THORChain.</li>
+  <li><strong>Increased Liquidity</strong>: Kujira’s platforms will gain access to THORChain’s deep liquidity pools, solving their current liquidity challenges.</li>
+  <li><strong>Native Assets</strong>: Kujira will benefit from THORChain’s native asset support, moving away from reliance on wrapped assets.</li>
+  <li><strong>User Acquisition</strong>: THORChain’s larger user base and decentralized liquidity will help Kujira overcome its challenges in user acquisition and volume generation.</li>
+</ul>
+
+<h2 id="inter-blockchain-communication-ibc-and-its-role">Inter-Blockchain Communication (IBC) and Its Role</h2>
+
+<p>THORChain will also enable IBC for the first time. IBC is a protocol for transferring tokens and data across different blockchains within the Cosmos ecosystem. It enables interoperability between different blockchains, allowing them to communicate and transfer assets securely. Learn more about IBC <a href="#ibc-in-detail">below</a>.</p>
+
+<h3 id="benefits-of-ibc">Benefits of IBC</h3>
+
+<ul>
+  <li><strong>Cross-Chain Liquidity</strong>: IBC will allow THORChain to tap into the liquidity and assets of other Cosmos-based chains, enhancing the variety of assets available for swaps and DeFi activities.</li>
+  <li><strong>Asset Transfers</strong>: Assets from other IBC-enabled chains can be brought into THORChain, and THORChain’s assets can be transferred out, increasing the network’s utility and reach.</li>
+  <li><strong>Enhanced Security and Redundancy</strong>: The ability to communicate with other blockchains can bolster THORChain’s resilience, offering more decentralized and robust security mechanisms.</li>
+</ul>
+
+<h2 id="integration-with-keplr-chain-registry">Integration with Keplr Chain Registry</h2>
+
+<p>THORChain’s upcoming integration with the Keplr chain registry means it will be fully supported within the Keplr wallet, a widely-used wallet for Cosmos ecosystem assets. This will make it easier for users to interact with THORChain, manage RUNE and other assets, and participate in THORChain’s DeFi ecosystem.</p>
+
+<h2 id="strategic-implications">Strategic Implications</h2>
+
+<ul>
+  <li><strong>Cosmos Integration</strong>: By enabling COSMWASM and IBC, THORChain significantly enhances its capabilities, supporting complex DeFi protocols and interacting with a broader range of blockchains. This positions THORChain as a more versatile and interconnected platform within the Cosmos ecosystem.</li>
+  <li><strong>L2 Development</strong>: The development of L2 applications using COSMWASM will drive innovation on THORChain, potentially leading to a diverse range of DeFi products that leverage TOR and contribute to the overall ecosystem’s growth.</li>
+  <li><strong>De-Risking L1</strong>: By focusing on L2 development, THORChain can maintain the stability and security of its L1 base layer while enabling rapid innovation in the L2 space.</li>
+</ul>
+
+<h2 id="future-developments">Future Developments</h2>
+
+<ul>
+  <li><strong>Hard Forks</strong>: THORChain’s second hard fork is imminent, followed by another to integrate COSMWASM and Kujira. Full integration of Kujira’s apps is expected by September, after which focus will shift to expanding the ecosystem and enhancing user experience.</li>
+  <li><strong>RUNE and KUJI Incentives</strong>: Both the THORChain and Kujira teams are incentivized for long-term development, with plans to align RUNE and KUJI holders with the success of the integrated ecosystem.</li>
+</ul>
+
+<p>In conclusion, the integration of COSMWASM and IBC will position THORChain as a more powerful and interconnected player within the Cosmos ecosystem, with significant implications for DeFi development, cross-chain interoperability.</p>
+
+<h2 id="sources">Sources</h2>
+
+<ul>
+  <li>https://winkhub.app/posts/kujira-recovery-plan-thorchain-partnership</li>
+  <li>https://x.com/Accelerath0r/status/1823429064071274984</li>
+  <li>https://discord.com/channels/838986635756044328/838986636665815072/1270552359981813835</li>
+</ul>
+
+<p>Note: At this stage USDC is being considered to price assets instead of TOR. <a href="https://discord.com/channels/838986635756044328/1270552359981813835/1270735855178350730">Source</a></p>
+
+<h2 id="ibc-in-detail">IBC In detail</h2>
+
+<p><strong>Inter-Blockchain Communication (IBC)</strong> is a protocol that enables different blockchains to communicate and transfer assets and data between each other securely. It is a fundamental technology in the Cosmos Ecosystem, which aims to create an “Internet of Blockchains,” where multiple independent blockchains can interoperate seamlessly.</p>
+
+<h3 id="how-ibc-works">How IBC Works:</h3>
+
+<p><strong>Communication Channels:</strong></p>
+
+<ul>
+  <li>IBC establishes communication channels between two blockchains, known as “IBC-enabled chains.” These channels are created through a process called “handshaking,” where both blockchains agree on a common communication protocol.</li>
+  <li>Once a channel is established, it can be used to send data packets between the chains. These data packets could include asset transfers, information, or even cross-chain contract calls.</li>
+</ul>
+
+<p><strong>Light Clients:</strong></p>
+
+<ul>
+  <li>Each blockchain participating in IBC runs a “light client” of the other blockchain. A light client is a lightweight version of the blockchain that only stores the necessary information to verify the state of the other blockchain (such as the latest block header).</li>
+  <li>This light client ensures that the data being sent between the two blockchains is valid and that both blockchains are in sync.</li>
+</ul>
+
+<p><strong>Transaction Process:</strong></p>
+
+<ul>
+  <li>When an asset transfer is initiated, the sending blockchain locks the asset in a specific smart contract or module. This action is recorded on the blockchain, and a proof of this transaction (a cryptographic proof) is generated.</li>
+  <li>The proof is then sent through the IBC channel to the receiving blockchain, where the light client verifies the proof.</li>
+  <li>Once verified, the receiving blockchain mints a corresponding asset (or recognizes the asset) and credits it to the recipient’s account. This ensures that assets transferred via IBC are unique and cannot be duplicated.</li>
+  <li>This process ensures that the asset is not duplicated, and only one valid version of the asset exists across both blockchains.</li>
+</ul>
+
+<p><strong>Security:</strong></p>
+
+<ul>
+  <li>IBC relies on the security of the underlying blockchains. Since each blockchain independently verifies transactions and states, the protocol itself does not need to rely on a central authority or intermediary.</li>
+  <li>The security of IBC comes from the consensus mechanisms of the participating blockchains and the cryptographic proofs exchanged between them.</li>
+</ul>
+
+<h3 id="how-asset-transfer-works-with-ibc">How Asset Transfer Works with IBC:</h3>
+
+<ol>
+  <li>
+    <p>Lock and Mint:
+  • On the sending blockchain, an asset (e.g., tokens) is locked in a specific IBC module or contract. This means the asset is effectively frozen and cannot be used on the sending blockchain while it’s locked.
+  • A proof of this lock is generated and sent to the receiving blockchain.</p>
+  </li>
+  <li>
+    <p>Verification and Minting:
+  • The receiving blockchain, upon receiving the proof, verifies it using its light client. If the proof is valid, the receiving blockchain mints a corresponding token (or recognizes the asset) and credits it to the recipient’s account.
+  • The minted token represents the original asset but is now usable on the receiving blockchain.</p>
+  </li>
+  <li>
+    <p>Unlock and Burn (Reverse Process):
+  • If the user wants to move the asset back to the original blockchain, they can initiate a reverse process. The minted token on the receiving blockchain is burned (destroyed), and a proof of this burn is sent back to the original blockchain.
+  • Upon verification, the original asset is unlocked and returned to the user’s account on the original blockchain.</p>
+  </li>
+</ol>
+
+<h3 id="benefits-of-ibc-for-thorchain">Benefits of IBC for THORChain:</h3>
+
+<ol>
+  <li>Cross-Chain Liquidity: IBC allows THORChain to access and provide liquidity for assets from other blockchains within the Cosmos Ecosystem, expanding the range of assets and markets available on THORChain.</li>
+  <li>Interoperability: IBC enables THORChain to interact with other blockchains, supporting cross-chain applications, data sharing, and decentralized exchanges.</li>
+  <li>Decentralization and Security: IBC’s reliance on light clients and cryptographic proofs ensures that asset transfers are secure and do not depend on centralized intermediaries.</li>
+  <li>Expansion of the Ecosystem: With IBC, THORChain can integrate with a broader range of blockchains, bringing in more users, assets, and applications into its ecosystem, thereby increasing its overall utility and value proposition.</li>
+</ol>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="Cosmos" /><summary type="html"><![CDATA[A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.]]></summary></entry><entry><title type="html">Bitcoin in SMSF</title><link href="https://grassrootscrypto.io/beginner/smsf-bitcoin/" rel="alternate" type="text/html" title="Bitcoin in SMSF" /><published>2024-04-02T00:00:00+10:30</published><updated>2024-04-02T00:00:00+10:30</updated><id>https://grassrootscrypto.io/beginner/smsf-bitcoin</id><content type="html" xml:base="https://grassrootscrypto.io/beginner/smsf-bitcoin/"><![CDATA[<p>I have done some write up for friends insterested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.</p>
+
+<h2 id="exploring-bitcoin-within-a-self-managed-super-fund-smsf">Exploring Bitcoin within a Self-Managed Super Fund (SMSF)</h2>
+
+<p>Bitcoin can be included in your superannuation, but exclusively through a Self-Managed Super Fund (SMSF).</p>
+
+<p><strong>Note:</strong> The information provided below pertains specifically to Australia. It’s strongly advised to conduct thorough research before making any investment decisions. Starting an SMSF is a serious undertaking.</p>
+
+<h2 id="smsfs">SMSFs</h2>
+
+<p>An SMSF functions as a trust managed by a company, identified by its Australian Company Number (ACN). While there are alternative approaches, having a corporate trustee overseeing the trust is the preferred method.</p>
+
+<p>SMSFs offer a diverse range of investment opportunities, spanning from traditional assets like stocks and bonds to alternative assets such as property, gold, artwork, wine, and cryptocurrency.</p>
+
+<h2 id="benefits">Benefits</h2>
+
+<p>Operating an SMSF provides numerous tax advantages, prompting many individuals to include their spouses and children in the fund. This approach is particularly beneficial for families with children.</p>
+
+<p>An SMSF is treated as a single managed entity, with members not directly owning the fund’s assets – the fund owns the assets. Each member receives a yearly benefit statement, typically reflecting their contribution to the fund. Taxation within SMSFs mirrors that of traditional superannuation, including tax rates and contribution caps. Notably, capital gains tax (CGT) is taxed at 15%, but becomes CGT-free upon withdrawal post-retirement. E.g. if you sell at retirement, you don’t have to pay CGT.</p>
+
+<h2 id="regulatory-considerations">Regulatory Considerations</h2>
+
+<p>SMSFs have extensive accounting and regulatory obligations, which is why you generally pay someone to do it, like you pay an accountant to do your taxes. Once established, the fund is regulated like regulated super fund like any other, e.g. searchable here <a href="https://superfundlookup.gov.au">Superfund Lookup</a>. You can then choose for your employer to pay your super into that fund. <a href="https://www.ato.gov.au/forms-and-instructions/superannuation-standard-choice-form">Superannuation Standard Choice Form</a>.</p>
+
+<p>However, failure to comply with regulations can lead to deregistration by the Australian Taxation Office (ATO). To make things simple, I would recommended using your super to buy Bitcoin, hold it in own cold storage and don’t touch it. This keeps the ATO happy, they can’t take it from you and also means you only care about the BTC price when you retire.</p>
+
+<h2 id="cost">Cost</h2>
+
+<p>Setting up and maintaining an SMSF is costly, with initial setup expenses exceeds $3,000 and ongoing annual costs surpassing $2,100. These expenses are covered by the fund, though reimbursement may be necessary if initially paid by the individual. Funds must have sufficient cash to cover ASIC fees, super fund levies, accounting fees, and ATO charges.</p>
+
+<h2 id="storage">Storage</h2>
+
+<p>Once you’ve purchased Bitcoin, you need to store it securely. The fund can cover expenses for cold wallets and other SMSF-related expenses. Recommended cold storage options include the Coldcard Mk4 or hardware wallets from <a href="https://www.coinspot.io">Coinspot.io</a>. Ensure you learn about cold storage before committing all your super to it.</p>
+
+<h2 id="process">Process</h2>
+
+<ol>
+  <li>Establishing the SMSF: Engage professional assistance to set up your SMSF, ensuring compliance with regulatory requirements. Be prepared for initial setup costs and ongoing administrative expenses, which the fund will pay for.</li>
+  <li>Create a Fund Bank Account: Using a bank for credit unit, open a transactional bank account for the SMSF, in the SMSF’s name. This will be a trading account for the SMSF and you can buy cold wallets and other SMSF. A debit card is nice to have on this account but not all banks have this option. Note: CBA have hard $10K per month limit on crypto transfers, so not a good option.</li>
+  <li>Change your Super Fund: Use the Superannuation Choice form to change super funds that your employer pays into. <a href="https://www.ato.gov.au/forms-and-instructions/superannuation-standard-choice-form">Superannuation Standard Choice Form</a></li>
+  <li>Roll over your super to the new fund’s bank account: <a href="https://www.ato.gov.au/forms-and-instructions/superannuation-request-for-rollover-of-whole-balance-between-funds">Superannuation Request for Rollover of Whole Balance Between Funds</a></li>
+  <li>Register the fund with an Exchange or OTC Provider: Register the SMSF with a reputable cryptocurrency exchange or over-the-counter (OTC) provider, to purchase and transfer of Bitcoin. Choose an Australian based exchange like Coinspot to keep things simple and keep the ATO happy.</li>
+  <li>Buy the Bitcoin and send to cold storage: Transfer the funds to the exchange you selected, buy the Bitcoin from the exchange then send it to your cold storage option.</li>
+</ol>
+
+<h2 id="smsf-providers">SMSF Providers</h2>
+
+<p>There are many SMSF providers out there. They do the accounting and auditing for the fund and will be the main cost to running the fund. You will want to use one understands crypto; below are 3 recommendations but there are many more options out there.</p>
+<ol>
+  <li><a href="https://newbrightoncapital.com/">New Brighton Capital</a>: It was the only one around when I started and was recommended by crypto OG friends. They have great crypto API feeds to make crypto management simple, no lock in contracts (leave any time), however they are not the cheapest.</li>
+  <li><a href="https://www.esuperfund.com.au/">Esuperfund</a>: A popular choice now and about the cheapest option. I have not used them however have friends that do have heard good things.</li>
+  <li><a href="https://www.hardblock.com.au/SMSF-bitcoin-investment">Hard Block</a>: Another option and a Bitcoin only exchange. They have a podcast on SMSF.</li>
+</ol>
+
+<p>If you believe in Bitcoin, it’s a no-brainer, in my opinion. Just be aware that it will take time and effort to set up and manage properly.</p>
+
+<h2 id="a-test-case-of-an-smsf-on-16-january-2024">A Test Case of an SMSF on 16 January 2024</h2>
+
+<p>Not financial advice, just sharing some thoughts. No one knows what will happen over the next 4 years. But here’s a hypothetical scenario: if you had $100,000 AUD four years ago and put it into an SMSF to buy Bitcoin, what would have happened?</p>
+
+<p>If you had started an SMSF on 16th January of the previous cycle (2020) with $100,000 to buy Bitcoin, you could have purchased about 7.8 BTC at <a href="https://au.finance.yahoo.com/quote/BTC-AUD/history?period1=1579046400&amp;period2=1579132800&amp;interval=1d&amp;filter=history&amp;frequency=1d&amp;includeAdjustedClose=true">$12,750 AUD per BTC</a>.
+Current AUD value would be $493,800 at $63,316 AUD per BTC - as at 16 Jan 24.</p>
+
+<p>Accounting for SMSF fees of approximately $10,000 over four years there would be a profit of about $383,800 or $95,000 per year. This assumes the Bitcoin wasn’t traded and stayed in cold storage.</p>
+
+<p>No one knows what will happen in the next four years, but it gives you an idea of why Bitcoin in an SMSF is a good idea despite the cost.</p>
+
+<p>Early on, people advised me to buy Bitcoin in an SMSF, self-custody it, and leave it till retirement – I think it’s good advice.</p>
+
+<p>You’ll need 3 or 4 million in super when you retire (accounting for inflation), and 10% compulsory super won’t cut it. You need a plan.</p>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="SMSF" /><category term="Getting Started" /><summary type="html"><![CDATA[I have done some write up for friends insterested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.]]></summary></entry><entry><title type="html">Crypto Begninner Guide</title><link href="https://grassrootscrypto.io/beginner/Beginner-Guide/" rel="alternate" type="text/html" title="Crypto Begninner Guide" /><published>2023-12-12T00:00:00+10:30</published><updated>2023-12-12T00:00:00+10:30</updated><id>https://grassrootscrypto.io/beginner/Beginner-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/beginner/Beginner-Guide/"><![CDATA[<p>🌟 Welcome to the Crypto Exploration Series! 🚀</p>
+
+<p>For those venturing into the exciting realm of Bitcoin and Crypto, these beginner-friendly videos are your go-to guides. In our first videos, we unravel the mysteries of Bitcoin, exploring its essence, deciphering crypto-related terms, and demystifying the process of acquiring and safeguarding your digital wealth. From understanding what Bitcoin is to practical tips for its secure handling, we’ve got you covered.
+If you have questions, reach out and ask!</p>
+
+<h3 id="what-is-bitcoin-for-beginners">What is Bitcoin for Beginners</h3>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/h3nDaC6XGI0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="crypto-wallets-and-self-custody">Crypto Wallets and Self Custody</h3>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/orVwCyOIxtI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="Self-Custody" /><category term="Wallets" /><category term="Getting Started" /><summary type="html"><![CDATA[🌟 Welcome to the Crypto Exploration Series! 🚀]]></summary></entry><entry><title type="html">THORChain Streaming Swaps</title><link href="https://grassrootscrypto.io/defi/thorchain/thorfi/Streaming-Swaps/" rel="alternate" type="text/html" title="THORChain Streaming Swaps" /><published>2023-07-27T00:00:00+09:30</published><updated>2023-07-27T00:00:00+09:30</updated><id>https://grassrootscrypto.io/defi/thorchain/thorfi/Streaming-Swaps</id><content type="html" xml:base="https://grassrootscrypto.io/defi/thorchain/thorfi/Streaming-Swaps/"><![CDATA[<h2 id="streaming-swaps">Streaming Swaps</h2>
+
+<p>Streaming swaps is a new feature within THORChain that allows efficient price execution, as low as 5 basis points. See the details about THORChain Streaming Swaps in the video below.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/E4xD-RoC2EY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Defi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Streaming Swaps]]></summary></entry><entry><title type="html">THORChain Monthly Update</title><link href="https://grassrootscrypto.io/defi/thorchain/thorfi/June-Update/" rel="alternate" type="text/html" title="THORChain Monthly Update" /><published>2023-06-25T00:00:00+09:30</published><updated>2023-06-25T00:00:00+09:30</updated><id>https://grassrootscrypto.io/defi/thorchain/thorfi/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/defi/thorchain/thorfi/June-Update/"><![CDATA[<p>As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.</p>
+
+<p>This video covers the updates from July to September 2023.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/pxH2ANDHt6k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>June Update: A Recap of THORChain’s Latest Milestones and What’s to Come!</p>
+
+<p>Here’s a breakdown of what you can expect from the video:</p>
+
+<ol>
+  <li>Lending Update</li>
+  <li>Synth Cap Increased</li>
+  <li>BSC Chain Integration</li>
+  <li>Outbound Fee Reduction</li>
+  <li>Streaming Swaps</li>
+  <li>Planned Obsolescence</li>
+  <li>What is Next</li>
+</ol>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/cmopHfCwxMc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<p>In addition, I’ve included the May update below. Take this opportunity to catch up on any previous announcements and ensure you’re up to date with all the latest news from THORChain.
+Let me know if you want anything else covered in next month’s update.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/B9M1Azpf65k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Defi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain" /><summary type="html"><![CDATA[As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.]]></summary></entry><entry><title type="html">THORChain Lending</title><link href="https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-Guide/" rel="alternate" type="text/html" title="THORChain Lending" /><published>2023-06-09T00:00:00+09:30</published><updated>2023-06-09T00:00:00+09:30</updated><id>https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-Guide/"><![CDATA[<p>THORFi Lending: A Comprehensive Guide.</p>
+
+<p>THORFi Lending, a groundbreaking feature that is set to redefine the lending landscape. I have created a series of informative videos to help you navigate this exciting new development. Whether you’re a seasoned investor or new to decentralized finance, these videos will provide you with invaluable insights to make the most of THORFi Lending.</p>
+
+<h3 id="how-lending-works-design-terms-and-risks">How Lending Works. Design, Terms and Risks</h3>
+
+<p>In this detailed video, we delve into the latest design of THORFi Lending. I cover the key aspects of how the lending system works, including its design, terms, and associated risks. By watching this video, you will gain a comprehensive understanding of THORFi Lending and be better equipped to make informed decisions.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/AaqHG00RJks" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="lending-with-numbers-and-examples">Lending with Numbers and Examples</h3>
+
+<p>To provide practical clarity, we present real-world examples and numerical scenarios based on the latest design discussed in the previous video. By exploring these examples, you’ll gain a deeper understanding of how THORFi Lending functions and how it can potentially benefit you. Additionally, I provide a spreadsheet for you to experiment with different numbers and explore lending possibilities.</p>
+
+<p>Play with the spreadsheet <a href="https://docs.google.com/spreadsheets/d/1PerBtQ4I273W0BX9YiOPx9IYJKjLzXT_YA9aWqrTP4Y/edit#gid=1607074855">here</a></p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/PVpYU5kCOHI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="other-resources">Other Resources</h3>
+
+<p>Also, there are older videos that contain valuable knowledge, although they may be slightly outdated. While they may not reflect the latest developments, they still offer valuable insights into the broader concepts and principles of lending.</p>
+
+<ul>
+  <li><a href="https://crypto-university.medium.com/under-the-hood-lending-101-f934e1c22792">LP University Basic Lending 101 Write-up</a></li>
+  <li><a href="https://docs.thorchain.org/thorchain-finance/lending">Lending Docs</a></li>
+</ul>
+
+<h2 id="older-videos-good-knowledge-but-may-be-out-of-date">Older videos, good knowledge but may be out of date</h2>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/glY_RVYdsfM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/2jA4DDWxAbk" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Defi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Lending" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[THORFi Lending: A Comprehensive Guide.]]></summary></entry><entry><title type="html">THORChain Lending Code Walkthrough notes</title><link href="https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-codenotes/" rel="alternate" type="text/html" title="THORChain Lending Code Walkthrough notes" /><published>2023-02-21T00:00:00+10:30</published><updated>2023-02-21T00:00:00+10:30</updated><id>https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-codenotes</id><content type="html" xml:base="https://grassrootscrypto.io/defi/thorchain/thorfi/Lending-codenotes/"><![CDATA[<p>I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process.
+<a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/">Learn more abount the risks of lending here</a></p>
+
+<p>The code is in review at moment across three branches.</p>
+
+<h2 id="mrs">MRs</h2>
+<ol>
+  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2713 (Lending)</li>
+  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2658 (Virtual pool gets generate at the beginning of each swap)</li>
+  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2723 (Circuit Breaker)</li>
+</ol>
+
+<h2 id="code-walkthrough-nodes">Code walkthrough nodes</h2>
+
+<h3 id="derived-asset-virtual-pool-recalc-pre-swap"><a href="https://www.youtube.com/watch?v=Wke82WgK8Ao">Derived Asset Virtual Pool, recalc pre swap</a></h3>
+<ol>
+  <li>Has derived asset type (which is already used for TOR)</li>
+  <li>V Pool spawned twice. 1. on begin block to allow API query (to allow lending quotes). 2. On v pool swap as required, calcs pool depth to determine the exact slip.</li>
+  <li>Virtual Pool depts are re-calculated before every Virtual Pool swap, so no sandwich attacks or swap queue manipulation is possible.</li>
+  <li>RUNE slip is fee is burnt.</li>
+</ol>
+
+<h3 id="lending-open-and-close-loans"><a href="https://www.youtube.com/watch?v=8qCiyLy4YEw">Lending Open and Close Loans</a></h3>
+<ol>
+  <li>Min out will be added for min loan amount (open/close), like LIM for a swap. Will be in a different but provisions allowed for it in msg structures.</li>
+  <li>5 new mimirs
+    <ol>
+      <li>Min CR</li>
+      <li>Max CR</li>
+      <li>Pause Loans - stop open and close loans</li>
+      <li>LoanRepaymentMaturity - enable min time for loan open.</li>
+      <li>CRPoolMultipler - cap collateral in a pool</li>
+      <li>EnableDerivedAssets</li>
+      <li>(MaxRuneSupply for circuit breaker but no in code)</li>
+    </ol>
+  </li>
+  <li>Loan Open message
+    <ol>
+      <li>Has affiliate for first L1 swap.</li>
+      <li>Has Dex aggregation support to taking out the debit (target asset)</li>
+    </ol>
+  </li>
+  <li>Loan Close message
+    <ol>
+      <li>Can pay off with any asset (is converted to TOR)</li>
+    </ol>
+  </li>
+  <li>Data for total pool collateral is collected and published in pool and pools endpoints.</li>
+  <li>New Memos for loan open and close with an example</li>
+  <li>New events emitted on loan open and repayment.</li>
+  <li>Has collateral up and down (13:45) - gives better data over time and allows credit rollover for new loan when overpaid. (though the 4 vars are not in the current code base)</li>
+  <li>Anyone can payoff anyone else’s loan, no restrictions.</li>
+  <li>Loan Close: Asset in calls LoanRepayment_handler that calls Swap handler (to swap L1 to TOR) that then calls LoanRepayment_handler after asset in has been swapped to TOR - thus and LoanRepayement_handler is recursive. Be good to map thatin a digram</li>
+</ol>
+
+<h3 id="circuit-breaker-part-1"><a href="https://www.youtube.com/watch?v=e6gZ77DdMrc">Circuit Breaker Part 1</a></h3>
+<ol>
+  <li>Part 1: For loan close, will not mint Rune beyond 500 mil, checks native supply before minting new RUNE. If over, will move RUNE from the reserve instead.</li>
+  <li>Part 2 is in the lending PR (2713) but not covered in the video
+    <ol>
+      <li>If the supply of RUNE is 500M (MaxRuneSupply Mimir) or greater, don’t allow the creation of new loans.</li>
+      <li>Can’t find Mimir value in constants</li>
+      <li>I put comment on the MR about this</li>
+    </ol>
+  </li>
+</ol>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Defi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Synths" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more abount the risks of lending here]]></summary></entry><entry><title type="html">THORChain - THORFI Risks and Concerns Explained</title><link href="https://grassrootscrypto.io/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="alternate" type="text/html" title="THORChain - THORFI Risks and Concerns Explained" /><published>2023-02-01T00:00:00+10:30</published><updated>2023-02-01T00:00:00+10:30</updated><id>https://grassrootscrypto.io/defi/thorchain/thorfi/THORFi-Risks-Explained</id><content type="html" xml:base="https://grassrootscrypto.io/defi/thorchain/thorfi/THORFi-Risks-Explained/"><![CDATA[<p>With the implementation of THORFi, there are risks. This has been discussed at length on discord and in the twitter spaces.</p>
+
+<p>I wanted to create a video to clear the confusion and get everyone on the same page.
+What are your thoughts?</p>
+
+<p>ADR 006 is currently open to enable POL, you can read that here: https://gitlab.com/thorchain/thornode/-/blob/develop/docs/architecture/adr-006-enable-pol.md 
+Update, this vote was passed.</p>
+
+<h3 id="thorfi-risks-and-concerns">THORFi Risks and Concerns</h3>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/glY_RVYdsfM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="grapics-used">Grapics Used</h3>
+
+<p>You can download the graphics used <a href="/assets/documents/THORFi-Risks-Concerns.pdf">here </a></p>]]></content><author><name>Chris</name><email>info@grassrootscrypto.io</email></author><category term="Defi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="THORFI Savings" /><category term="Synths" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[With the implementation of THORFi, there are risks. This has been discussed at length on discord and in the twitter spaces.]]></summary></entry></feed>

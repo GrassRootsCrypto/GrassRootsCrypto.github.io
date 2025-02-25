@@ -1,0 +1,639 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Impermanent Loss Explained - GrassRoots Crypto</title>
+<meta name="description" content="This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, check out my video explaining it.">
+
+
+  <meta name="author" content="Chris">
+  
+  <meta property="article:author" content="Chris">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GrassRoots Crypto">
+<meta property="og:title" content="Impermanent Loss Explained">
+<meta property="og:url" content="https://grassrootscrypto.io/defi/impermanent-loss-explained/">
+
+
+  <meta property="og:description" content="This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, check out my video explaining it.">
+
+
+
+
+
+  <meta name="twitter:site" content="@GrassRootsio">
+  <meta name="twitter:title" content="Impermanent Loss Explained">
+  <meta name="twitter:description" content="This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, check out my video explaining it.">
+  <meta name="twitter:url" content="https://grassrootscrypto.io/defi/impermanent-loss-explained/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2020-11-21T00:00:00+10:30">
+
+
+
+
+
+
+<link rel="canonical" href="https://grassrootscrypto.io/defi/impermanent-loss-explained/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "GrassRoots Crypto",
+      "url": "https://grassrootscrypto.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          GrassRoots Crypto
+          <span class="site-subtitle">Teaching people about Crypto!</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/services/" title="What GrassRoots Crypto can do for you?">Services</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ReferralLinks/">Referral Links</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search/">Search</a>
+            </li><li class="masthead__menu-item">
+              <a href="/disclaimer/" title="Disclaimer, Disclosre and Copyright!">Disclaimer</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li><li class="masthead__menu-item">
+              <a href="/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Impermanent Loss Explained">
+    <meta itemprop="description" content="This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, check out my video explaining it.">
+    <meta itemprop="datePublished" content="2020-11-21T00:00:00+10:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Impermanent Loss Explained
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          4 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+          <aside class="sidebar__right ">
+            <nav class="toc">
+              <header><h4 class="nav__title"><i class="fas fa-file-alt"></i> On this page</h4></header>
+              <ul class="toc__menu">
+  <li><a href="#the-risk">The Risk</a></li>
+  <li><a href="#so-why-do-it">So why do it?</a></li>
+  <li><a href="#summing-up">Summing up</a></li>
+  <li><a href="#arbitraging---how-it-works">Arbitraging - how it works?</a></li>
+  <li><a href="#quick-example">Quick example</a></li>
+</ul>
+
+            </nav>
+          </aside>
+        
+        <p>This video helps people understand what Impermanent Loss is and asks key questions when considering your exposure to Impermanent Loss. If you are new to liquidity pools, <a href="/defi/thorchain/liquidity-provider/">check out my video explaining it.</a></p>
+
+<p>NOTE: ILP has been sunset in THORChain.</p>
+
+<p>Impermanent Loss (IL), or in simple speak, not yet a permanent loss, is one of the hardest concepts in Defi for most people to understand.  See the video below.</p>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/OfnXC4N5OUw" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<h3 id="the-risk">The Risk</h3>
+<p>Impermanent Loss (IL) is a risk Liquidly Providers face when staking their assets in a liquidity pool. It is the potential difference in gains between holding and being a Liquidly Provider.</p>
+
+<p>Most people seem to freak out about it because it sounds scary and can be difficult to understand and explain.</p>
+
+<p>A few things that need to pointed out here.</p>
+<ol>
+  <li>The ‘loss’ is on paper only, and is not final - hence not yet permanent. It will likely change tomorrow. For example, BNB could return to its original price, eliminating the Impermanent Loss. The loss only becomes permanent when you withdraw from the Liquidity Pool.</li>
+  <li>If both assets rise in price by the same percentage, then it’s all good - the total pool value increases. The issue arises when the price movements are lopsided or when the pool becomes out of balance.</li>
+  <li>Price will always change, so the amount of Impermanent Loss or the amount you are ‘missing out’ on is always changing.</li>
+  <li>The fees you receive as a Liquidity Provider may have been more or less than what you missed out on. To understand your actual or net loss/gain, you need to subtract any fee revenue from the missed-out amount.</li>
+</ol>
+
+<h3 id="so-why-do-it">So why do it?</h3>
+<p>Why become a Liquidity Provider if you are exposed to the risk of Impermanent Loss?</p>
+
+<p>AMM platforms like BepSwap (ThorChain) require Liquidity Providers to operate, so they make it very lucrative for them by offering a good share of the fees, additional ‘network benefits,’ and sometimes additional tokens for providing liquidity, which also hold value.
+Many are willing to take this risk due to the attractive rewards.</p>
+
+<p>It must be said, however, the more the price moves, the more IL becomes an issue, and the IL can be greater than the income generated by fees or network benefits.</p>
+
+<p>In other words, when price movements are small, the income generated generally covers the Impermanent Loss. But when price movements become very large, it may not be enough.</p>
+
+<p><strong>Key questions to ask yourself:</strong></p>
+<ol>
+  <li>What are you trying to achieve? Are you looking to hold assets in the hope they will increase in value, trying to capitalize on every potential price increase? Or are you providing a service and getting paid for it, not worrying too much about every temporary price fluctuation?</li>
+  <li>What is your time preference? Are you in it for the short term or the long term? Are you interested in short-term trading or long-term asset appreciation, not being concerned with short-term volatility?</li>
+</ol>
+
+<p>Remember, Impermanent Loss only becomes permanent when you withdraw!</p>
+
+<h3 id="summing-up">Summing up</h3>
+<p>Impermanent Loss (IL), or in simple terms, not yet a permanent loss, occurs during the rebalancing process of a liquidity pool due to price movements.
+It is a risk Liquidity Providers face when staking their assets in a Liquidity Pool.
+The more the price moves (e.g., the more the liquidity pool becomes out of balance), the more Impermanent Loss becomes an issue.
+AMM platforms require Liquidity Providers to operate, so some may offer benefits/rewards to Liquidity Providers (particularly when they are new).</p>
+
+<p>I don’t know your situation or what is best for you, whatever you decide to do, I hope you have a better understanding of IL.</p>
+
+<h2 id="bonus---not-in-the-video">Bonus - not in the video</h2>
+<h3 id="arbitraging---how-it-works">Arbitraging - how it works?</h3>
+<p>How is this magic rebalancing process done when a pool becomes out of balance?
+When you stake into a Liquidity Provider, it is done at the market price - like the retail price. But once in the pool, assets have their own price, let’s call it the pool price.
+When there is an imbalance in the pool, due to price movements, the price of the assets (pool price) becomes different from the market price to encourage people to buy or sell assets in the pool to bring it back into balance. This is known as arbitrage.</p>
+
+<h3 id="quick-example">Quick example</h3>
+<p>Say there is a BNB:RUNE pool and the price of BNB rises - the pool becomes out of balance.</p>
+
+<p>To rebalance the pool, some BNB needs to be removed so the pool returns to a 50/50 split, and this is done by putting BNB on sale, allowing traders to buy BNB at a discount or below the market price. Remember, Liquidity Pools can set their own price, known as the pool price. Someone can basically buy the cheap BNB from this pool, then sell it at retail and pocket the difference. This is known as arbitrage, and there are computer bots that do this all the time, so the rebalancing is kind of an automatic process. Bots may have to work on a pool for a period of time, first making big trades, then getting smaller until balance is restored. Bots do this as they get to pocket the Impermanent Loss.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#bepswap" class="page__taxonomy-item" rel="tag">BepSwap</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#impermanent-loss" class="page__taxonomy-item" rel="tag">Impermanent Loss</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#liquidity-pool" class="page__taxonomy-item" rel="tag">Liquidity Pool</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#liquidity-provider" class="page__taxonomy-item" rel="tag">Liquidity Provider</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#defi" class="page__taxonomy-item" rel="tag">Defi</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2020-11-21T00:00:00+10:30">November 21, 2020</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/defi/thorchain/ultmate-bepswap-guide/" class="pagination--pager" title="THE ULTIMATE GUIDE TO BEPSWAP
+">Previous</a>
+    
+    
+      <a href="/beginner/chains-tokens/" class="pagination--pager" title="Blockchains and Tokens Explained
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <section id="static-comments">
+        
+      </section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thorchain/Feburary-Update/" rel="permalink">THORChain Feburary Update
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thorchain/thorchain-cosmos/" rel="permalink">THORChain + Cosmos Update
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira p...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I have done some write up for friends insterested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/GrassRootsio" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://t.me/GrassRootsCrypto" rel="nofollow noopener noreferrer"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/c/grassrootscrypto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 GrassRoots Crypto. <a href="/disclaimer/" rel="nofollow">Copyright. All Rights Reserved</a> </div>
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NH9NNXEF3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>

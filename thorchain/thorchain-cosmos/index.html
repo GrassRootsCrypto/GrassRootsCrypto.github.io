@@ -1,0 +1,712 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.26.2 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>THORChain + Cosmos Update - GrassRoots Crypto</title>
+<meta name="description" content="A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.">
+
+
+  <meta name="author" content="Chris">
+  
+  <meta property="article:author" content="Chris">
+  
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="GrassRoots Crypto">
+<meta property="og:title" content="THORChain + Cosmos Update">
+<meta property="og:url" content="https://grassrootscrypto.io/thorchain/thorchain-cosmos/">
+
+
+  <meta property="og:description" content="A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.">
+
+
+
+
+
+  <meta name="twitter:site" content="@GrassRootsio">
+  <meta name="twitter:title" content="THORChain + Cosmos Update">
+  <meta name="twitter:description" content="A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.">
+  <meta name="twitter:url" content="https://grassrootscrypto.io/thorchain/thorchain-cosmos/">
+
+  
+    <meta name="twitter:card" content="summary">
+    
+  
+
+  
+
+
+
+  <meta property="article:published_time" content="2024-08-16T00:00:00+09:30">
+
+
+
+
+
+
+<link rel="canonical" href="https://grassrootscrypto.io/thorchain/thorchain-cosmos/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "GrassRoots Crypto",
+      "url": "https://grassrootscrypto.io/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+
+<!--[if IE]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          GrassRoots Crypto
+          <span class="site-subtitle">Teaching people about Crypto!</span>
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/categories/">Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/services/" title="What GrassRoots Crypto can do for you?">Services</a>
+            </li><li class="masthead__menu-item">
+              <a href="/ReferralLinks/">Referral Links</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/search/">Search</a>
+            </li><li class="masthead__menu-item">
+              <a href="/disclaimer/" title="Disclaimer, Disclosre and Copyright!">Disclaimer</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li><li class="masthead__menu-item">
+              <a href="/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="THORChain + Cosmos Update">
+    <meta itemprop="description" content="A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.">
+    <meta itemprop="datePublished" content="2024-08-16T00:00:00+09:30">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">THORChain + Cosmos Update
+</h1>
+          
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <p>A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.</p>
+
+<h1 id="thorchain-x-kujira-integration-summary">THORChain x Kujira Integration Summary</h1>
+
+<h2 id="thorchain-overview">THORChain Overview</h2>
+
+<p>THORChain is a Cosmos-based blockchain designed for cross-chain liquidity and decentralized finance (DeFi) applications. It is primarily known for enabling the swapping of native assets across different blockchains without the need for wrapped tokens or centralized exchanges. THORChain’s native asset, RUNE, plays a crucial role in liquidity provision, security, and the overall functionality of the network.</p>
+
+<h2 id="cosmwasm-and-its-role">COSMWASM and Its Role</h2>
+
+<p>COSMWASM is a smart contract platform built for the Cosmos ecosystem, enabling Rust-based smart contracts within THORChain. It allows for the development of decentralized applications (dApps) and DeFi protocols on THORChain’s layer 2 (L2).</p>
+
+<h3 id="benefits-of-cosmwasm">Benefits of COSMWASM</h3>
+
+<ul>
+  <li><strong>Custom DeFi Apps</strong>: COSMWASM enables the deployment of DeFi applications directly on THORChain. This includes decentralized exchanges (DEXs), lending platforms, and more.</li>
+  <li><strong>Modular Contracts</strong>: Contracts can be deployed and updated modularly, with testing on a staging network before going live on the mainnet.</li>
+  <li><strong>Native Asset Support</strong>: COSMWASM supports all native tokens within THORChain, allowing them to interact seamlessly within the smart contract environment.</li>
+</ul>
+
+<h3 id="risk-separation">Risk Separation</h3>
+
+<p>By adding features in the L2 space through COSMWASM, THORChain can de-risk changes to the L1 base layer. Experimental and innovative features can be implemented more quickly in the L2 space without compromising the stability of the L1 layer. This risk separation ensures that THORChain’s L1 remains stable, while the L2 layer can evolve with new features.</p>
+
+<h2 id="kujira-integration">Kujira Integration</h2>
+
+<h3 id="kujiras-features">Kujira’s Features</h3>
+
+<p>Kujira brings a suite of DeFi protocols that will be integrated into THORChain’s ecosystem through COSMWASM:</p>
+
+<ul>
+  <li><strong>FIN</strong>: The first on-chain order book for Cosmos, allowing decentralized trading with a 100% on-chain order book.</li>
+  <li><strong>Orca</strong>: A liquidation platform that allows users to participate in liquidations, providing more decentralized opportunities for trading.</li>
+  <li><strong>Ghost</strong>: A money market with significant TVL (Total Value Locked) that will take over THORChain’s Lending feature, offering a more robust platform for borrowing and lending.</li>
+  <li><strong>BLUE</strong>: An overview of the user’s portfolio on Kujira, a full list of governance proposals as well as the ability to vote, and ability to mint USK</li>
+  <li><strong>Pilot</strong>: A launchpad that will benefit from THORChain’s larger liquidity pool, enabling more capital to participate in new project launches.</li>
+</ul>
+
+<h3 id="benefits-of-the-integration">Benefits of the Integration</h3>
+
+<ul>
+  <li><strong>DeFi on L2</strong>: Kujira’s DeFi protocols will run on top of THORChain’s base layer, acting as the application layer, and will be the first L2 on THORChain.</li>
+  <li><strong>Increased Liquidity</strong>: Kujira’s platforms will gain access to THORChain’s deep liquidity pools, solving their current liquidity challenges.</li>
+  <li><strong>Native Assets</strong>: Kujira will benefit from THORChain’s native asset support, moving away from reliance on wrapped assets.</li>
+  <li><strong>User Acquisition</strong>: THORChain’s larger user base and decentralized liquidity will help Kujira overcome its challenges in user acquisition and volume generation.</li>
+</ul>
+
+<h2 id="inter-blockchain-communication-ibc-and-its-role">Inter-Blockchain Communication (IBC) and Its Role</h2>
+
+<p>THORChain will also enable IBC for the first time. IBC is a protocol for transferring tokens and data across different blockchains within the Cosmos ecosystem. It enables interoperability between different blockchains, allowing them to communicate and transfer assets securely. Learn more about IBC <a href="#ibc-in-detail">below</a>.</p>
+
+<h3 id="benefits-of-ibc">Benefits of IBC</h3>
+
+<ul>
+  <li><strong>Cross-Chain Liquidity</strong>: IBC will allow THORChain to tap into the liquidity and assets of other Cosmos-based chains, enhancing the variety of assets available for swaps and DeFi activities.</li>
+  <li><strong>Asset Transfers</strong>: Assets from other IBC-enabled chains can be brought into THORChain, and THORChain’s assets can be transferred out, increasing the network’s utility and reach.</li>
+  <li><strong>Enhanced Security and Redundancy</strong>: The ability to communicate with other blockchains can bolster THORChain’s resilience, offering more decentralized and robust security mechanisms.</li>
+</ul>
+
+<h2 id="integration-with-keplr-chain-registry">Integration with Keplr Chain Registry</h2>
+
+<p>THORChain’s upcoming integration with the Keplr chain registry means it will be fully supported within the Keplr wallet, a widely-used wallet for Cosmos ecosystem assets. This will make it easier for users to interact with THORChain, manage RUNE and other assets, and participate in THORChain’s DeFi ecosystem.</p>
+
+<h2 id="strategic-implications">Strategic Implications</h2>
+
+<ul>
+  <li><strong>Cosmos Integration</strong>: By enabling COSMWASM and IBC, THORChain significantly enhances its capabilities, supporting complex DeFi protocols and interacting with a broader range of blockchains. This positions THORChain as a more versatile and interconnected platform within the Cosmos ecosystem.</li>
+  <li><strong>L2 Development</strong>: The development of L2 applications using COSMWASM will drive innovation on THORChain, potentially leading to a diverse range of DeFi products that leverage TOR and contribute to the overall ecosystem’s growth.</li>
+  <li><strong>De-Risking L1</strong>: By focusing on L2 development, THORChain can maintain the stability and security of its L1 base layer while enabling rapid innovation in the L2 space.</li>
+</ul>
+
+<h2 id="future-developments">Future Developments</h2>
+
+<ul>
+  <li><strong>Hard Forks</strong>: THORChain’s second hard fork is imminent, followed by another to integrate COSMWASM and Kujira. Full integration of Kujira’s apps is expected by September, after which focus will shift to expanding the ecosystem and enhancing user experience.</li>
+  <li><strong>RUNE and KUJI Incentives</strong>: Both the THORChain and Kujira teams are incentivized for long-term development, with plans to align RUNE and KUJI holders with the success of the integrated ecosystem.</li>
+</ul>
+
+<p>In conclusion, the integration of COSMWASM and IBC will position THORChain as a more powerful and interconnected player within the Cosmos ecosystem, with significant implications for DeFi development, cross-chain interoperability.</p>
+
+<h2 id="sources">Sources</h2>
+
+<ul>
+  <li>https://winkhub.app/posts/kujira-recovery-plan-thorchain-partnership</li>
+  <li>https://x.com/Accelerath0r/status/1823429064071274984</li>
+  <li>https://discord.com/channels/838986635756044328/838986636665815072/1270552359981813835</li>
+</ul>
+
+<p>Note: At this stage USDC is being considered to price assets instead of TOR. <a href="https://discord.com/channels/838986635756044328/1270552359981813835/1270735855178350730">Source</a></p>
+
+<h2 id="ibc-in-detail">IBC In detail</h2>
+
+<p><strong>Inter-Blockchain Communication (IBC)</strong> is a protocol that enables different blockchains to communicate and transfer assets and data between each other securely. It is a fundamental technology in the Cosmos Ecosystem, which aims to create an “Internet of Blockchains,” where multiple independent blockchains can interoperate seamlessly.</p>
+
+<h3 id="how-ibc-works">How IBC Works:</h3>
+
+<p><strong>Communication Channels:</strong></p>
+
+<ul>
+  <li>IBC establishes communication channels between two blockchains, known as “IBC-enabled chains.” These channels are created through a process called “handshaking,” where both blockchains agree on a common communication protocol.</li>
+  <li>Once a channel is established, it can be used to send data packets between the chains. These data packets could include asset transfers, information, or even cross-chain contract calls.</li>
+</ul>
+
+<p><strong>Light Clients:</strong></p>
+
+<ul>
+  <li>Each blockchain participating in IBC runs a “light client” of the other blockchain. A light client is a lightweight version of the blockchain that only stores the necessary information to verify the state of the other blockchain (such as the latest block header).</li>
+  <li>This light client ensures that the data being sent between the two blockchains is valid and that both blockchains are in sync.</li>
+</ul>
+
+<p><strong>Transaction Process:</strong></p>
+
+<ul>
+  <li>When an asset transfer is initiated, the sending blockchain locks the asset in a specific smart contract or module. This action is recorded on the blockchain, and a proof of this transaction (a cryptographic proof) is generated.</li>
+  <li>The proof is then sent through the IBC channel to the receiving blockchain, where the light client verifies the proof.</li>
+  <li>Once verified, the receiving blockchain mints a corresponding asset (or recognizes the asset) and credits it to the recipient’s account. This ensures that assets transferred via IBC are unique and cannot be duplicated.</li>
+  <li>This process ensures that the asset is not duplicated, and only one valid version of the asset exists across both blockchains.</li>
+</ul>
+
+<p><strong>Security:</strong></p>
+
+<ul>
+  <li>IBC relies on the security of the underlying blockchains. Since each blockchain independently verifies transactions and states, the protocol itself does not need to rely on a central authority or intermediary.</li>
+  <li>The security of IBC comes from the consensus mechanisms of the participating blockchains and the cryptographic proofs exchanged between them.</li>
+</ul>
+
+<h3 id="how-asset-transfer-works-with-ibc">How Asset Transfer Works with IBC:</h3>
+
+<ol>
+  <li>
+    <p>Lock and Mint:
+  • On the sending blockchain, an asset (e.g., tokens) is locked in a specific IBC module or contract. This means the asset is effectively frozen and cannot be used on the sending blockchain while it’s locked.
+  • A proof of this lock is generated and sent to the receiving blockchain.</p>
+  </li>
+  <li>
+    <p>Verification and Minting:
+  • The receiving blockchain, upon receiving the proof, verifies it using its light client. If the proof is valid, the receiving blockchain mints a corresponding token (or recognizes the asset) and credits it to the recipient’s account.
+  • The minted token represents the original asset but is now usable on the receiving blockchain.</p>
+  </li>
+  <li>
+    <p>Unlock and Burn (Reverse Process):
+  • If the user wants to move the asset back to the original blockchain, they can initiate a reverse process. The minted token on the receiving blockchain is burned (destroyed), and a proof of this burn is sent back to the original blockchain.
+  • Upon verification, the original asset is unlocked and returned to the user’s account on the original blockchain.</p>
+  </li>
+</ol>
+
+<h3 id="benefits-of-ibc-for-thorchain">Benefits of IBC for THORChain:</h3>
+
+<ol>
+  <li>Cross-Chain Liquidity: IBC allows THORChain to access and provide liquidity for assets from other blockchains within the Cosmos Ecosystem, expanding the range of assets and markets available on THORChain.</li>
+  <li>Interoperability: IBC enables THORChain to interact with other blockchains, supporting cross-chain applications, data sharing, and decentralized exchanges.</li>
+  <li>Decentralization and Security: IBC’s reliance on light clients and cryptographic proofs ensures that asset transfers are secure and do not depend on centralized intermediaries.</li>
+  <li>Expansion of the Ecosystem: With IBC, THORChain can integrate with a broader range of blockchains, bringing in more users, assets, and applications into its ecosystem, thereby increasing its overall utility and value proposition.</li>
+</ol>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#cosmos" class="page__taxonomy-item" rel="tag">Cosmos</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#thorchain" class="page__taxonomy-item" rel="tag">THORChain</a>
+    
+    </span>
+  </p>
+
+
+
+
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-folder-open" aria-hidden="true"></i> Categories: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/categories/#thorchain" class="page__taxonomy-item" rel="tag">THORChain</a>
+    
+    </span>
+  </p>
+
+
+        
+  <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2024-08-16T00:00:00+09:30">August 16, 2024</time></p>
+
+
+      </footer>
+
+      
+
+      
+  <nav class="pagination">
+    
+      <a href="/beginner/smsf-bitcoin/" class="pagination--pager" title="Bitcoin in SMSF
+">Previous</a>
+    
+    
+      <a href="/thorchain/rujira/thorchain-rujitrade/" class="pagination--pager" title="THORChain + Ruji Trade
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+      <div class="page__comments">
+  
+  
+      <section id="static-comments">
+        
+      </section>
+    
+</div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thorchain/Feburary-Update/" rel="permalink">THORChain Feburary Update
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          7 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave ...</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          5 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">I have done some write up for friends insterested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.
+
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title no_toc" itemprop="headline">
+      
+        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Begninner Guide
+</a>
+      
+    </h2>
+    
+
+  <p class="page__meta">
+    
+
+    
+
+    
+      
+      
+
+      <span class="page__meta-readtime">
+        <i class="far fa-clock" aria-hidden="true"></i>
+        
+          less than 1 minute read
+        
+      </span>
+    
+  </p>
+
+
+    <p class="archive__item-excerpt" itemprop="description">🌟 Welcome to the Crypto Exploration Series! 🚀
+
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+          <li><a href="https://twitter.com/GrassRootsio" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://t.me/GrassRootsCrypto" rel="nofollow noopener noreferrer"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram</a></li>
+        
+      
+        
+          <li><a href="https://www.youtube.com/c/grassrootscrypto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2025 GrassRoots Crypto. <a href="/disclaimer/" rel="nofollow">Copyright. All Rights Reserved</a> </div>
+
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-NH9NNXEF3M"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': false});
+</script>
+
+
+
+
+
+
+    
+
+  
+
+
+
+
+
+  </body>
+</html>
