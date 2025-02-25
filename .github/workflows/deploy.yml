@@ -1,31 +1,68 @@
-name: Deploy to GitHub Pages
+name: Deploy Jekyll Site
 
 on:
   push:
     branches:
       - main
+      - preview/*  # Deploy preview branches separately
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch: {}
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout Repository
+        uses: actions/checkout@v4
         with:
-          node-version: '14'
+          fetch-depth: 0
 
-      - name: Install dependencies
-        run: npm install
+      - name: Set up Ruby for Jekyll
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.2'
 
-      - name: Build the project
-        run: npm run build
+      - name: Setup Bundler Cache
+        uses: actions/cache@v4
+        with:
+          path: vendor/bundle
+          key: ${{ runner.os }}-bundler-${{ hashFiles('Gemfile.lock') }}
+          restore-keys: |
+            ${{ runner.os }}-bundler-
+
+      - name: Install Jekyll and Dependencies
+        run: |
+          bundle config set path 'vendor/bundle'
+          bundle install
+          bundle clean
+
+      - name: Build Jekyll Site
+        run: bundle exec jekyll build
+        env:
+          JEKYLL_ENV: production
+
+      - name: Deploy Algolia Index (Only on Main)
+        if: github.ref == 'refs/heads/main'
+        run: bundle exec jekyll algolia push
+        env:
+          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
+        continue-on-error: true
 
       - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          publish_branch: gh-pages
+          publish_dir: ./_site
+
+      - name: Deploy to GitHub Pages (Preview)
+        if: github.ref != 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages-preview
+          publish_dir: ./_site
