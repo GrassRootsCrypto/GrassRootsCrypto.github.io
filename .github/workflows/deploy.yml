@@ -7,7 +7,7 @@ on:
       - preview/*  # Deploy preview branches separately
   pull_request:
     branches:
-      - main
+      - main  # Ensure PRs run the build process but don't deploy
   workflow_dispatch: {}
 
 jobs:
@@ -44,15 +44,8 @@ jobs:
         env:
           JEKYLL_ENV: production
 
-      - name: Deploy Algolia Index (Only on Main)
-        if: github.ref == 'refs/heads/main'
-        run: bundle exec jekyll algolia push
-        env:
-          ALGOLIA_API_KEY: ${{ secrets.ALGOLIA_API_KEY }}
-        continue-on-error: true
-
-      - name: Deploy to GitHub Pages
-        if: github.ref == 'refs/heads/main'
+      - name: Deploy to GitHub Pages (Main)
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -60,7 +53,7 @@ jobs:
           publish_dir: ./_site
 
       - name: Deploy to GitHub Pages (Preview)
-        if: github.ref != 'refs/heads/main'
+        if: startsWith(github.ref, 'refs/heads/preview/')
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
