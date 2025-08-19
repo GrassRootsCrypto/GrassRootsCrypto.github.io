@@ -1,7 +1,7 @@
 ---
 title: "THORChain Impermanent Loss Protection"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - MCCN  

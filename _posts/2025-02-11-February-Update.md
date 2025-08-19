@@ -1,5 +1,5 @@
 ---
-title: "THORChain Feburary Update"
+title: "THORChain February Update"
 categories:
   - THORChain
 tags:
@@ -88,7 +88,7 @@ Proposal 6 outlines a comprehensive approach to addressing the approx $200 milli
 ### Implementation Details of Proposal 6
 
 1. The full implementation details have been [published on GitLab](https://gitlab.com/thorchain/thornode/-/issues/2152) with an [amendment](https://gitlab.com/thorchain/thornode/-/issues/2154). 
-1. A node vote changed the Emission Curve to reduce the block rewards. This will reduce the block emssions from approx. This changes emissions form approx 25,000 RUNE a day to 2 RUNE a day, or 750 RUNE per year.
+1. A node vote changed the Emission Curve to reduce the block rewards. This will reduce the block emissions from approx. This changes emissions from approx 25,000 RUNE a day to 2 RUNE a day, or 750 RUNE per year.
 1. To support the amendment to proposal 6, [MR3926](https://gitlab.com/thorchain/thornode/-/merge_requests/3926) has been created to allow LP deposits to be paused on a specific chain.
 
 ## Next Steps

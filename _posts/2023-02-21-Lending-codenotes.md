@@ -1,7 +1,7 @@
 ---
 title: "THORChain Lending Code Walkthrough notes"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:
@@ -13,7 +13,7 @@ classes: wide
 ---
 
 I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process.
-[Learn more abount the risks of lending here]({% post_url 2023-02-01-THORFi-Risks-Explained %})
+[Learn more about the risks of lending here]({% post_url 2023-02-01-THORFi-Risks-Explained %})
 
 
 The code is in review at moment across three branches. 

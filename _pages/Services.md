@@ -21,7 +21,7 @@ We can help you with:
 
 1. Understanding Bitcoin and Ethereum: Gain insights into the fundamentals of Bitcoin and Ethereum, the two leading cryptocurrencies.
 1. Blockchain Strategy: Learn how to develop effective strategies for leveraging blockchain technology in various industries and use cases.
-1. Defi - Liquidity Pools / Impermanent Loss: Explore the world of Decentralized Finance (DeFi), including concepts such as liquidity pools and understanding impermanent loss.
+1. DeFi - Liquidity Pools / Impermanent Loss: Explore the world of Decentralized Finance (DeFi), including concepts such as liquidity pools and understanding impermanent loss.
 1. Smart Contract Development: Dive into the realm of smart contracts and learn how to develop and deploy them on different blockchain platforms.
 1. Trading - Exchanges, CEX, and DEX: Get acquainted with cryptocurrency trading, including both centralized exchanges (CEX) and decentralized exchanges (DEX).
 1. Earning Interest on Your Coins: Discover methods and platforms to earn interest on your cryptocurrency holdings through staking, lending, or other yield-generating opportunities.

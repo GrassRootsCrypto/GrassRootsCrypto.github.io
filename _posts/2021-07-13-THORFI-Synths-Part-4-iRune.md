@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Synths Part 4 - iRune"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

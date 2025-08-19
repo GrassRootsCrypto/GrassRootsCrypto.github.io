@@ -11,7 +11,7 @@ author_profile: false
 classes: wide
 ---
 
-I have done some write up for friends insterested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.
+I have done some write up for friends interested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared in on my website.
 
 ## Exploring Bitcoin within a Self-Managed Super Fund (SMSF)
 

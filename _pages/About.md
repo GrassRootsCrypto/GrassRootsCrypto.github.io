@@ -2,7 +2,7 @@
 permalink: /about/
 title: "About"
 layout: splash
-author_profile: ture
+author_profile: true
 toc: false
 ---
 
@@ -20,7 +20,7 @@ GrassRoots Crypto aims to explain what you need to know using common relatable e
 
 I have over 19 years of experience in the IT industry, with over 5 years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
 
-I have an excellent understanding of Bitcoin, have participated in the Ethereum Defi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
+I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
 In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn had have some fun.
 
  My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.

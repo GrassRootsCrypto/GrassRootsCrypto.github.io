@@ -1,7 +1,7 @@
 ---
 title: "THORChain - A Liquidity Pooling Example "
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

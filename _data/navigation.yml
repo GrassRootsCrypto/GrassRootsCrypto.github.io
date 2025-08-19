@@ -13,7 +13,7 @@ main:
     url: /search/
   - title: Disclaimer
     url: /disclaimer/
-    description: "Disclaimer, Disclosre and Copyright!"
+    description: "Disclaimer, Disclosure and Copyright!"
   - title: "Sitemap"
     url: /sitemap/
   - title: "Diagrams"

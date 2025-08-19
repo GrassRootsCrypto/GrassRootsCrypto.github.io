@@ -1,10 +1,12 @@
 source "https://rubygems.org"
+ruby "3.2.3"
 #gemspec
 
 gem "jekyll"
 gem "minimal-mistakes-jekyll"
 gem "github-pages"
 gem 'tzinfo-data'
+gem "faraday-retry"
 
 
 # The following plugins are automatically loaded by the theme-gem:

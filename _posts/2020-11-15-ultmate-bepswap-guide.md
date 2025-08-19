@@ -1,7 +1,7 @@
 ---
 title: "THE ULTIMATE GUIDE TO BEPSWAP"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - "Liquidity Provider"

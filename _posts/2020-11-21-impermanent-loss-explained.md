@@ -1,7 +1,7 @@
 ---
 title: "Impermanent Loss Explained"
 categories:
-  - Defi
+  - DeFi
 tags:
   - "Impermanent Loss"
   - "Liquidity Provider"
@@ -15,7 +15,7 @@ This video helps people understand what Impermanent Loss is and asks key questio
 
 NOTE: ILP has been sunset in THORChain.
 
-Impermanent Loss (IL), or in simple speak, not yet a permanent loss, is one of the hardest concepts in Defi for most people to understand.  See the video below.
+Impermanent Loss (IL), or in simple speak, not yet a permanent loss, is one of the hardest concepts in DeFi for most people to understand.  See the video below.
 
 {% include video id="OfnXC4N5OUw" provider="youtube" %}
 

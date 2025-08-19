@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Risks and Concerns Explained"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

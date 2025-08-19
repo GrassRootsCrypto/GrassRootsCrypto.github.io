@@ -1,5 +1,5 @@
 ---
-title: "Crypto Begninner Guide"
+title: "Crypto Beginner Guide"
 categories:
   - Beginner
 tags:

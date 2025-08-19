@@ -1,7 +1,7 @@
 ---
 title: "THORChain Lending"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:
