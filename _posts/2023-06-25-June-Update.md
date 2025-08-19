@@ -1,7 +1,7 @@
 ---
 title: "THORChain Monthly Update"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

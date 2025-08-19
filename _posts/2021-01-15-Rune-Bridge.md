@@ -1,7 +1,7 @@
 ---
 title: "Rune Ethereum Bridge"
 categories:
-  - Defi
+  - DeFi
 tags:
   - "Guides"
   - BepSwap

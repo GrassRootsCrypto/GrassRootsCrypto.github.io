@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Design - A Complete Guide"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

@@ -1,7 +1,7 @@
 ---
 title: "THORChain Streaming Swaps"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

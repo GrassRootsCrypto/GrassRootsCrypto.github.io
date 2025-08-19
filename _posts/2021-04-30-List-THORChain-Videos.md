@@ -1,7 +1,7 @@
 ---
 title: "THORChain Videos"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - Vidoes

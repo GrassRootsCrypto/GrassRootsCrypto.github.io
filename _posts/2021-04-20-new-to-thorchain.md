@@ -1,7 +1,7 @@
 ---
 title: "Beginner's Guide to THORChain"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - MCCN
@@ -14,7 +14,7 @@ tags:
 classes: wide
 toc: true
 ---
-If you are new to THORChain, welcome. If you are new to Defi, [See this page first]({% post_url 2021-04-19-new-to-defi %}).
+If you are new to THORChain, welcome. If you are new to DeFi, [See this page first]({% post_url 2021-04-19-new-to-defi %}).
 These videos give you a good overview of THORChain, all the links used are in the description of the videos.
 
 ### Overview of THORChain
@@ -32,9 +32,9 @@ These videos give you a good overview of THORChain, all the links used are in th
 ### Quick Guide to MCCN
 
 {% include video id="w6ePf1fEPWA" provider="youtube" %}
-[See here for more informataion on MCCN]({% post_url 2021-04-12-MCCN-Launch %})
+[See here for more information on MCCN]({% post_url 2021-04-12-MCCN-Launch %})
 
 ### Ultimate Guide to BEPSWAP
 
 {% include video id="pcwx27k1u4c" provider="youtube" %}
-[See here for more informataion on MCCN]({% post_url 2020-11-15-ultmate-bepswap-guide %})
+[See here for more information on MCCN]({% post_url 2020-11-15-ultmate-bepswap-guide %})

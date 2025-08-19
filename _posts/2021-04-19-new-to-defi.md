@@ -1,7 +1,7 @@
 ---
-title: "New to Defi"
+title: "New to DeFi"
 categories:
-  - Defi  
+  - DeFi  
   - Beginner
 Tags:
   - Blockchain

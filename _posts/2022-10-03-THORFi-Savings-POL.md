@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Savings - Yield Bearning Synths"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

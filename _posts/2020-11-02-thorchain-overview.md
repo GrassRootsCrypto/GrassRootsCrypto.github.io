@@ -1,7 +1,7 @@
 ---
 title: "THORCHain and THORNode Overviews"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - "Liquidity Provider"

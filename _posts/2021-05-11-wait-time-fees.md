@@ -1,7 +1,7 @@
 ---
 title: "THORChain Wait Times and Fees Explained"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - MCCN  

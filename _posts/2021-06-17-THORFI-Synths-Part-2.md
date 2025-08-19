@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Synths Part 2 - A Deep Dive"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

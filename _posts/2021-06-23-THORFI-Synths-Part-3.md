@@ -1,7 +1,7 @@
 ---
 title: "THORChain - THORFI Synths Part 3 - A Conclusion"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI
 tags:

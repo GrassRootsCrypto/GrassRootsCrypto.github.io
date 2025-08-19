@@ -1,7 +1,7 @@
 ---
 title: "THORChain - Hacks - What you want to know!"
 categories:
-  - Defi
+  - DeFi
   - THORChain
   - THORFI  
 tags:

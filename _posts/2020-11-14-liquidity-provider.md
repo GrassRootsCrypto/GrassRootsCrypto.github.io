@@ -1,7 +1,7 @@
 ---
 title: "Understanding Liquidity Pools and Liquidity Providers"
 categories:
-  - Defi
+  - DeFi
   - THORChain
 tags:
   - "Liquidity Provider"
