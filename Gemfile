@@ -2,19 +2,17 @@ source "https://rubygems.org"
 
 #gemspec
 
-gem "jekyll"
-gem "minimal-mistakes-jekyll"
-gem "github-pages"
+gem "github-pages", group: :jekyll_plugins
+gem "jekyll-include-cache", group: :jekyll_plugins
 gem 'tzinfo-data'
 gem "faraday-retry"
 
 
-# The following plugins are automatically loaded by the theme-gem:
+# The following plugins are automatically loaded by the github-pages gem:
 #   gem "jekyll-paginate"
 #   gem "jekyll-sitemap"
 #   gem "jekyll-gist"
 #   gem "jekyll-feed"
-#   gem "jekyll-include-cache"
 #
 # If you have any other plugins, put them here!
 group :jekyll_plugins do
