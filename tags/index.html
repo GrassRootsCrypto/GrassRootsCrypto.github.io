@@ -13,7 +13,7 @@
 <meta name="description" content="Crypto Education">
 
 
-  <meta name="author" content="Chris">
+  <meta name="author" content="Chris GRC">
   
 
 
@@ -21,22 +21,26 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="GrassRoots Crypto">
 <meta property="og:title" content="Posts by Tag">
-<meta property="og:url" content="https://grassrootscrypto.io/tags/">
+<meta property="og:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/tags/">
 
 
   <meta property="og:description" content="Crypto Education">
 
 
 
+  <meta property="og:image" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png">
+
 
 
   <meta name="twitter:site" content="@GrassRootsio">
   <meta name="twitter:title" content="Posts by Tag">
   <meta name="twitter:description" content="Crypto Education">
-  <meta name="twitter:url" content="https://grassrootscrypto.io/tags/">
+  <meta name="twitter:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/tags/">
 
   
     <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png">
     
   
 
@@ -49,7 +53,7 @@
 
 
 
-<link rel="canonical" href="https://grassrootscrypto.io/tags/">
+<link rel="canonical" href="https://grassrootscrypto.io/pages/GrassRootsCrypto/tags/">
 
 
 
@@ -60,7 +64,7 @@
     
       "@type": "Person",
       "name": "GrassRoots Crypto",
-      "url": "https://grassrootscrypto.io/"
+      "url": "https://grassrootscrypto.io/pages/GrassRootsCrypto/"
     
   }
 </script>
@@ -73,7 +77,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
+<link href="/pages/GrassRootsCrypto/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/pages/GrassRootsCrypto/assets/css/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
@@ -106,6 +110,9 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- Dark mode script - load early to prevent flash -->
+<script src="/pages/GrassRootsCrypto/assets/js/dark-mode.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -132,28 +139,28 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
+          <a class="site-logo" href="/pages/GrassRootsCrypto/"><img src="/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
         
-        <a class="site-title" href="/">
+        <a class="site-title" href="/pages/GrassRootsCrypto/">
           GrassRoots Crypto
           <span class="site-subtitle">Teaching people about Crypto!</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/categories/">Posts</a>
+              <a href="/pages/GrassRootsCrypto/categories/">Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/services/" title="What GrassRoots Crypto can do for you?">Services</a>
+              <a href="/pages/GrassRootsCrypto/services/" title="What GrassRoots Crypto can do for you?">Services</a>
             </li><li class="masthead__menu-item">
-              <a href="/ReferralLinks/">Referral Links</a>
+              <a href="/pages/GrassRootsCrypto/ReferralLinks/">Referral Links</a>
             </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
+              <a href="/pages/GrassRootsCrypto/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/search/">Search</a>
+              <a href="/pages/GrassRootsCrypto/search/">Search</a>
             </li><li class="masthead__menu-item">
-              <a href="/disclaimer/" title="Disclaimer, Disclosure and Copyright!">Disclaimer</a>
+              <a href="/pages/GrassRootsCrypto/disclaimer/" title="Disclaimer, Disclosure and Copyright!">Disclaimer</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/">Sitemap</a>
+              <a href="/pages/GrassRootsCrypto/sitemap/">Sitemap</a>
             </li><li class="masthead__menu-item">
-              <a href="/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
+              <a href="/pages/GrassRootsCrypto/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -163,6 +170,10 @@
           </svg>
         </button>
         
+        <button class="dark-mode-toggle" type="button" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon" style="display: none;">🌙</span>
+        </button>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
@@ -178,6 +189,32 @@
       
 
 
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Posts by Tag</li>
+      
+    
+  </ol>
+</nav>
+
+  
+
 
 <div id="main" role="main">
   
@@ -191,8 +228,13 @@
 
   <div class="author__content">
     
-      <h3 class="author__name" itemprop="name">Chris</h3>
+      <h3 class="author__name" itemprop="name">Chris GRC</h3>
     
+    
+      <div class="author__bio" itemprop="description">
+        <p>Founder of GrassRoots Crypto. 21+ years IT, 5+ years crypto. Teaching people about crypto and DeFi.</p>
+
+      </div>
     
   </div>
 
@@ -2033,7 +2075,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Streaming-Swaps/" rel="permalink">THORChain Streaming Swaps
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/" rel="permalink">THORChain Streaming Swaps
 </a>
       
     </h2>
@@ -2041,8 +2083,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-07-27T00:00:00+09:30">July 27, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2074,7 +2122,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
 </a>
       
     </h2>
@@ -2082,8 +2130,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-06-09T00:00:00+09:30">June 9, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2115,7 +2169,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
 </a>
       
     </h2>
@@ -2123,8 +2177,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-21T00:00:00+10:30">February 21, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2154,7 +2214,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
 </a>
       
     </h2>
@@ -2162,8 +2222,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-01T00:00:00+10:30">February 1, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2195,7 +2261,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
 </a>
       
     </h2>
@@ -2203,8 +2269,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-12-01T00:00:00+10:30">December 1, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2236,7 +2308,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
 </a>
       
     </h2>
@@ -2244,8 +2316,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-10-03T00:00:00+10:30">October 3, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2275,7 +2353,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
 </a>
       
     </h2>
@@ -2283,8 +2361,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-04-07T00:00:00+09:30">April 7, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2314,7 +2398,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
 </a>
       
     </h2>
@@ -2322,8 +2406,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-28T00:00:00+09:30">July 28, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2361,7 +2451,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -2369,8 +2459,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2400,7 +2496,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
 </a>
       
     </h2>
@@ -2408,8 +2504,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-13T00:00:00+09:30">July 13, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2439,7 +2541,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
 </a>
       
     </h2>
@@ -2447,8 +2549,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-23T00:00:00+09:30">June 23, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2478,7 +2586,7 @@
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
 </a>
       
     </h2>
@@ -2486,8 +2594,14 @@
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:30">June 17, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2518,7 +2632,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
 </a>
       
     </h2>
@@ -2526,8 +2640,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-11T00:00:00+09:30">June 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2557,7 +2677,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
 </a>
       
     </h2>
@@ -2565,8 +2685,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-11T00:00:00+09:30">May 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2596,7 +2722,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
 </a>
       
     </h2>
@@ -2604,8 +2730,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-29T00:00:00+09:30">April 29, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2636,7 +2768,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -2644,8 +2776,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2676,7 +2814,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
 </a>
       
     </h2>
@@ -2684,8 +2822,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-12T00:00:00+09:30">April 12, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2953,7 +3097,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
 </a>
       
     </h2>
@@ -2961,8 +3105,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-04-07T00:00:00+09:30">April 7, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -2992,7 +3142,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
 </a>
       
     </h2>
@@ -3000,8 +3150,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-28T00:00:00+09:30">July 28, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3039,7 +3195,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -3047,8 +3203,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3078,7 +3240,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
 </a>
       
     </h2>
@@ -3086,8 +3248,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-13T00:00:00+09:30">July 13, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3117,7 +3285,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
 </a>
       
     </h2>
@@ -3125,8 +3293,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-23T00:00:00+09:30">June 23, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3156,7 +3330,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
 </a>
       
     </h2>
@@ -3164,8 +3338,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:30">June 17, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3196,7 +3376,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
 </a>
       
     </h2>
@@ -3204,8 +3384,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-11T00:00:00+09:30">June 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3235,7 +3421,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
 </a>
       
     </h2>
@@ -3243,8 +3429,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-11T00:00:00+09:30">May 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3274,7 +3466,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
 </a>
       
     </h2>
@@ -3282,8 +3474,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-29T00:00:00+09:30">April 29, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3314,7 +3512,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
+        <a href="/pages/GrassRootsCrypto/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
 </a>
       
     </h2>
@@ -3322,8 +3520,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-15T00:00:00+10:30">January 15, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3355,7 +3559,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
+        <a href="/pages/GrassRootsCrypto/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
 </a>
       
     </h2>
@@ -3363,8 +3567,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-21T00:00:00+10:30">November 21, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3394,7 +3604,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
 </a>
       
     </h2>
@@ -3402,8 +3612,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-15T00:00:00+10:30">November 15, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3435,7 +3651,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
 </a>
       
     </h2>
@@ -3443,8 +3659,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-14T00:00:00+10:30">November 14, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3474,7 +3696,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorchain-overview/" rel="permalink">THORCHain and THORNode Overviews
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorchain-overview/" rel="permalink">THORChain and THORNode Overviews
 </a>
       
     </h2>
@@ -3482,8 +3704,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-02T00:00:00+10:30">November 2, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3686,7 +3914,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
 </a>
       
     </h2>
@@ -3694,8 +3922,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-04-07T00:00:00+09:30">April 7, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3725,7 +3959,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -3733,8 +3967,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3764,7 +4004,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
 </a>
       
     </h2>
@@ -3772,8 +4012,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-13T00:00:00+09:30">July 13, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3803,7 +4049,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
 </a>
       
     </h2>
@@ -3811,8 +4057,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-23T00:00:00+09:30">June 23, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3842,7 +4094,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
 </a>
       
     </h2>
@@ -3850,8 +4102,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:30">June 17, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3882,7 +4140,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
 </a>
       
     </h2>
@@ -3890,8 +4148,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-11T00:00:00+09:30">June 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3921,7 +4185,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
 </a>
       
     </h2>
@@ -3929,8 +4193,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-11T00:00:00+09:30">May 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -3960,7 +4230,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
 </a>
       
     </h2>
@@ -3968,8 +4238,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-29T00:00:00+09:30">April 29, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4000,7 +4276,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
+        <a href="/pages/GrassRootsCrypto/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
 </a>
       
     </h2>
@@ -4008,8 +4284,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-21T00:00:00+10:30">November 21, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4039,7 +4321,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
 </a>
       
     </h2>
@@ -4047,8 +4329,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-15T00:00:00+10:30">November 15, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4080,7 +4368,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
 </a>
       
     </h2>
@@ -4088,8 +4376,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-14T00:00:00+10:30">November 14, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4119,7 +4413,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorchain-overview/" rel="permalink">THORCHain and THORNode Overviews
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorchain-overview/" rel="permalink">THORChain and THORNode Overviews
 </a>
       
     </h2>
@@ -4127,8 +4421,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-02T00:00:00+10:30">November 2, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4247,7 +4547,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/February-Update/" rel="permalink">THORChain February Update
+        <a href="/pages/GrassRootsCrypto/thorchain/February-Update/" rel="permalink">THORChain February Update
 </a>
       
     </h2>
@@ -4255,8 +4555,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2025-02-11T00:00:00+10:30">February 11, 2025</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4286,7 +4592,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
+        <a href="/pages/GrassRootsCrypto/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
 </a>
       
     </h2>
@@ -4294,8 +4600,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2025-01-29T00:00:00+10:30">January 29, 2025</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4327,7 +4639,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/thorchain-cosmos/" rel="permalink">THORChain + Cosmos Update
+        <a href="/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/" rel="permalink">THORChain + Cosmos Update
 </a>
       
     </h2>
@@ -4335,8 +4647,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-08-16T00:00:00+09:30">August 16, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4366,7 +4684,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
 </a>
       
     </h2>
@@ -4374,8 +4692,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-01-31T00:00:00+10:30">January 31, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4407,7 +4731,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/List-THORChain-Videos/" rel="permalink">THORChain Videos
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/List-THORChain-Videos/" rel="permalink">THORChain Videos
 </a>
       
     </h2>
@@ -4415,8 +4739,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-30T00:00:00+09:30">April 30, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4448,7 +4778,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -4456,8 +4786,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4488,7 +4824,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
 </a>
       
     </h2>
@@ -4496,8 +4832,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-12T00:00:00+09:30">April 12, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4527,7 +4869,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
 </a>
       
     </h2>
@@ -4535,8 +4877,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-15T00:00:00+10:30">November 15, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4568,7 +4916,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
+        <a href="/pages/GrassRootsCrypto/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
 </a>
       
     </h2>
@@ -4576,8 +4924,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-10T00:00:00+10:30">November 10, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4609,7 +4963,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorchain-overview/" rel="permalink">THORCHain and THORNode Overviews
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorchain-overview/" rel="permalink">THORChain and THORNode Overviews
 </a>
       
     </h2>
@@ -4617,8 +4971,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-02T00:00:00+10:30">November 2, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4649,7 +5009,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
 </a>
       
     </h2>
@@ -4657,8 +5017,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-28T00:00:00+10:30">October 28, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4808,7 +5174,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Complete-Guide/" rel="permalink">THORChain - THORFI Design - A Complete Guide
 </a>
       
     </h2>
@@ -4816,8 +5182,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-04-07T00:00:00+09:30">April 7, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4847,7 +5219,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -4855,8 +5227,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4886,7 +5264,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
 </a>
       
     </h2>
@@ -4894,8 +5272,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-13T00:00:00+09:30">July 13, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4925,7 +5309,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
 </a>
       
     </h2>
@@ -4933,8 +5317,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-23T00:00:00+09:30">June 23, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -4964,7 +5354,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
 </a>
       
     </h2>
@@ -4972,8 +5362,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:30">June 17, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5004,7 +5400,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
 </a>
       
     </h2>
@@ -5012,8 +5408,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-11T00:00:00+09:30">June 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5043,7 +5445,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
 </a>
       
     </h2>
@@ -5051,8 +5453,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-11T00:00:00+09:30">May 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5082,7 +5490,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
 </a>
       
     </h2>
@@ -5090,8 +5498,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-29T00:00:00+09:30">April 29, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5122,7 +5536,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -5130,8 +5544,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5162,7 +5582,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
 </a>
       
     </h2>
@@ -5170,8 +5590,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-12T00:00:00+09:30">April 12, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5525,7 +5951,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
+        <a href="/pages/GrassRootsCrypto/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
 </a>
       
     </h2>
@@ -5533,8 +5959,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-15T00:00:00+10:30">January 15, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5566,7 +5998,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
+        <a href="/pages/GrassRootsCrypto/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
 </a>
       
     </h2>
@@ -5574,8 +6006,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-21T00:00:00+10:30">November 21, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5605,7 +6043,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
 </a>
       
     </h2>
@@ -5613,8 +6051,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-15T00:00:00+10:30">November 15, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5646,7 +6090,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/liquidity-provider/" rel="permalink">Understanding Liquidity Pools and Liquidity Providers
 </a>
       
     </h2>
@@ -5654,8 +6098,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-14T00:00:00+10:30">November 14, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5685,7 +6135,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
+        <a href="/pages/GrassRootsCrypto/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
 </a>
       
     </h2>
@@ -5693,8 +6143,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-10T00:00:00+10:30">November 10, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5726,7 +6182,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorchain-overview/" rel="permalink">THORCHain and THORNode Overviews
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorchain-overview/" rel="permalink">THORChain and THORNode Overviews
 </a>
       
     </h2>
@@ -5734,8 +6190,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-02T00:00:00+10:30">November 2, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5934,7 +6396,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
 </a>
       
     </h2>
@@ -5942,8 +6404,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-01-31T00:00:00+10:30">January 31, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -5975,7 +6443,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
+        <a href="/pages/GrassRootsCrypto/thorchain/Road-to-Mulitchain/" rel="permalink">Road to THORChain Multichain
 </a>
       
     </h2>
@@ -5983,8 +6451,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-10T00:00:00+10:30">November 10, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6016,7 +6490,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorchain-overview/" rel="permalink">THORCHain and THORNode Overviews
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorchain-overview/" rel="permalink">THORChain and THORNode Overviews
 </a>
       
     </h2>
@@ -6024,8 +6498,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-02T00:00:00+10:30">November 2, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6056,7 +6536,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
 </a>
       
     </h2>
@@ -6064,8 +6544,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-28T00:00:00+10:30">October 28, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6109,7 +6595,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-operator-101/" rel="permalink">THORNode Operations 101
 </a>
       
     </h2>
@@ -6117,8 +6603,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-01-31T00:00:00+10:30">January 31, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6150,7 +6642,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
+        <a href="/pages/GrassRootsCrypto/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
 </a>
       
     </h2>
@@ -6158,8 +6650,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-15T00:00:00+10:30">January 15, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6191,7 +6689,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/ultmate-bepswap-guide/" rel="permalink">THE ULTIMATE GUIDE TO BEPSWAP
 </a>
       
     </h2>
@@ -6199,8 +6697,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-15T00:00:00+10:30">November 15, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6232,7 +6736,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
+        <a href="/pages/GrassRootsCrypto/thornode/thornode-series/" rel="permalink">THORNode Instructional Series
 </a>
       
     </h2>
@@ -6240,8 +6744,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-10-28T00:00:00+10:30">October 28, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6289,7 +6799,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -6297,8 +6807,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6328,7 +6844,7 @@ I have created a video that provides a general overview of THORChain, explaining
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/IL-Protection/" rel="permalink">THORChain Impermanent Loss Protection
 </a>
       
     </h2>
@@ -6336,8 +6852,14 @@ I have created a video that provides a general overview of THORChain, explaining
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-29T00:00:00+09:30">April 29, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6368,7 +6890,7 @@ Once you have seen the video, you c...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -6376,8 +6898,14 @@ Once you have seen the video, you c...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6408,7 +6936,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
+        <a href="/pages/GrassRootsCrypto/defi/impermanent-loss-explained/" rel="permalink">Impermanent Loss Explained
 </a>
       
     </h2>
@@ -6416,8 +6944,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2020-11-21T00:00:00+10:30">November 21, 2020</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6485,7 +7019,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-4-iRune/" rel="permalink">THORChain - THORFI Synths Part 4 - iRune
 </a>
       
     </h2>
@@ -6493,8 +7027,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-13T00:00:00+09:30">July 13, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6524,7 +7064,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-3/" rel="permalink">THORChain - THORFI Synths Part 3 - A Conclusion
 </a>
       
     </h2>
@@ -6532,8 +7072,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-23T00:00:00+09:30">June 23, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6563,7 +7109,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-2/" rel="permalink">THORChain - THORFI Synths Part 2 - A Deep Dive
 </a>
       
     </h2>
@@ -6571,8 +7117,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-17T00:00:00+09:30">June 17, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6603,7 +7155,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFI-Synths-Part-1/" rel="permalink">THORChain - THORFI Synths Part 1 - An Introduction
 </a>
       
     </h2>
@@ -6611,8 +7163,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-06-11T00:00:00+09:30">June 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6662,7 +7220,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
 </a>
       
     </h2>
@@ -6670,8 +7228,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-21T00:00:00+10:30">February 21, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6701,7 +7265,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
 </a>
       
     </h2>
@@ -6709,8 +7273,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-01T00:00:00+10:30">February 1, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6742,7 +7312,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
 </a>
       
     </h2>
@@ -6750,8 +7320,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-12-01T00:00:00+10:30">December 1, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6783,7 +7359,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
 </a>
       
     </h2>
@@ -6791,8 +7367,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-10-03T00:00:00+10:30">October 3, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6832,7 +7414,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
 </a>
       
     </h2>
@@ -6840,8 +7422,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-06-09T00:00:00+09:30">June 9, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6873,7 +7461,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/" rel="permalink">THORChain Lending Code Walkthrough notes
 </a>
       
     </h2>
@@ -6881,8 +7469,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-21T00:00:00+10:30">February 21, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6912,7 +7506,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
 </a>
       
     </h2>
@@ -6920,8 +7514,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-01T00:00:00+10:30">February 1, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -6953,7 +7553,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Lending/" rel="permalink">THORChain - THORFI Lending
 </a>
       
     </h2>
@@ -6961,8 +7561,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-12-01T00:00:00+10:30">December 1, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7144,7 +7750,7 @@ This vide...</p>
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -7152,8 +7758,14 @@ This vide...</p>
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7184,7 +7796,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/MCCN-Launch/" rel="permalink">THORChain MCCN Launch
 </a>
       
     </h2>
@@ -7192,8 +7804,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-12T00:00:00+09:30">April 12, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7235,7 +7853,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -7243,8 +7861,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7274,7 +7898,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -7282,8 +7906,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7324,7 +7954,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -7332,8 +7962,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7363,7 +7999,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/new-to-thorchain/" rel="permalink">Beginner’s Guide to THORChain
 </a>
       
     </h2>
@@ -7371,8 +8007,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-20T00:00:00+09:30">April 20, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7427,7 +8069,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="permalink">THORChain - THORFI Risks and Concerns Explained
 </a>
       
     </h2>
@@ -7435,8 +8077,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-02-01T00:00:00+10:30">February 1, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7468,7 +8116,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Savings-POL/" rel="permalink">THORChain - THORFI Savings - Yield Bearning Synths
 </a>
       
     </h2>
@@ -7476,8 +8124,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2022-10-03T00:00:00+10:30">October 3, 2022</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7523,7 +8177,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Streaming-Swaps/" rel="permalink">THORChain Streaming Swaps
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/" rel="permalink">THORChain Streaming Swaps
 </a>
       
     </h2>
@@ -7531,8 +8185,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-07-27T00:00:00+09:30">July 27, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7564,7 +8224,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/June-Update/" rel="permalink">THORChain Monthly Update
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="permalink">THORChain Monthly Update
 </a>
       
     </h2>
@@ -7572,8 +8232,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-06-25T00:00:00+09:30">June 25, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7615,7 +8281,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+        <a href="/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
 </a>
       
     </h2>
@@ -7623,8 +8289,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-04-02T00:00:00+10:30">April 2, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7656,7 +8328,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
+        <a href="/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
 </a>
       
     </h2>
@@ -7664,8 +8336,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-12-12T00:00:00+10:30">December 12, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7707,7 +8385,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+        <a href="/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
 </a>
       
     </h2>
@@ -7715,8 +8393,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-04-02T00:00:00+10:30">April 2, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7748,7 +8432,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
+        <a href="/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
 </a>
       
     </h2>
@@ -7756,8 +8440,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-12-12T00:00:00+10:30">December 12, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7803,7 +8493,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+        <a href="/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
 </a>
       
     </h2>
@@ -7811,8 +8501,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-04-02T00:00:00+10:30">April 2, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7844,7 +8540,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
+        <a href="/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
 </a>
       
     </h2>
@@ -7852,8 +8548,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-12-12T00:00:00+10:30">December 12, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7919,7 +8621,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
+        <a href="/pages/GrassRootsCrypto/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
 </a>
       
     </h2>
@@ -7927,8 +8629,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-08T00:00:00+10:30">January 8, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -7968,7 +8676,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
+        <a href="/pages/GrassRootsCrypto/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
 </a>
       
     </h2>
@@ -7976,8 +8684,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-08T00:00:00+10:30">January 8, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8017,7 +8731,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
+        <a href="/pages/GrassRootsCrypto/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
 </a>
       
     </h2>
@@ -8025,8 +8739,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-08T00:00:00+10:30">January 8, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8066,7 +8786,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
+        <a href="/pages/GrassRootsCrypto/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
 </a>
       
     </h2>
@@ -8074,8 +8794,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-08T00:00:00+10:30">January 8, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8115,7 +8841,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
+        <a href="/pages/GrassRootsCrypto/beginner/chains-tokens/" rel="permalink">Blockchains and Tokens Explained
 </a>
       
     </h2>
@@ -8123,8 +8849,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-08T00:00:00+10:30">January 8, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8164,7 +8896,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
+        <a href="/pages/GrassRootsCrypto/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
 </a>
       
     </h2>
@@ -8172,8 +8904,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-15T00:00:00+10:30">January 15, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8215,7 +8953,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
+        <a href="/pages/GrassRootsCrypto/defi/Rune-Bridge/" rel="permalink">Rune Ethereum Bridge
 </a>
       
     </h2>
@@ -8223,8 +8961,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-01-15T00:00:00+10:30">January 15, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8276,7 +9020,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/List-THORChain-Videos/" rel="permalink">THORChain Videos
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/List-THORChain-Videos/" rel="permalink">THORChain Videos
 </a>
       
     </h2>
@@ -8284,8 +9028,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-04-30T00:00:00+09:30">April 30, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8327,7 +9077,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/wait-time-fees/" rel="permalink">THORChain Wait Times and Fees Explained
 </a>
       
     </h2>
@@ -8335,8 +9085,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-05-11T00:00:00+09:30">May 11, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8378,7 +9134,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-liquidity-example/" rel="permalink">THORChain - A Liquidity Pooling Example
 </a>
       
     </h2>
@@ -8386,8 +9142,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-19T00:00:00+09:30">July 19, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8427,7 +9189,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
 </a>
       
     </h2>
@@ -8435,8 +9197,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-28T00:00:00+09:30">July 28, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8484,7 +9252,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
 </a>
       
     </h2>
@@ -8492,8 +9260,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-28T00:00:00+09:30">July 28, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8541,7 +9315,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/thorchain-hack-overview/" rel="permalink">THORChain - Hacks - What you want to know!
 </a>
       
     </h2>
@@ -8549,8 +9323,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2021-07-28T00:00:00+09:30">July 28, 2021</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8604,7 +9384,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="permalink">THORChain Lending
 </a>
       
     </h2>
@@ -8612,8 +9392,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-06-09T00:00:00+09:30">June 9, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8657,7 +9443,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/defi/thorchain/thorfi/June-Update/" rel="permalink">THORChain Monthly Update
+        <a href="/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="permalink">THORChain Monthly Update
 </a>
       
     </h2>
@@ -8665,8 +9451,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-06-25T00:00:00+09:30">June 25, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8710,7 +9502,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
+        <a href="/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
 </a>
       
     </h2>
@@ -8718,8 +9510,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-12-12T00:00:00+10:30">December 12, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8761,7 +9559,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
+        <a href="/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="permalink">Crypto Beginner Guide
 </a>
       
     </h2>
@@ -8769,8 +9567,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2023-12-12T00:00:00+10:30">December 12, 2023</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8814,7 +9618,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
+        <a href="/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="permalink">Bitcoin in SMSF
 </a>
       
     </h2>
@@ -8822,8 +9626,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-04-02T00:00:00+10:30">April 2, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8865,7 +9675,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/thorchain-cosmos/" rel="permalink">THORChain + Cosmos Update
+        <a href="/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/" rel="permalink">THORChain + Cosmos Update
 </a>
       
     </h2>
@@ -8873,8 +9683,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2024-08-16T00:00:00+09:30">August 16, 2024</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8914,7 +9730,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
+        <a href="/pages/GrassRootsCrypto/thorchain/rujira/thorchain-rujitrade/" rel="permalink">THORChain + Ruji Trade
 </a>
       
     </h2>
@@ -8922,8 +9738,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2025-01-29T00:00:00+10:30">January 29, 2025</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -8965,7 +9787,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
     
     <h2 class="archive__item-title no_toc" itemprop="headline">
       
-        <a href="/thorchain/February-Update/" rel="permalink">THORChain February Update
+        <a href="/pages/GrassRootsCrypto/thorchain/February-Update/" rel="permalink">THORChain February Update
 </a>
       
     </h2>
@@ -8973,8 +9795,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
 
   <p class="page__meta">
     
-
+      
+      <span class="page__meta-date">
+        <i class="far fa-calendar-alt" aria-hidden="true"></i>
+        <time datetime="2025-02-11T00:00:00+10:30">February 11, 2025</time>
+      </span>
     
+
+    <span class="page__meta-sep"></span>
 
     
       
@@ -9050,7 +9878,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
       
     
 
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/pages/GrassRootsCrypto/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -9061,14 +9889,14 @@ These videos give you a good overview of THORChain, all the links used are...</p
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/pages/GrassRootsCrypto/assets/js/main.min.js"></script>
 
 
 
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr.min.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr-store.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr-en.js"></script>
 
 
 
@@ -9080,7 +9908,7 @@ These videos give you a good overview of THORChain, all the links used are...</p
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': false});
+  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': true});
 </script>
 
 

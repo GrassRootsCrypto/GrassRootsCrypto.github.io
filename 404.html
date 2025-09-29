@@ -13,7 +13,7 @@
 <meta name="description" content="Page not found. Your pixels are in another canvas.">
 
 
-  <meta name="author" content="Chris">
+  <meta name="author" content="Chris GRC">
   
 
 
@@ -21,22 +21,26 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="GrassRoots Crypto">
 <meta property="og:title" content="Page Not Found">
-<meta property="og:url" content="https://grassrootscrypto.io/404.html">
+<meta property="og:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/404.html">
 
 
   <meta property="og:description" content="Page not found. Your pixels are in another canvas.">
 
 
 
+  <meta property="og:image" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png">
+
 
 
   <meta name="twitter:site" content="@GrassRootsio">
   <meta name="twitter:title" content="Page Not Found">
   <meta name="twitter:description" content="Page not found. Your pixels are in another canvas.">
-  <meta name="twitter:url" content="https://grassrootscrypto.io/404.html">
+  <meta name="twitter:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/404.html">
 
   
     <meta name="twitter:card" content="summary">
+    
+      <meta name="twitter:image" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png">
     
   
 
@@ -49,7 +53,7 @@
 
 
 
-<link rel="canonical" href="https://grassrootscrypto.io/404.html">
+<link rel="canonical" href="https://grassrootscrypto.io/pages/GrassRootsCrypto/404.html">
 
 
 
@@ -60,7 +64,7 @@
     
       "@type": "Person",
       "name": "GrassRoots Crypto",
-      "url": "https://grassrootscrypto.io/"
+      "url": "https://grassrootscrypto.io/pages/GrassRootsCrypto/"
     
   }
 </script>
@@ -73,7 +77,7 @@
 <!-- end _includes/seo.html -->
 
 
-<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
+<link href="/pages/GrassRootsCrypto/feed.xml" type="application/atom+xml" rel="alternate" title="GrassRoots Crypto Feed">
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -83,7 +87,7 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/pages/GrassRootsCrypto/assets/css/main.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
 
 <!--[if IE]>
@@ -106,6 +110,9 @@
     <!-- start custom head snippets -->
 
 <!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- Dark mode script - load early to prevent flash -->
+<script src="/pages/GrassRootsCrypto/assets/js/dark-mode.js"></script>
 
 <!-- end custom head snippets -->
 
@@ -132,28 +139,28 @@
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
         
-          <a class="site-logo" href="/"><img src="/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
+          <a class="site-logo" href="/pages/GrassRootsCrypto/"><img src="/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png" alt=""></a>
         
-        <a class="site-title" href="/">
+        <a class="site-title" href="/pages/GrassRootsCrypto/">
           GrassRoots Crypto
           <span class="site-subtitle">Teaching people about Crypto!</span>
         </a>
         <ul class="visible-links"><li class="masthead__menu-item">
-              <a href="/categories/">Posts</a>
+              <a href="/pages/GrassRootsCrypto/categories/">Posts</a>
             </li><li class="masthead__menu-item">
-              <a href="/services/" title="What GrassRoots Crypto can do for you?">Services</a>
+              <a href="/pages/GrassRootsCrypto/services/" title="What GrassRoots Crypto can do for you?">Services</a>
             </li><li class="masthead__menu-item">
-              <a href="/ReferralLinks/">Referral Links</a>
+              <a href="/pages/GrassRootsCrypto/ReferralLinks/">Referral Links</a>
             </li><li class="masthead__menu-item">
-              <a href="/about/">About</a>
+              <a href="/pages/GrassRootsCrypto/about/">About</a>
             </li><li class="masthead__menu-item">
-              <a href="/search/">Search</a>
+              <a href="/pages/GrassRootsCrypto/search/">Search</a>
             </li><li class="masthead__menu-item">
-              <a href="/disclaimer/" title="Disclaimer, Disclosure and Copyright!">Disclaimer</a>
+              <a href="/pages/GrassRootsCrypto/disclaimer/" title="Disclaimer, Disclosure and Copyright!">Disclaimer</a>
             </li><li class="masthead__menu-item">
-              <a href="/sitemap/">Sitemap</a>
+              <a href="/pages/GrassRootsCrypto/sitemap/">Sitemap</a>
             </li><li class="masthead__menu-item">
-              <a href="/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
+              <a href="/pages/GrassRootsCrypto/THORChainDiagrams/" title="THORChain Diagrams">Diagrams</a>
             </li></ul>
         
         <button class="search__toggle" type="button">
@@ -163,6 +170,10 @@
           </svg>
         </button>
         
+        <button class="dark-mode-toggle" type="button" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon" style="display: none;">🌙</span>
+        </button>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">Toggle menu</span>
           <div class="navicon"></div>
@@ -177,6 +188,32 @@
     <div class="initial-content">
       
 
+
+  
+    
+
+
+
+<nav class="breadcrumbs">
+  <ol itemscope itemtype="https://schema.org/BreadcrumbList">
+    
+    
+    
+      
+        <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+          <a href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" itemprop="item"><span itemprop="name">Home</span></a>
+          <meta itemprop="position" content="1" />
+        </li>
+        <span class="sep">/</span>
+      
+      
+        <li class="current">Page Not Found</li>
+      
+    
+  </ol>
+</nav>
+
+  
 
 
 <div id="main" role="main">
@@ -248,7 +285,7 @@
       
     
 
-    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li><a href="/pages/GrassRootsCrypto/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
   </ul>
 </div>
 
@@ -259,14 +296,14 @@
     </div>
 
     
-  <script src="/assets/js/main.min.js"></script>
+  <script src="/pages/GrassRootsCrypto/assets/js/main.min.js"></script>
 
 
 
 
-<script src="/assets/js/lunr/lunr.min.js"></script>
-<script src="/assets/js/lunr/lunr-store.js"></script>
-<script src="/assets/js/lunr/lunr-en.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr.min.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr-store.js"></script>
+<script src="/pages/GrassRootsCrypto/assets/js/lunr/lunr-en.js"></script>
 
 
 
@@ -278,7 +315,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': false});
+  gtag('config', 'G-NH9NNXEF3M', { 'anonymize_ip': true});
 </script>
 
 
