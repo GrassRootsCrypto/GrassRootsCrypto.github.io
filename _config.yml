@@ -18,21 +18,23 @@ minimal_mistakes_skin    : "grc" # air #"default" "grc" "air", "aqua", "contrast
 # I like default, air, dark
 # Site Settings
 locale                   : "en-US"
-title                    : "GrassRoots Crypto"
+lang                     : en-US
+title                    : GrassRoots Crypto
 title_separator          : "-"
 subtitle                 : "Teaching people about Crypto!" # site tagline that appears below site title in masthead
-name                     : "GrassRoots Crypto"
-description              : "Crypto Education"
+name                     : GrassRoots Crypto
+description              : Crypto Education
 url                      : https://grassrootscrypto.io
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "GrassRootsCrypto/GrassRootsCrypto.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : GrassRootsCrypto/GrassRootsCrypto.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "./assets/images/Grassroots_Crypto_Logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+og_image                 : "./assets/images/Grassroots_Crypto_Logo.png" # Default social share image
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
+breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
 comments:
-  provider               : staticman # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
@@ -56,6 +58,7 @@ atom_feed:
 search                   : true
 search_full_content      : true
 search_provider          : # lunr (default), algolia, google
+enable_copy_code_button  : true
 algolia:
   application_id         : # YOUR_APPLICATION_ID
   index_name             : # YOUR_INDEX_NAME
@@ -73,6 +76,7 @@ naver_site_verification  :
 # Social Sharing
 twitter:
   username               : GrassRootsio
+  card                   : summary_large_image
 # facebook:
 #  username               :
 #  app_id                 :
@@ -90,50 +94,50 @@ twitter:
 
 # Analytics
 analytics:
-  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : "G-NH9NNXEF3M"
-    anonymize_ip         : # true, false (default)
+    tracking_id          : G-NH9NNXEF3M
+    anonymize_ip         : true # Better for privacy
 
 
 # Site Author
 author:
-  name             : "Chris"
+  name             : Chris GRC
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : # "I like to teach people about Crypto"
-  location         : "Australia"
-  email            : "info@grassrootscrypto.io"
+  bio              : 'Founder of GrassRoots Crypto. 21+ years IT, 5+ years crypto. Teaching people about crypto and DeFi.'
+  location         : Australia
+  email            : info@grassrootscrypto.io
   links:
-    - label: "YouTube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/c/grassrootscrypto"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/GrassRootsio"
-    - label: "Telegram"
-      icon: "fab fa-telegram-plane"
-      url: "https://t.me/GrassRootsCrypto"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    - label: YouTube
+      icon: fab fa-fw fa-youtube
+      url: https://www.youtube.com/c/grassrootscrypto
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/GrassRootsio
+    - label: Telegram
+      icon: fab fa-telegram-plane
+      url: https://t.me/GrassRootsCrypto
+    - label: GitHub
+      icon: fab fa-fw fa-github
 
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/GrassRootsio"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
+    - label: Twitter
+      icon: fab fa-fw fa-twitter-square
+      url: https://twitter.com/GrassRootsio
+    - label: GitHub
+      icon: fab fa-fw fa-github
       # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
+    - label: GitLab
+      icon: fab fa-fw fa-gitlab
       # url:
-    - label: "Telegram"
-      icon: "fab fa-telegram-plane"
-      url: "https://t.me/GrassRootsCrypto"
-    - label: "Youtube"
-      icon: "fab fa-fw fa-youtube"
-      url: "https://www.youtube.com/c/grassrootscrypto"
+    - label: Telegram
+      icon: fab fa-telegram-plane
+      url: https://t.me/GrassRootsCrypto
+    - label: Youtube
+      icon: fab fa-fw fa-youtube
+      url: https://www.youtube.com/c/grassrootscrypto
 
 
 # Reading Files
@@ -258,6 +262,8 @@ tag_archive:
 # - https://jch.penibelst.de/
 compress_html:
   clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: [html, head, body]
   ignore:
     envs: development
 
@@ -272,6 +278,10 @@ defaults:
       layout: single
       author_profile: false
       read_time: true
-      comments: true # true
+      comments: false # Disabled - discussions happen on YouTube
       share: false
       related: true
+      toc: true
+      toc_sticky: true
+      show_date: true
+      date_format: "%B %d, %Y"

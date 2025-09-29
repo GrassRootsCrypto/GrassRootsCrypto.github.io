@@ -44,6 +44,21 @@ jobs:
         env:
           JEKYLL_ENV: production
 
+      - name: Report Build Status
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const state = '${{ job.status }}' === 'success' ? 'success' : 'failure';
+            await github.rest.repos.createCommitStatus({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              sha: context.sha,
+              state: state,
+              context: 'report-build-status',
+              description: state === 'success' ? 'Build completed successfully' : 'Build failed'
+            });
+
       - name: Deploy to GitHub Pages (Main)
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v4

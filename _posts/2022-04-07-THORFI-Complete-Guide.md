@@ -21,7 +21,7 @@ You can leave questions in the comments section.
 
 {% include video id="qb7NxAbP97U" provider="youtube" %}
 
-### Grapics and Spreadsheet Used
+### Graphics and Spreadsheet Used
 
 You can download the grapics used [here ]({{ site.baseurl }}/assets/documents/THORChain-THORFi.pdf)
 

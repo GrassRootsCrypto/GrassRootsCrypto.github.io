@@ -23,6 +23,6 @@ So, it is now a three-part series on Synthetics, with this one being an introduc
 {% include video id="-ZfIRkKYhO8" provider="youtube" %}
 
 
-### Grapics Used
+### Graphics Used
 
 These are the grapics used in part 1. [I have saved it to PDF here.]({{ site.baseurl }}/assets/documents/THORFI-Synths-Part-1.pdf)

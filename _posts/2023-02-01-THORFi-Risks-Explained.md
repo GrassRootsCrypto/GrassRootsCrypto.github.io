@@ -24,6 +24,6 @@ Update, this vote was passed.
 
 {% include video id="glY_RVYdsfM" provider="youtube" %}
 
-### Grapics Used
+### Graphics Used
 
 You can download the graphics used [here ]({{ site.baseurl }}/assets/documents/THORFi-Risks-Concerns.pdf)

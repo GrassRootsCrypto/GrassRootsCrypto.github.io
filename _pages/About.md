@@ -16,9 +16,9 @@ GrassRoots Crypto aims to explain what you need to know using common relatable e
 
 ---
 
-## About Me
+## About Chris
 
-I have over 19 years of experience in the IT industry, with over 5 years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
+I have over 21 years of experience in the IT industry, with 5+ years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read many books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
 
 I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
 In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn had have some fun.
@@ -43,9 +43,8 @@ Over the years, I have had the privilege of guiding numerous individuals on thei
 
 If you like my videos and want to go beyond a like and a subscription, you can tip me using the below;
 
-1. Binance Address (BEP-2) -     bnb14fl4tudhfjxrhtvwx3mspsjrq2ncn3rwunnekr
-1. Ethereum Address (ERC-20) -   0x9647b2c35df9394172c30478be6b3c373d92fd84
-1. Native RUNE - THOR Address -  thor1mjyg60v0jw04jka8vzzlvh5nknhrepl8lwaf7z
 1. Bitcoin Address -             bc1qdh8n9h0xu4cxwkkc0pem73j66ckqsyy8sva24r
+1. Ethereum Address (ERC-20) -   0x9647b2c35df9394172c30478be6b3c373d92fd84
+1. THORChain Address -           thor1mjyg60v0jw04jka8vzzlvh5nknhrepl8lwaf7z
 1. Litecoin Address -            ltc1qtwusm7pk5l0d72wm8uc32h9ateh2ryufdz282j
 1. Bitcoin Cash Address  -       qpqgqr73y9w997fdk4d467k7ugrk3xzp35lsa9gt4f

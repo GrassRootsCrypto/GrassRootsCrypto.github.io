@@ -1,5 +1,5 @@
 ---
-title: "THORCHain and THORNode Overviews"
+title: "THORChain and THORNode Overviews"
 categories:
   - DeFi
   - THORChain
