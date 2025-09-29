@@ -26,6 +26,10 @@
           </svg>
         </button>
         {% endif %}
+        <button class="dark-mode-toggle" type="button" id="dark-mode-toggle" aria-label="Toggle dark mode">
+          <span class="icon sun-icon">☀️</span>
+          <span class="icon moon-icon" style="display: none;">🌙</span>
+        </button>
         <button class="greedy-nav__toggle hidden" type="button">
           <span class="visually-hidden">{{ site.data.ui-text[site.locale].menu_label | default: "Toggle menu" }}</span>
           <div class="navicon"></div>

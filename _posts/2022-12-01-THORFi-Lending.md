@@ -20,6 +20,6 @@ Now, let's discuss lending. What are your thoughts on this topic? Let me know in
 
 {% include video id="2jA4DDWxAbk" provider="youtube" %} 
 
-### Grapics Used
+### Graphics Used
 
 You can download the graphics used [here ]({{ site.baseurl }}/assets/documents/THORFi-Lending.pdf)

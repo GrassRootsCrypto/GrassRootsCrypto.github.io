@@ -22,5 +22,5 @@ I feel and believe that if you truly understand Synths, you will understand that
 {% include video id="dR8s0YeAQ8M" provider="youtube" %}
 
 
-### Grapics Used
+### Graphics Used
 These are the grapics used in part 3. [I have saved it to PDF here.]({{ site.baseurl }}/assets/documents/THORFI-Synths-Part-3.pdf)

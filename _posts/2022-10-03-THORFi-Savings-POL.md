@@ -22,6 +22,6 @@ In this video, I cover THORFi Savings with Yield Bearing Synths. To address the 
 
 Leave questions or comments the comments section. Also see the <a href="https://docs.thorchain.org/thorchain-finance/lending-savings">THORChain Docs site</a> for more detailed information.
 
-### Grapics Used
+### Graphics Used
 
 You can download the graphics used [here ]({{ site.baseurl }}/assets/documents/THORFi-Savings.pdf)
