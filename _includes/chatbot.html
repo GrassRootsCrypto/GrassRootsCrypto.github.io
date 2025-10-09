@@ -1,0 +1,24 @@
+<!-- Tawk.to Live Chat Widget -->
+<!--
+  To activate the chatbot:
+  1. Sign up for free at https://www.tawk.to/
+  2. Create a property for your website
+  3. Get your Property ID and Widget ID from the admin panel
+  4. Add them to _config.yml under the tawk section
+-->
+
+{% if site.tawk.property_id and site.tawk.property_id != '' %}
+<script type="text/javascript">
+if (!window.Tawk_API) {
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/{{ site.tawk.property_id }}/{{ site.tawk.widget_id }}';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+}
+</script>
+{% endif %}

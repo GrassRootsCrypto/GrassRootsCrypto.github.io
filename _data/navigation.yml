@@ -5,6 +5,9 @@ main:
   - title: "Services"
     url: /services/
     description: "What GrassRoots Crypto can do for you?"
+  - title: "Contact"
+    url: /contact/
+    description: "Get in touch or book a session"
   - title:  "Referral Links"
     url: /ReferralLinks/
   - title: "About"
