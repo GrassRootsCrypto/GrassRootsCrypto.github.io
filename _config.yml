@@ -50,6 +50,15 @@ comments:
   staticman:
     branch               : # "master"
     endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+
+# Contact Form Settings
+web3forms:
+  access_key: e5d47dd8-ff45-43c3-92f9-610d4b8cd256
+
+# Live Chat Settings
+tawk:
+  property_id: 68e76900366f2e1951fd5dfd
+  widget_id: 1j73v4ako
 reCaptcha:
   siteKey                :
   secret                 :

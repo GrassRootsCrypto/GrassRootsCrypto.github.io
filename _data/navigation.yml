@@ -1,19 +1,22 @@
 # main links
 main:
-  - title: Posts
-    url: /categories/
   - title: "Services"
     url: /services/
     description: "What GrassRoots Crypto can do for you?"
-  - title:  "Referral Links"
-    url: /ReferralLinks/
+  - title: Posts
+    url: /categories/
   - title: "About"
     url: /about/
+  - title: "Contact"
+    url: /contact/
+    description: "Get in touch or book a session"
   - title: "Search"
     url: /search/
   - title: Disclaimer
     url: /disclaimer/
     description: "Disclaimer, Disclosure and Copyright!"
+  - title:  "Referral Links"
+    url: /ReferralLinks/
   - title: "Sitemap"
     url: /sitemap/
   - title: "Diagrams"
