@@ -1,33 +1,14 @@
 ---
 permalink: /contact/
-title: "Contact Us"
 layout: single
 toc: true
 toc_label: "On This Page"
 toc_icon: "envelope"
 ---
 
-## Get In Touch
+## Send Chris GRC a Message
 
-We'd love to hear from you! Whether you have questions about cryptocurrency, DeFi, or want to learn more about our services, feel free to reach out.
-
----
-
-## Book a Session
-
-Ready to start your crypto learning journey? Book a 30-minute consultation session with us.
-
-<!-- Calendly inline widget begin -->
-<div class="calendly-inline-widget" data-url="https://calendly.com/chris-grc/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-<!-- Calendly inline widget end -->
-
-
----
-
-## Send Us a Message
-
-Have a quick question or inquiry? Fill out the form below and we'll get back to you as soon as possible.
+Have a quick question or inquiry? Fill out the form below and I'll get back to you as soon as possible.
 
 <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" class="contact-form">
 
@@ -63,7 +44,7 @@ Have a quick question or inquiry? Fill out the form below and we'll get back to 
 
   <div class="form-group">
     <label for="message">Message *</label>
-    <textarea name="message" id="message" rows="6" placeholder="Tell us how we can help you..." aria-required="true" aria-describedby="message-error" required></textarea>
+    <textarea name="message" id="message" rows="6" placeholder="How can I help you..." aria-required="true" aria-describedby="message-error" required></textarea>
     <span id="message-error" role="alert" class="error-message"></span>
   </div>
 
@@ -97,12 +78,22 @@ document.getElementById('contact-form').addEventListener('submit', async functio
       throw new Error('Form submission failed');
     }
   } catch (error) {
-    alert('Error submitting form. Please try again or contact us directly via email.');
+    alert('Error submitting form. Please try again or contact me directly via email.');
     btn.disabled = false;
     btn.innerHTML = originalText;
   }
 });
 </script>
+
+
+## Book a Session
+
+Ready to start your crypto learning journey? Book a 30-minute consultation session with me.
+
+<!-- Calendly inline widget begin -->
+<div class="calendly-inline-widget" data-url="https://calendly.com/chris-grc/30min" style="min-width:320px;height:700px;"></div>
+<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<!-- Calendly inline widget end -->
 
 
 ---
@@ -115,7 +106,7 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 }
 
 .form-group {
-  margin-bottom: 1.5em;
+  margin-bottom: 1.2em;
 }
 
 .form-group label {
