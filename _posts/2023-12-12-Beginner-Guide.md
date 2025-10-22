@@ -1,5 +1,7 @@
 ---
 title: "Crypto Beginner Guide"
+description: "Start your crypto journey with beginner-friendly video guides. Learn what Bitcoin is, how crypto wallets work, and master self-custody fundamentals for Australians."
+excerpt: "Beginner-friendly video guides covering Bitcoin basics, crypto wallets, and self-custody. Perfect starting point for your crypto education journey."
 categories:
   - Beginner
 tags:

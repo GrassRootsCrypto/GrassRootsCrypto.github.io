@@ -1,0 +1,14 @@
+{% if include.id %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "{{ include.title | default: page.title }}",
+  "description": "{{ include.description | default: page.description | default: page.excerpt | strip_html | strip_newlines }}",
+  "thumbnailUrl": "https://img.youtube.com/vi/{{ include.id }}/maxresdefault.jpg",
+  "uploadDate": "{{ page.date | date_to_xmlschema }}",
+  "contentUrl": "https://www.youtube.com/watch?v={{ include.id }}",
+  "embedUrl": "https://www.youtube.com/embed/{{ include.id }}"
+}
+</script>
+{% endif %}

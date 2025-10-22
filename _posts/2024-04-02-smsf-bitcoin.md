@@ -1,5 +1,7 @@
 ---
 title: "Bitcoin in SMSF"
+description: "Complete guide to buying and holding Bitcoin in your Australian Self-Managed Super Fund (SMSF). Learn setup costs, tax benefits, storage, and SMSF providers like New Brighton Capital or eSuperFund."
+excerpt: "Learn how to include Bitcoin in your SMSF with this comprehensive Australian guide covering costs, tax benefits, cold storage, and provider comparisons."
 categories:
   - Beginner
 tags:

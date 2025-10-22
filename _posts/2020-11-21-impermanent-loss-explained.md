@@ -1,5 +1,7 @@
 ---
 title: "Impermanent Loss Explained"
+description: "Understand impermanent loss in DeFi liquidity pools. Learn the risks, rewards, and key questions before providing liquidity on THORChain or other AMM platforms."
+excerpt: "Complete guide to impermanent loss for liquidity providers. Understand the risks, calculate potential losses, and make informed DeFi decisions."
 categories:
   - DeFi
 tags:
