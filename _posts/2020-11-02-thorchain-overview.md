@@ -1,5 +1,7 @@
 ---
 title: "THORChain and THORNode Overviews"
+description: "Learn how THORChain enables cross-chain swaps without wrapped tokens. Understand the decentralized exchange protocol powering Bitcoin, Ethereum, and multi-chain DeFi."
+excerpt: "Comprehensive THORChain overview explaining cross-chain swaps, liquidity pools, RUNE tokenomics, and how the protocol enables trustless DeFi across blockchains."
 categories:
   - DeFi
   - THORChain

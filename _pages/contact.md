@@ -92,7 +92,29 @@ Ready to start your crypto learning journey? Book a 30-minute consultation sessi
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/chris-grc/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+<script>
+  // Lazy-load Calendly when user scrolls to booking section
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const script = document.createElement('script');
+          script.src = 'https://assets.calendly.com/assets/external/widget.js';
+          script.async = true;
+          document.head.appendChild(script);
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(document.querySelector('.calendly-inline-widget'));
+  } else {
+    // Fallback for older browsers
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
 <!-- Calendly inline widget end -->
 
 

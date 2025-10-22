@@ -28,6 +28,10 @@ codekit-config.json
 _asset_bundler_cache
 _site
 
+# Claude Code context files
+.claude/
+CLAUDE.md
+
 test/
 docs/
 readme.me

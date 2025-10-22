@@ -1,5 +1,7 @@
 ---
 title: "THORChain February Update"
+description: "THORChain paused THORFi lending and savings in February 2025. Understand the $200M liability unwind, Proposal 6 ($TCY token), and what it means for the future."
+excerpt: "Detailed analysis of THORChain's February 2025 THORFi pause, the $200M unwind process, and Proposal 6 implementation creating the $TCY revenue-sharing token."
 categories:
   - THORChain
 tags:
