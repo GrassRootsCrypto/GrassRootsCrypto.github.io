@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>Send Chris GRC a Message - GrassRoots Crypto</title>
-<meta name="description" content="Crypto Education">
+<meta name="description" content="Crypto Education and Consulting">
 
 
   <meta name="author" content="Chris GRC">
@@ -24,7 +24,7 @@
 <meta property="og:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/contact/">
 
 
-  <meta property="og:description" content="Crypto Education">
+  <meta property="og:description" content="Crypto Education and Consulting">
 
 
 
@@ -34,7 +34,7 @@
 
   <meta name="twitter:site" content="@GrassRootsio">
   <meta name="twitter:title" content="Send Chris GRC a Message">
-  <meta name="twitter:description" content="Crypto Education">
+  <meta name="twitter:description" content="Crypto Education and Consulting">
   <meta name="twitter:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/contact/">
 
   
@@ -73,6 +73,10 @@
 
 
 
+  <meta name="msvalidate.01" content="A767874A5E04B8E7D272281C63A7745E">
+
+
+
 
 <!-- end _includes/seo.html -->
 
@@ -81,6 +85,10 @@
 
 <!-- https://t.co/dKP3o1e -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Preconnect to external resources for performance -->
+<link rel="preconnect" href="https://assets.calendly.com">
+<link rel="dns-prefetch" href="https://www.google-analytics.com">
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
@@ -337,7 +345,29 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
 <!-- Calendly inline widget begin -->
 <div class="calendly-inline-widget" data-url="https://calendly.com/chris-grc/30min" style="min-width:320px;height:700px;"></div>
-<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async=""></script>
+<script>
+  // Lazy-load Calendly when user scrolls to booking section
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const script = document.createElement('script');
+          script.src = 'https://assets.calendly.com/assets/external/widget.js';
+          script.async = true;
+          document.head.appendChild(script);
+          observer.disconnect();
+        }
+      });
+    });
+    observer.observe(document.querySelector('.calendly-inline-widget'));
+  } else {
+    // Fallback for older browsers
+    const script = document.createElement('script');
+    script.src = 'https://assets.calendly.com/assets/external/widget.js';
+    script.async = true;
+    document.head.appendChild(script);
+  }
+</script>
 
 <!-- Calendly inline widget end -->
 
@@ -504,22 +534,6 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 
 
 
-
-
-
-<script type="text/javascript">
-if (!window.Tawk_API) {
-  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-  (function(){
-  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-  s1.async=true;
-  s1.src='https://embed.tawk.to/68e76900366f2e1951fd5dfd/1j73v4ako';
-  s1.charset='UTF-8';
-  s1.setAttribute('crossorigin','*');
-  s0.parentNode.insertBefore(s1,s0);
-  })();
-}
-</script>
 
 
 
