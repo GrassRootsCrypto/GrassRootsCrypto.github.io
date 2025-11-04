@@ -1,5 +1,7 @@
 ---
 title: "Beginner's Guide to THORChain"
+description: "New to THORChain? Learn the fundamentals: cross-chain swaps, liquidity pools, THORNodes, and MCCN. Complete video guide series for DeFi beginners."
+excerpt: "Complete beginner's guide to THORChain covering cross-chain swaps, liquidity pools, node operations, and getting started with DeFi."
 categories:
   - DeFi
   - THORChain

@@ -1,5 +1,7 @@
 ---
 title: "THORNode Operations 101"
+description: "Learn THORNode operator essentials: requirements, components, economics, and setup. Complete guide with slideshow covering node operations, security, and profitability for aspiring operators."
+excerpt: "Complete guide for aspiring THORNode operators covering requirements, components, economics, security, and setup essentials."
 categories:
   - THORNode
 tags:

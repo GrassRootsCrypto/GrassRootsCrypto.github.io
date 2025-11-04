@@ -1,5 +1,7 @@
 ---
 title: "THORChain + Cosmos Update"
+description: "THORChain x Kujira integration explained: COSMWASM smart contracts, IBC, L2 DeFi apps, and how Kujira's FIN, Orca, Ghost bring new features to THORChain."
+excerpt: "Deep dive into THORChain's Cosmos integration: COSMWASM L2, Kujira partnership, FIN order book, Ghost lending, and native asset DeFi on THORChain."
 categories:
   - THORChain
 tags:

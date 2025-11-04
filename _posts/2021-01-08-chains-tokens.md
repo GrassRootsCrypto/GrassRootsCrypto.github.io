@@ -1,5 +1,7 @@
 ---
 title: "Blockchains and Tokens Explained"
+description: "Beginner's guide to blockchains and token standards: ERC-20, BEP-2, Bitcoin, Ethereum explained. Learn the critical differences to avoid losing funds in crypto."
+excerpt: "Essential guide for crypto beginners explaining blockchains, token standards (ERC-20, BEP-2), and the critical differences to prevent fund loss."
 categories:
   - Beginner
 tags:

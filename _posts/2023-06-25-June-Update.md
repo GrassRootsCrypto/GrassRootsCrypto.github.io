@@ -1,11 +1,13 @@
 ---
 title: "THORChain Monthly Update"
+description: "THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap."
+excerpt: "Catch up on THORChain's May-June 2023 milestones: lending updates, BSC chain integration, streaming swaps launch, and what's next for the protocol."
 categories:
   - DeFi
   - THORChain
   - THORFI
 tags:
-  - "THORFI"  
+  - "THORFI"
   - "Cross Chain"
 author_profile: false
 classes: wide

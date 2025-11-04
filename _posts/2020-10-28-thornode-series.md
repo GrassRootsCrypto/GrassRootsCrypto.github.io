@@ -1,5 +1,7 @@
 ---
 title: "THORNode Instructional Series"
+description: "Complete THORNode operator series: setup from scratch, bonding, management, updates, monitoring, security, backup, and unbonding. Technical guide for node operators."
+excerpt: "Comprehensive THORNode operator series covering setup, bonding, management, monitoring with Slack, security best practices, and unbonding procedures."
 categories:
   - THORNode
 tags:
