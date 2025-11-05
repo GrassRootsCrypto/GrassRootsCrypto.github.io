@@ -1,5 +1,7 @@
 ---
 title: "THORChain - THORFI Design - A Complete Guide"
+description: "Complete guide to THORFi: understand lending, savings, and synth mechanisms on THORChain. Detailed video walkthrough with graphics and spreadsheet examples."
+excerpt: "Deep dive into THORFi design covering lending, savings, synths, and protocol mechanics with downloadable resources and detailed explanations."
 categories:
   - DeFi
   - THORChain
@@ -20,6 +22,7 @@ You can leave questions in the comments section.
 ### THORFI Guide Video
 
 {% include video id="qb7NxAbP97U" provider="youtube" %}
+{% include video-schema.html id="qb7NxAbP97U" title="THORFi Complete Guide: Lending, Savings, and Synths Explained" %}
 
 ### Graphics and Spreadsheet Used
 

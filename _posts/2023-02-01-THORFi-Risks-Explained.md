@@ -1,5 +1,7 @@
 ---
 title: "THORChain - THORFI Risks and Concerns Explained"
+description: "THORFi risks explained: understand lending and savings risks, Protocol-Owned Liquidity concerns, and ADR-006 implementation on THORChain with detailed analysis."
+excerpt: "Clear breakdown of THORFi risks and concerns covering lending, savings, synths, and POL implementation with community discussion points."
 categories:
   - DeFi
   - THORChain
@@ -23,6 +25,7 @@ Update, this vote was passed.
 ### THORFi Risks and Concerns
 
 {% include video id="glY_RVYdsfM" provider="youtube" %}
+{% include video-schema.html id="glY_RVYdsfM" title="THORFi Risks and Concerns: Lending, Savings, and POL Analysis" %}
 
 ### Graphics Used
 

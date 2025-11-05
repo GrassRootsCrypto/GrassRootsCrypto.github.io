@@ -17,6 +17,7 @@ I made a video regarding Ruji Trade and how it is going to work. Also see below 
 ### Ruji Trade
 
 {% include video id="sGBNbV5z2cc" provider="youtube" %}
+{% include video-schema.html id="sGBNbV5z2cc" title="Ruji Trade on THORChain: Architecture and Integration Explained" %}
 
 ### Updated Version of the picture used
 

@@ -1,5 +1,7 @@
 ---
 title: "THORChain Lending Code Walkthrough notes"
+description: "Technical deep dive into THORFi Lending code: merge request analysis, virtual pool mechanics, circuit breaker implementation, and loan open/close handler walkthrough."
+excerpt: "Developer-focused walkthrough of THORChain Lending implementation covering derived assets, virtual pools, circuit breakers, and loan handler code."
 categories:
   - DeFi
   - THORChain

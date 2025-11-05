@@ -18,3 +18,4 @@ classes: wide
 Streaming swaps is a new feature within THORChain that allows efficient price execution, as low as 5 basis points. See the details about THORChain Streaming Swaps in the video below.
 
 {% include video id="E4xD-RoC2EY" provider="youtube" %}
+{% include video-schema.html id="E4xD-RoC2EY" title="THORChain Streaming Swaps: 5 Basis Point Price Execution Explained" %}
