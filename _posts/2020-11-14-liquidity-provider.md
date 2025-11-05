@@ -1,5 +1,7 @@
 ---
 title: "Understanding Liquidity Pools and Liquidity Providers"
+description: "Learn how liquidity pools work in DeFi. Understand liquidity providers, staking, fees, and earning passive income through decentralized exchange pools on THORChain."
+excerpt: "Complete guide to liquidity pools and providers in DeFi: how staking works, earning fees, and generating passive income on decentralized exchanges."
 categories:
   - DeFi
   - THORChain

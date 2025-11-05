@@ -5,7 +5,7 @@ categories:
   - THORChain
   - THORFI
 tags:
-  - MCCN  
+  - MCCN
   - "Liquidity Provider"
   - "Liquidity Pool"
   - "Cross Chain Swaps"

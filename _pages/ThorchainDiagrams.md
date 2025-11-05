@@ -10,7 +10,7 @@ Working pictures of THORChain. Work in progress. Please provide feedback in the 
 
 ## High Level App Overview
 
-![High Level App View]({{ site.baseurl }}/assets/images/TCALHL.png)
+![THORChain architecture diagram showing major components including Cosmos BaseApp, THORChain module, Bifrost, and TSS vault structure]({{ site.baseurl }}/assets/images/TCALHL.png)
 These are the major components within THORChain.
 THORChain extends the Cosmos BaseApp and has its own module for specific message handling and processing.
 
@@ -20,7 +20,7 @@ See my [Develop on THORChain - Full Guide](https://youtu.be/Qowrasst2UQ) video f
 
 Example BTC to ETH Swap overview - High Level.
 
-![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap.png)
+![THORChain BTC to ETH cross-chain swap flow diagram showing inbound transaction, Asgard vault, swap processing, and outbound transaction path]({{ site.baseurl }}/assets/images/THORChain Swap.png)
 See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swap.pdf)
 
 Key points in the diagram:
@@ -41,7 +41,7 @@ Memos types like `swap` will create an outbound message, others like `add` or `R
 ### Swap Example - Msg Flow
 
 Another look at the same swap as above but looking the message flow.
-![High Level App View]({{ site.baseurl }}/assets/images/THORChain Swap Msg.png)
+![THORChain swap message flow diagram showing MsgObservedTxIn, swap handler processing, and MsgOutboundTx execution]({{ site.baseurl }}/assets/images/THORChain Swap Msg.png)
 
 ### Swap Example Detailed Code Flow
 
@@ -51,11 +51,11 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swa
 
 ## High Level Add Liquidity Example
 
-![High Level App View]({{ site.baseurl }}/assets/images/TC-AddLiq-Flow.png)
+![THORChain add liquidity flow diagram showing deposit transaction, pool addition, and liquidity provider unit calculation]({{ site.baseurl }}/assets/images/TC-AddLiq-Flow.png)
 
 ## Add Liquidity  Example Detailed Code Flow
 
-![High Level App View]({{ site.baseurl }}/assets/images/TC-AddLiq-Msg-Flow.png)
+![THORChain add liquidity message flow diagram showing MsgDeposit processing, add liquidity handler, and pool state updates]({{ site.baseurl }}/assets/images/TC-AddLiq-Msg-Flow.png)
 
 In this example, there is no outbound message.
 

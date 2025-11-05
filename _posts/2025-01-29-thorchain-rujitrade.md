@@ -1,5 +1,7 @@
 ---
 title: "THORChain + Ruji Trade"
+description: "How Ruji Trade integrates with THORChain: video explanation and visual diagram showing the trading platform's architecture and workflow on THORChain L2."
+excerpt: "Understand Ruji Trade's integration with THORChain through video walkthrough and detailed architecture diagram showing trading mechanics."
 categories:
   - THORChain
   - Rujira

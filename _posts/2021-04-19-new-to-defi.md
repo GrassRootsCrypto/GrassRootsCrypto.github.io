@@ -1,7 +1,9 @@
 ---
 title: "New to DeFi"
+description: "New to DeFi? Start here: liquidity pools, impermanent loss, blockchains, and tokens explained. Essential video guides for DeFi beginners covering fundamentals."
+excerpt: "DeFi fundamentals for beginners: liquidity pools, impermanent loss, blockchains, and tokens. Complete video series to start your DeFi journey."
 categories:
-  - DeFi  
+  - DeFi
   - Beginner
 Tags:
   - Blockchain
