@@ -6,6 +6,14 @@ toc_label: "On This Page"
 toc_icon: "envelope"
 ---
 
+{% include localbusiness-schema.html %}
+
+## Based in Adelaide, South Australia
+
+I'm available for face-to-face consultations in Adelaide or online sessions anywhere in the world. Whether you're starting your crypto journey or looking to deepen your understanding of DeFi and THORChain, I'm here to help.
+
+---
+
 ## Send Chris GRC a Message
 
 Have a quick question or inquiry? Fill out the form below and I'll get back to you as soon as possible.

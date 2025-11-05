@@ -6,6 +6,8 @@ author_profile: true
 toc: false
 ---
 
+{% include localbusiness-schema.html %}
+
 ## Education, Training, Consulting, Advice
 
 GrassRoots Crypto is a company dedicated to providing comprehensive education, training, consulting, and advice for users in the crypto space. I understand the challenges of navigating the complex world of cryptocurrencies, even with the vast resources available online.
@@ -20,10 +22,12 @@ GrassRoots Crypto aims to explain what you need to know using common relatable e
 
 I have over 21 years of experience in the IT industry, with 5+ years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read many books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
 
+Based in Adelaide, South Australia, I work with crypto enthusiasts locally and around Australia, as well as offering online consultations globally. Whether you prefer face-to-face sessions in Adelaide or virtual meetings from anywhere in the world, I'm here to help you understand crypto.
+
 I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
 In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn had have some fun.
 
- My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
+My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
 
 ---
 

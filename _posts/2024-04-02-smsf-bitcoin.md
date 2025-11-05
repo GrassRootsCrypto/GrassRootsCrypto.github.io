@@ -80,3 +80,19 @@ No one knows what will happen in the next four years, but it gives you an idea o
 Early on, people advised me to buy Bitcoin in an SMSF, self-custody it, and leave it till retirement – I think it's good advice.
 
 You'll need $3-4 million in super when you retire (accounting for inflation), and 10% compulsory super won't cut it. You need a plan.
+
+---
+
+## Need Help with Bitcoin in Your SMSF?
+
+Navigating Bitcoin in an SMSF can be complex - from choosing the right SMSF provider to understanding custody options and tax implications. Based in Adelaide, I help Australians develop practical Bitcoin SMSF strategies.
+
+Whether you're just starting to explore the idea or ready to implement, I can help you understand:
+- Which SMSF provider suits your needs
+- Self-custody vs custodial storage options
+- Tax considerations and compliance requirements
+- Practical steps to get started
+
+[Get in Touch](/contact/){: .btn .btn--primary}
+
+*Not financial advice - education and guidance only.*
