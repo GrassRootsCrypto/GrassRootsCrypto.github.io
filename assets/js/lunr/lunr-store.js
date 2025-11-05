@@ -202,4 +202,16 @@ var store = [{
         "tags": ["THORChain","THORFi"],
         "url": "https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update/",
         "teaser": null
+      },{
+        "title": "THORChain March Update",
+        "excerpt":"Following the February THORFi unwind, I wanted to share an update on what’s happening with THORChain, the TCY token implementation, and where the network is heading.   THORChain March 2025 Update                 Related Updates      THORChain February 2025 Update - The initial THORFi pause and Proposal 6 approval   THORChain and THORNode Overviews - Understanding THORChain fundamentals  ","categories": ["THORChain"],
+        "tags": ["THORChain","THORFi","TCY"],
+        "url": "https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/March-Update/",
+        "teaser": null
+      },{
+        "title": "THORChain June Update",
+        "excerpt":"Mid-year update for THORChain covering the major developments in Q2 2025 and what’s on the roadmap for the second half of the year.   THORChain June 2025 Update                 Related Updates      THORChain February 2025 Update - The THORFi unwind and Proposal 6   THORChain March 2025 Update - TCY implementation progress   Streaming Swaps Explained - Understanding THORChain’s swap technology  ","categories": ["THORChain"],
+        "tags": ["THORChain","TCY","Liquidity Nodes","DeFi","Cross-chain"],
+        "url": "https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/",
+        "teaser": null
       }]

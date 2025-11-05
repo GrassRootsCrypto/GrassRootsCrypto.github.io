@@ -1,4 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml" rel="self" type="application/atom+xml" /><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-10-22T18:12:36+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml</id><title type="html">GrassRoots Crypto</title><subtitle>Crypto Education and Consulting</subtitle><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><entry><title type="html">THORChain February Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update/" rel="alternate" type="text/html" title="THORChain February Update" /><published>2025-02-11T00:00:00+10:30</published><updated>2025-02-11T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update/"><![CDATA[<p>I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave it to the article below to do that.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml" rel="self" type="application/atom+xml" /><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-11-06T08:21:53+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml</id><title type="html">GrassRoots Crypto</title><subtitle>Crypto Education and Consulting</subtitle><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><entry><title type="html">THORChain June Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/" rel="alternate" type="text/html" title="THORChain June Update" /><published>2025-06-24T00:00:00+09:30</published><updated>2025-06-24T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/"><![CDATA[<p>Mid-year update for THORChain covering the major developments in Q2 2025 and what’s on the roadmap for the second half of the year.</p>
+
+<h2 id="thorchain-june-2025-update">THORChain June 2025 Update</h2>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/3Mc7P0p8Mto" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain June 2025 Update: Highlights and Roadmap",
+  "description": "June 2025 THORChain update covering Q2 achievements, TCY token launch status, Liquidity Nodes introduction, and Q3 roadmap for the evolving DeFi protocol.",
+  "thumbnailUrl": "https://img.youtube.com/vi/3Mc7P0p8Mto/maxresdefault.jpg",
+  "uploadDate": "2025-06-24T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=3Mc7P0p8Mto",
+  "embedUrl": "https://www.youtube.com/embed/3Mc7P0p8Mto"
+}
+</script>
+
+<h2 id="related-updates">Related Updates</h2>
+
+<ul>
+  <li><a href="/thorchain/February-Update/">THORChain February 2025 Update</a> - The THORFi unwind and Proposal 6</li>
+  <li><a href="/thorchain/march-update/">THORChain March 2025 Update</a> - TCY implementation progress</li>
+  <li><a href="/thorchain/Streaming-Swaps/">Streaming Swaps Explained</a> - Understanding THORChain’s swap technology</li>
+</ul>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="TCY" /><category term="Liquidity Nodes" /><category term="DeFi" /><category term="Cross-chain" /><summary type="html"><![CDATA[June 2025 THORChain update covering Q2 achievements, TCY token launch status, Liquidity Nodes introduction, and Q3 roadmap for the evolving DeFi protocol.]]></summary></entry><entry><title type="html">THORChain March Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/March-Update/" rel="alternate" type="text/html" title="THORChain March Update" /><published>2025-03-27T00:00:00+10:30</published><updated>2025-03-27T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/March-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/March-Update/"><![CDATA[<p>Following the February THORFi unwind, I wanted to share an update on what’s happening with THORChain, the TCY token implementation, and where the network is heading.</p>
+
+<h2 id="thorchain-march-2025-update">THORChain March 2025 Update</h2>
+
+<!-- Courtesy of embedresponsively.com //-->
+
+<div class="responsive-video-container">
+    <iframe src="https://www.youtube-nocookie.com/embed/s4mt55Intas" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain March 2025 Update: Network and TCY Implementation Status",
+  "description": "March 2025 THORChain update covering network status post-THORFi unwind, TCY token implementation progress, and Protocol-Owned Liquidity developments.",
+  "thumbnailUrl": "https://img.youtube.com/vi/s4mt55Intas/maxresdefault.jpg",
+  "uploadDate": "2025-03-27T00:00:00+10:30",
+  "contentUrl": "https://www.youtube.com/watch?v=s4mt55Intas",
+  "embedUrl": "https://www.youtube.com/embed/s4mt55Intas"
+}
+</script>
+
+<h2 id="related-updates">Related Updates</h2>
+
+<ul>
+  <li><a href="/thorchain/February-Update/">THORChain February 2025 Update</a> - The initial THORFi pause and Proposal 6 approval</li>
+  <li><a href="/defi/thorchain-overview/">THORChain and THORNode Overviews</a> - Understanding THORChain fundamentals</li>
+</ul>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="THORFi" /><category term="TCY" /><summary type="html"><![CDATA[March 2025 THORChain update covering network status post-THORFi unwind, TCY token implementation progress, and Protocol-Owned Liquidity developments.]]></summary></entry><entry><title type="html">THORChain February Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update/" rel="alternate" type="text/html" title="THORChain February Update" /><published>2025-02-11T00:00:00+10:30</published><updated>2025-02-11T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/February-Update/"><![CDATA[<p>I wanted create a post about THORChain as a lot has happened this year. The biggest update is regarding THORFi and there is a lot to unpack, so I will leave it to the article below to do that.</p>
 
 <h2 id="introduction">Introduction</h2>
 
@@ -178,7 +235,7 @@
 
 <h3 id="updated-version-of-the-picture-used">Updated Version of the picture used</h3>
 
-<p>See the full image <a href="/pages/GrassRootsCrypto/assets/images/RujiTrade.jpg">here</a></p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="Rujira" /><category term="THORChain" /><category term="Rujira" /><summary type="html"><![CDATA[I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.]]></summary></entry><entry><title type="html">THORChain + Cosmos Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/" rel="alternate" type="text/html" title="THORChain + Cosmos Update" /><published>2024-08-16T00:00:00+09:30</published><updated>2024-08-16T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/"><![CDATA[<p>A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.</p>
+<p>See the full image <a href="/pages/GrassRootsCrypto/assets/images/RujiTrade.jpg">here</a></p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="Rujira" /><category term="THORChain" /><category term="Rujira" /><summary type="html"><![CDATA[How Ruji Trade integrates with THORChain: video explanation and visual diagram showing the trading platform's architecture and workflow on THORChain L2.]]></summary></entry><entry><title type="html">THORChain + Cosmos Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/" rel="alternate" type="text/html" title="THORChain + Cosmos Update" /><published>2024-08-16T00:00:00+09:30</published><updated>2024-08-16T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/"><![CDATA[<p>A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.</p>
 
 <h1 id="thorchain-x-kujira-integration-summary">THORChain x Kujira Integration Summary</h1>
 
@@ -331,7 +388,7 @@
   <li>Interoperability: IBC enables THORChain to interact with other blockchains, supporting cross-chain applications, data sharing, and decentralized exchanges.</li>
   <li>Decentralization and Security: IBC’s reliance on light clients and cryptographic proofs ensures that asset transfers are secure and do not depend on centralized intermediaries.</li>
   <li>Expansion of the Ecosystem: With IBC, THORChain can integrate with a broader range of blockchains, bringing in more users, assets, and applications into its ecosystem, thereby increasing its overall utility and value proposition.</li>
-</ol>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="Cosmos" /><summary type="html"><![CDATA[A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.]]></summary></entry><entry><title type="html">Bitcoin in SMSF</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="alternate" type="text/html" title="Bitcoin in SMSF" /><published>2024-04-02T00:00:00+10:30</published><updated>2024-04-02T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin/"><![CDATA[<p>I have done some write-up for friends interested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared it on my website.</p>
+</ol>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="THORChain" /><category term="Cosmos" /><summary type="html"><![CDATA[THORChain x Kujira integration explained: COSMWASM smart contracts, IBC, L2 DeFi apps, and how Kujira's FIN, Orca, Ghost bring new features to THORChain.]]></summary></entry><entry><title type="html">Bitcoin in SMSF</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin/" rel="alternate" type="text/html" title="Bitcoin in SMSF" /><published>2024-04-02T00:00:00+10:30</published><updated>2024-04-02T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/smsf-bitcoin/"><![CDATA[<p>I have done some write-up for friends interested in having Bitcoin in their SMSF so I have cleaned it up a bit and shared it on my website.</p>
 
 <h2 id="exploring-bitcoin-within-a-self-managed-super-fund-smsf">Exploring Bitcoin within a Self-Managed Super Fund (SMSF)</h2>
 
@@ -428,7 +485,7 @@ If you have questions, reach out and ask!</p>
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/E4xD-RoC2EY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Streaming Swaps]]></summary></entry><entry><title type="html">THORChain Monthly Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="alternate" type="text/html" title="THORChain Monthly Update" /><published>2023-06-25T00:00:00+09:30</published><updated>2023-06-25T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/"><![CDATA[<p>As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.</p>
+  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Streaming swaps on THORChain enable efficient price execution as low as 5 basis points. Learn how this feature optimizes large cross-chain swaps and reduces slippage.]]></summary></entry><entry><title type="html">THORChain Monthly Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="alternate" type="text/html" title="THORChain Monthly Update" /><published>2023-06-25T00:00:00+09:30</published><updated>2023-06-25T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/"><![CDATA[<p>As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.</p>
 
 <p>This video covers the updates from July to September 2023.</p>
 
@@ -465,7 +522,7 @@ Let me know if you want anything else covered in next month’s update.</p>
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/B9M1Azpf65k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain" /><summary type="html"><![CDATA[As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.]]></summary></entry><entry><title type="html">THORChain Lending</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="alternate" type="text/html" title="THORChain Lending" /><published>2023-06-09T00:00:00+09:30</published><updated>2023-06-09T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/"><![CDATA[<p>THORFi Lending: A Comprehensive Guide.</p>
+  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain" /><summary type="html"><![CDATA[THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.]]></summary></entry><entry><title type="html">THORChain Lending</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="alternate" type="text/html" title="THORChain Lending" /><published>2023-06-09T00:00:00+09:30</published><updated>2023-06-09T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/"><![CDATA[<p>THORFi Lending: A Comprehensive Guide.</p>
 
 <p>THORFi Lending, a groundbreaking feature that is set to redefine the lending landscape. I have created a series of informative videos to help you navigate this exciting new development. Whether you’re a seasoned investor or new to decentralized finance, these videos will provide you with invaluable insights to make the most of THORFi Lending.</p>
 
@@ -512,87 +569,4 @@ Let me know if you want anything else covered in next month’s update.</p>
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/2jA4DDWxAbk" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Lending" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[THORFi Lending: A Comprehensive Guide.]]></summary></entry><entry><title type="html">THORChain Lending Code Walkthrough notes</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/" rel="alternate" type="text/html" title="THORChain Lending Code Walkthrough notes" /><published>2023-02-21T00:00:00+10:30</published><updated>2023-02-21T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/"><![CDATA[<p>I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process.
-<a href="/defi/thorchain/thorfi/THORFi-Risks-Explained/">Learn more about the risks of lending here</a></p>
-
-<p>The code is in review at moment across three branches.</p>
-
-<h2 id="mrs">MRs</h2>
-<ol>
-  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2713 (Lending)</li>
-  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2658 (Virtual pool gets generate at the beginning of each swap)</li>
-  <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2723 (Circuit Breaker)</li>
-</ol>
-
-<h2 id="code-walkthrough-nodes">Code walkthrough nodes</h2>
-
-<h3 id="derived-asset-virtual-pool-recalc-pre-swap"><a href="https://www.youtube.com/watch?v=Wke82WgK8Ao">Derived Asset Virtual Pool, recalc pre swap</a></h3>
-<ol>
-  <li>Has derived asset type (which is already used for TOR)</li>
-  <li>V Pool spawned twice. 1. on begin block to allow API query (to allow lending quotes). 2. On v pool swap as required, calcs pool depth to determine the exact slip.</li>
-  <li>Virtual Pool depts are re-calculated before every Virtual Pool swap, so no sandwich attacks or swap queue manipulation is possible.</li>
-  <li>RUNE slip is fee is burnt.</li>
-</ol>
-
-<h3 id="lending-open-and-close-loans"><a href="https://www.youtube.com/watch?v=8qCiyLy4YEw">Lending Open and Close Loans</a></h3>
-<ol>
-  <li>Min out will be added for min loan amount (open/close), like LIM for a swap. Will be in a different but provisions allowed for it in msg structures.</li>
-  <li>5 new mimirs
-    <ol>
-      <li>Min CR</li>
-      <li>Max CR</li>
-      <li>Pause Loans - stop open and close loans</li>
-      <li>LoanRepaymentMaturity - enable min time for loan open.</li>
-      <li>CRPoolMultipler - cap collateral in a pool</li>
-      <li>EnableDerivedAssets</li>
-      <li>(MaxRuneSupply for circuit breaker but no in code)</li>
-    </ol>
-  </li>
-  <li>Loan Open message
-    <ol>
-      <li>Has affiliate for first L1 swap.</li>
-      <li>Has Dex aggregation support to taking out the debit (target asset)</li>
-    </ol>
-  </li>
-  <li>Loan Close message
-    <ol>
-      <li>Can pay off with any asset (is converted to TOR)</li>
-    </ol>
-  </li>
-  <li>Data for total pool collateral is collected and published in pool and pools endpoints.</li>
-  <li>New Memos for loan open and close with an example</li>
-  <li>New events emitted on loan open and repayment.</li>
-  <li>Has collateral up and down (13:45) - gives better data over time and allows credit rollover for new loan when overpaid. (though the 4 vars are not in the current code base)</li>
-  <li>Anyone can payoff anyone else’s loan, no restrictions.</li>
-  <li>Loan Close: Asset in calls LoanRepayment_handler that calls Swap handler (to swap L1 to TOR) that then calls LoanRepayment_handler after asset in has been swapped to TOR - thus and LoanRepayement_handler is recursive. Be good to map thatin a digram</li>
-</ol>
-
-<h3 id="circuit-breaker-part-1"><a href="https://www.youtube.com/watch?v=e6gZ77DdMrc">Circuit Breaker Part 1</a></h3>
-<ol>
-  <li>Part 1: For loan close, will not mint Rune beyond 500 mil, checks native supply before minting new RUNE. If over, will move RUNE from the reserve instead.</li>
-  <li>Part 2 is in the lending PR (2713) but not covered in the video
-    <ol>
-      <li>If the supply of RUNE is 500M (MaxRuneSupply Mimir) or greater, don’t allow the creation of new loans.</li>
-      <li>Can’t find Mimir value in constants</li>
-      <li>I put comment on the MR about this</li>
-    </ol>
-  </li>
-</ol>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Synths" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more about the risks of lending here]]></summary></entry><entry><title type="html">THORChain - THORFI Risks and Concerns Explained</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/" rel="alternate" type="text/html" title="THORChain - THORFI Risks and Concerns Explained" /><published>2023-02-01T00:00:00+10:30</published><updated>2023-02-01T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/THORFi-Risks-Explained/"><![CDATA[<p>With the implementation of THORFi, there are risks. This has been discussed at length on discord and in the twitter spaces.</p>
-
-<p>I wanted to create a video to clear the confusion and get everyone on the same page.
-What are your thoughts?</p>
-
-<p>ADR 006 is currently open to enable POL, you can read that here: https://gitlab.com/thorchain/thornode/-/blob/develop/docs/architecture/adr-006-enable-pol.md 
-Update, this vote was passed.</p>
-
-<h3 id="thorfi-risks-and-concerns">THORFi Risks and Concerns</h3>
-
-<!-- Courtesy of embedresponsively.com //-->
-
-<div class="responsive-video-container">
-    <iframe src="https://www.youtube-nocookie.com/embed/glY_RVYdsfM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>
-
-<h3 id="graphics-used">Graphics Used</h3>
-
-<p>You can download the graphics used <a href="/pages/GrassRootsCrypto/assets/documents/THORFi-Risks-Concerns.pdf">here </a></p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="THORFI Savings" /><category term="Synths" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[With the implementation of THORFi, there are risks. This has been discussed at length on discord and in the twitter spaces.]]></summary></entry></feed>
+  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Lending" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[THORFi Lending: A Comprehensive Guide.]]></summary></entry></feed>
