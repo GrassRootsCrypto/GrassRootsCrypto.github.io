@@ -12,7 +12,7 @@ author_profile: false
 classes: wide
 ---
 
-I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used. 
+I made a video regarding Ruji Trade and how it is going to work. Also see below an updated version of the picture used.
 
 ### Ruji Trade
 

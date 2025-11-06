@@ -56,7 +56,8 @@ Have a quick question or inquiry? Fill out the form below and I'll get back to y
     <span id="message-error" role="alert" class="error-message"></span>
   </div>
 
-  <button type="submit" class="btn btn--primary" id="submit-btn">Send Message</button>
+<button type="submit" class="btn btn--primary" id="submit-btn">Send Message</button>
+
 </form>
 
 <script>
@@ -93,7 +94,6 @@ document.getElementById('contact-form').addEventListener('submit', async functio
 });
 </script>
 
-
 ## Book a Session
 
 Ready to start your crypto learning journey? Book a 30-minute consultation session with me.
@@ -125,9 +125,7 @@ Ready to start your crypto learning journey? Book a 30-minute consultation sessi
 </script>
 <!-- Calendly inline widget end -->
 
-
 ---
-
 
 <style>
 .contact-form {

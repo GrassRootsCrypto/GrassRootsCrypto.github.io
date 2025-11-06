@@ -88,6 +88,7 @@ You'll need $3-4 million in super when you retire (accounting for inflation), an
 Navigating Bitcoin in an SMSF can be complex - from choosing the right SMSF provider to understanding custody options and tax implications. Based in Adelaide, I help Australians develop practical Bitcoin SMSF strategies.
 
 Whether you're just starting to explore the idea or ready to implement, I can help you understand:
+
 - Which SMSF provider suits your needs
 - Self-custody vs custodial storage options
 - Tax considerations and compliance requirements
@@ -95,4 +96,4 @@ Whether you're just starting to explore the idea or ready to implement, I can he
 
 [Get in Touch](/contact/){: .btn .btn--primary}
 
-*Not financial advice - education and guidance only.*
+_Not financial advice - education and guidance only._

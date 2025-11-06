@@ -12,6 +12,7 @@ author_profile: false
 classes: wide
 toc: false
 ---
+
 This video covers the required knowledge for a person looking to be a Node Operator.
 
 {% include video id="XXYXNAolPEU" provider="youtube" %}
