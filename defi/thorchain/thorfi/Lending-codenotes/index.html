@@ -10,7 +10,7 @@
     <meta charset="utf-8">
 
 <!-- begin _includes/seo.html --><title>THORChain Lending Code Walkthrough notes - GrassRoots Crypto</title>
-<meta name="description" content="I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more about the risks of lending here">
+<meta name="description" content="Technical deep dive into THORFi Lending code: merge request analysis, virtual pool mechanics, circuit breaker implementation, and loan open/close handler walkthrough.">
 
 
   <meta name="author" content="Chris GRC">
@@ -26,7 +26,7 @@
 <meta property="og:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/">
 
 
-  <meta property="og:description" content="I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more about the risks of lending here">
+  <meta property="og:description" content="Technical deep dive into THORFi Lending code: merge request analysis, virtual pool mechanics, circuit breaker implementation, and loan open/close handler walkthrough.">
 
 
 
@@ -36,7 +36,7 @@
 
   <meta name="twitter:site" content="@GrassRootsio">
   <meta name="twitter:title" content="THORChain Lending Code Walkthrough notes">
-  <meta name="twitter:description" content="I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more about the risks of lending here">
+  <meta name="twitter:description" content="Technical deep dive into THORFi Lending code: merge request analysis, virtual pool mechanics, circuit breaker implementation, and loan open/close handler walkthrough.">
   <meta name="twitter:url" content="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-codenotes/">
 
   
@@ -79,7 +79,7 @@
   "@context": "https://schema.org",
   "@type": "Article",
   "headline": "THORChain Lending Code Walkthrough notes",
-  "description": "I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process. Learn more about the risks of lending here",
+  "description": "Technical deep dive into THORFi Lending code: merge request analysis, virtual pool mechanics, circuit breaker implementation, and loan open/close handler walkthrough.",
   "image": "https://grassrootscrypto.io/pages/GrassRootsCrypto/assets/images/Grassroots_Crypto_Logo.png",
   "datePublished": "2023-02-21T00:00:00+10:30",
   
@@ -297,7 +297,7 @@
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     <meta itemprop="headline" content="THORChain Lending Code Walkthrough notes">
-    <meta itemprop="description" content="I am keeping an eye on THORFi lending and trying to push a plan for its release. There is a lot of discussion around the pros/cons of lending, so I would like to see a comprehensive testing and review process.Learn more about the risks of lending here">
+    <meta itemprop="description" content="Developer-focused walkthrough of THORChain Lending implementation covering derived assets, virtual pools, circuit breakers, and loan handler code.">
     <meta itemprop="datePublished" content="2023-02-21T00:00:00+10:30">
     
 
@@ -361,6 +361,7 @@
 <p>The code is in review at moment across three branches.</p>
 
 <h2 id="mrs">MRs</h2>
+
 <ol>
   <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2713 (Lending)</li>
   <li>https://gitlab.com/thorchain/thornode/-/merge_requests/2658 (Virtual pool gets generate at the beginning of each swap)</li>
@@ -370,6 +371,7 @@
 <h2 id="code-walkthrough-nodes">Code walkthrough nodes</h2>
 
 <h3 id="derived-asset-virtual-pool-recalc-pre-swap"><a href="https://www.youtube.com/watch?v=Wke82WgK8Ao">Derived Asset Virtual Pool, recalc pre swap</a></h3>
+
 <ol>
   <li>Has derived asset type (which is already used for TOR)</li>
   <li>V Pool spawned twice. 1. on begin block to allow API query (to allow lending quotes). 2. On v pool swap as required, calcs pool depth to determine the exact slip.</li>
@@ -378,6 +380,7 @@
 </ol>
 
 <h3 id="lending-open-and-close-loans"><a href="https://www.youtube.com/watch?v=8qCiyLy4YEw">Lending Open and Close Loans</a></h3>
+
 <ol>
   <li>Min out will be added for min loan amount (open/close), like LIM for a swap. Will be in a different but provisions allowed for it in msg structures.</li>
   <li>5 new mimirs
@@ -411,6 +414,7 @@
 </ol>
 
 <h3 id="circuit-breaker-part-1"><a href="https://www.youtube.com/watch?v=e6gZ77DdMrc">Circuit Breaker Part 1</a></h3>
+
 <ol>
   <li>Part 1: For loan close, will not mint Rune beyond 500 mil, checks native supply before minting new RUNE. If over, will move RUNE from the reserve instead.</li>
   <li>Part 2 is in the lending PR (2713) but not covered in the video
@@ -728,35 +732,47 @@
         <div class="page__footer-follow">
   <ul class="social-icons">
     
-      <li><strong>Follow:</strong></li>
+    <li><strong>Follow:</strong></li>
+      
     
+    <li>
+      <a href="https://twitter.com/GrassRootsio" rel="nofollow noopener noreferrer"
+        ><i
+          class="fab fa-fw fa-twitter-square"
+          aria-hidden="true"
+        ></i>
+        Twitter</a
+      >
+    </li>
+     
+     
+     
+    
+    <li>
+      <a href="https://www.youtube.com/c/grassrootscrypto" rel="nofollow noopener noreferrer"
+        ><i
+          class="fab fa-fw fa-youtube"
+          aria-hidden="true"
+        ></i>
+        Youtube</a
+      >
+    </li>
+      
 
-    
-      
-        
-          <li><a href="https://twitter.com/GrassRootsio" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-twitter-square" aria-hidden="true"></i> Twitter</a></li>
-        
-      
-        
-      
-        
-      
-        
-          <li><a href="https://t.me/GrassRootsCrypto" rel="nofollow noopener noreferrer"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram</a></li>
-        
-      
-        
-          <li><a href="https://www.youtube.com/c/grassrootscrypto" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-youtube" aria-hidden="true"></i> Youtube</a></li>
-        
-      
-    
-
-    <li><a href="/pages/GrassRootsCrypto/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    <li>
+      <a
+        href="/pages/GrassRootsCrypto/feed.xml"
+        ><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a
+      >
+    </li>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2025 GrassRoots Crypto. <a href="/disclaimer/" rel="nofollow">Copyright. All Rights Reserved</a> </div>
-
+<div class="page__footer-copyright">
+  &copy; 2025 GrassRoots Crypto.
+  Based in Adelaide, South Australia.
+  <a href="/disclaimer/" rel="nofollow">Copyright. All Rights Reserved</a>
+</div>
 
       </footer>
     </div>

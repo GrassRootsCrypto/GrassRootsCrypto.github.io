@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml" rel="self" type="application/atom+xml" /><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-11-06T08:21:53+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml</id><title type="html">GrassRoots Crypto</title><subtitle>Crypto Education and Consulting</subtitle><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><entry><title type="html">THORChain June Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/" rel="alternate" type="text/html" title="THORChain June Update" /><published>2025-06-24T00:00:00+09:30</published><updated>2025-06-24T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/"><![CDATA[<p>Mid-year update for THORChain covering the major developments in Q2 2025 and what’s on the roadmap for the second half of the year.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-US"><generator uri="https://jekyllrb.com/" version="3.10.0">Jekyll</generator><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml" rel="self" type="application/atom+xml" /><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/" rel="alternate" type="text/html" hreflang="en-US" /><updated>2025-11-10T15:21:45+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/feed.xml</id><title type="html">GrassRoots Crypto</title><subtitle>Crypto Education and Consulting</subtitle><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><entry><title type="html">THORChain June Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/" rel="alternate" type="text/html" title="THORChain June Update" /><published>2025-06-24T00:00:00+09:30</published><updated>2025-06-24T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/June-Update/"><![CDATA[<p>Mid-year update for THORChain covering the major developments in Q2 2025 and what’s on the roadmap for the second half of the year.</p>
 
 <h2 id="thorchain-june-2025-update">THORChain June 2025 Update</h2>
 
@@ -233,6 +233,19 @@
     <iframe src="https://www.youtube-nocookie.com/embed/sGBNbV5z2cc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Ruji Trade on THORChain: Architecture and Integration Explained",
+  "description": "How Ruji Trade integrates with THORChain: video explanation and visual diagram showing the trading platform's architecture and workflow on THORChain L2.",
+  "thumbnailUrl": "https://img.youtube.com/vi/sGBNbV5z2cc/maxresdefault.jpg",
+  "uploadDate": "2025-01-29T00:00:00+10:30",
+  "contentUrl": "https://www.youtube.com/watch?v=sGBNbV5z2cc",
+  "embedUrl": "https://www.youtube.com/embed/sGBNbV5z2cc"
+}
+</script>
+
 <h3 id="updated-version-of-the-picture-used">Updated Version of the picture used</h3>
 
 <p>See the full image <a href="/pages/GrassRootsCrypto/assets/images/RujiTrade.jpg">here</a></p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="THORChain" /><category term="Rujira" /><category term="THORChain" /><category term="Rujira" /><summary type="html"><![CDATA[How Ruji Trade integrates with THORChain: video explanation and visual diagram showing the trading platform's architecture and workflow on THORChain L2.]]></summary></entry><entry><title type="html">THORChain + Cosmos Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/" rel="alternate" type="text/html" title="THORChain + Cosmos Update" /><published>2024-08-16T00:00:00+09:30</published><updated>2024-08-16T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/thorchain/thorchain-cosmos/"><![CDATA[<p>A lot is happening with THORChain, so I’ve been doing research to understand it better. I wanted to dive deeper into COSMWASM, IBC, and the upcoming Kujira partnership. Using various sources, I used ChatGPT to create the following summary that I wanted to share with the community. Enjoy! This is just one part of the ongoing developments within THORChain which I will put into a video soon.</p>
@@ -458,7 +471,26 @@ Current AUD value would be $493,800 at $63,316 AUD per BTC - as at 16th January 
 
 <p>Early on, people advised me to buy Bitcoin in an SMSF, self-custody it, and leave it till retirement – I think it’s good advice.</p>
 
-<p>You’ll need $3-4 million in super when you retire (accounting for inflation), and 10% compulsory super won’t cut it. You need a plan.</p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="SMSF" /><category term="Getting Started" /><summary type="html"><![CDATA[Complete guide to buying and holding Bitcoin in your Australian Self-Managed Super Fund (SMSF). Learn setup costs, tax benefits, storage, and SMSF providers like New Brighton Capital or eSuperFund.]]></summary></entry><entry><title type="html">Crypto Beginner Guide</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="alternate" type="text/html" title="Crypto Beginner Guide" /><published>2023-12-12T00:00:00+10:30</published><updated>2023-12-12T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide/"><![CDATA[<p>🌟 Welcome to the Crypto Exploration Series! 🚀</p>
+<p>You’ll need $3-4 million in super when you retire (accounting for inflation), and 10% compulsory super won’t cut it. You need a plan.</p>
+
+<hr />
+
+<h2 id="need-help-with-bitcoin-in-your-smsf">Need Help with Bitcoin in Your SMSF?</h2>
+
+<p>Navigating Bitcoin in an SMSF can be complex - from choosing the right SMSF provider to understanding custody options and tax implications. Based in Adelaide, I help Australians develop practical Bitcoin SMSF strategies.</p>
+
+<p>Whether you’re just starting to explore the idea or ready to implement, I can help you understand:</p>
+
+<ul>
+  <li>Which SMSF provider suits your needs</li>
+  <li>Self-custody vs custodial storage options</li>
+  <li>Tax considerations and compliance requirements</li>
+  <li>Practical steps to get started</li>
+</ul>
+
+<p><a href="/contact/" class="btn btn--primary">Get in Touch</a></p>
+
+<p><em>Not financial advice - education and guidance only.</em></p>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="SMSF" /><category term="Getting Started" /><summary type="html"><![CDATA[Complete guide to buying and holding Bitcoin in your Australian Self-Managed Super Fund (SMSF). Learn setup costs, tax benefits, storage, and SMSF providers like New Brighton Capital or eSuperFund.]]></summary></entry><entry><title type="html">Crypto Beginner Guide</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide/" rel="alternate" type="text/html" title="Crypto Beginner Guide" /><published>2023-12-12T00:00:00+10:30</published><updated>2023-12-12T00:00:00+10:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/beginner/Beginner-Guide/"><![CDATA[<p>🌟 Welcome to the Crypto Exploration Series! 🚀</p>
 
 <p>For those venturing into the exciting realm of Bitcoin and Crypto, these beginner-friendly videos are your go-to guides. In our first videos, we unravel the mysteries of Bitcoin, exploring its essence, deciphering crypto-related terms, and demystifying the process of acquiring and safeguarding your digital wealth. From understanding what Bitcoin is to practical tips for its secure handling, we’ve got you covered.
 If you have questions, reach out and ask!</p>
@@ -471,13 +503,39 @@ If you have questions, reach out and ask!</p>
     <iframe src="https://www.youtube-nocookie.com/embed/h3nDaC6XGI0" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "What is Bitcoin for Beginners: Understanding Crypto Fundamentals",
+  "description": "Start your crypto journey with beginner-friendly video guides. Learn what Bitcoin is, how crypto wallets work, and master self-custody fundamentals for Australians.",
+  "thumbnailUrl": "https://img.youtube.com/vi/h3nDaC6XGI0/maxresdefault.jpg",
+  "uploadDate": "2023-12-12T00:00:00+10:30",
+  "contentUrl": "https://www.youtube.com/watch?v=h3nDaC6XGI0",
+  "embedUrl": "https://www.youtube.com/embed/h3nDaC6XGI0"
+}
+</script>
+
 <h3 id="crypto-wallets-and-self-custody">Crypto Wallets and Self Custody</h3>
 
 <!-- Courtesy of embedresponsively.com //-->
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/orVwCyOIxtI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="Self-Custody" /><category term="Wallets" /><category term="Getting Started" /><summary type="html"><![CDATA[Start your crypto journey with beginner-friendly video guides. Learn what Bitcoin is, how crypto wallets work, and master self-custody fundamentals for Australians.]]></summary></entry><entry><title type="html">THORChain Streaming Swaps</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/" rel="alternate" type="text/html" title="THORChain Streaming Swaps" /><published>2023-07-27T00:00:00+09:30</published><updated>2023-07-27T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/"><![CDATA[<h2 id="streaming-swaps">Streaming Swaps</h2>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "Crypto Wallets and Self Custody Explained for Beginners",
+  "description": "Start your crypto journey with beginner-friendly video guides. Learn what Bitcoin is, how crypto wallets work, and master self-custody fundamentals for Australians.",
+  "thumbnailUrl": "https://img.youtube.com/vi/orVwCyOIxtI/maxresdefault.jpg",
+  "uploadDate": "2023-12-12T00:00:00+10:30",
+  "contentUrl": "https://www.youtube.com/watch?v=orVwCyOIxtI",
+  "embedUrl": "https://www.youtube.com/embed/orVwCyOIxtI"
+}
+</script>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="Beginner" /><category term="Beginner" /><category term="Crypto" /><category term="Self-Custody" /><category term="Wallets" /><category term="Getting Started" /><summary type="html"><![CDATA[Start your crypto journey with beginner-friendly video guides. Learn what Bitcoin is, how crypto wallets work, and master self-custody fundamentals for Australians.]]></summary></entry><entry><title type="html">THORChain Streaming Swaps</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/" rel="alternate" type="text/html" title="THORChain Streaming Swaps" /><published>2023-07-27T00:00:00+09:30</published><updated>2023-07-27T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Streaming-Swaps/"><![CDATA[<h2 id="streaming-swaps">Streaming Swaps</h2>
 
 <p>Streaming swaps is a new feature within THORChain that allows efficient price execution, as low as 5 basis points. See the details about THORChain Streaming Swaps in the video below.</p>
 
@@ -485,7 +543,20 @@ If you have questions, reach out and ask!</p>
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/E4xD-RoC2EY" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Streaming swaps on THORChain enable efficient price execution as low as 5 basis points. Learn how this feature optimizes large cross-chain swaps and reduces slippage.]]></summary></entry><entry><title type="html">THORChain Monthly Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="alternate" type="text/html" title="THORChain Monthly Update" /><published>2023-06-25T00:00:00+09:30</published><updated>2023-06-25T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/"><![CDATA[<p>As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.</p>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain Streaming Swaps: 5 Basis Point Price Execution Explained",
+  "description": "Streaming swaps on THORChain enable efficient price execution as low as 5 basis points. Learn how this feature optimizes large cross-chain swaps and reduces slippage.",
+  "thumbnailUrl": "https://img.youtube.com/vi/E4xD-RoC2EY/maxresdefault.jpg",
+  "uploadDate": "2023-07-27T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=E4xD-RoC2EY",
+  "embedUrl": "https://www.youtube.com/embed/E4xD-RoC2EY"
+}
+</script>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Streaming swaps on THORChain enable efficient price execution as low as 5 basis points. Learn how this feature optimizes large cross-chain swaps and reduces slippage.]]></summary></entry><entry><title type="html">THORChain Monthly Update</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/" rel="alternate" type="text/html" title="THORChain Monthly Update" /><published>2023-06-25T00:00:00+09:30</published><updated>2023-06-25T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/June-Update/"><![CDATA[<p>As an avid observer of THORChain, I wanted to share a video summarising the significant events that took place in June. This comprehensive overview covers key developments that have shaped the future of THORChain and decentralized finance.</p>
 
 <p>This video covers the updates from July to September 2023.</p>
 
@@ -494,6 +565,19 @@ If you have questions, reach out and ask!</p>
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/pxH2ANDHt6k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain June 2023 Update: Lending, BSC, and Streaming Swaps",
+  "description": "THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.",
+  "thumbnailUrl": "https://img.youtube.com/vi/pxH2ANDHt6k/maxresdefault.jpg",
+  "uploadDate": "2023-06-25T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=pxH2ANDHt6k",
+  "embedUrl": "https://www.youtube.com/embed/pxH2ANDHt6k"
+}
+</script>
 
 <p>June Update: A Recap of THORChain’s Latest Milestones and What’s to Come!</p>
 
@@ -515,6 +599,19 @@ If you have questions, reach out and ask!</p>
     <iframe src="https://www.youtube-nocookie.com/embed/cmopHfCwxMc" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain Update: Streaming Swaps and Protocol Developments",
+  "description": "THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.",
+  "thumbnailUrl": "https://img.youtube.com/vi/cmopHfCwxMc/maxresdefault.jpg",
+  "uploadDate": "2023-06-25T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=cmopHfCwxMc",
+  "embedUrl": "https://www.youtube.com/embed/cmopHfCwxMc"
+}
+</script>
+
 <p>In addition, I’ve included the May update below. Take this opportunity to catch up on any previous announcements and ensure you’re up to date with all the latest news from THORChain.
 Let me know if you want anything else covered in next month’s update.</p>
 
@@ -522,7 +619,20 @@ Let me know if you want anything else covered in next month’s update.</p>
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/B9M1Azpf65k" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain" /><summary type="html"><![CDATA[THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.]]></summary></entry><entry><title type="html">THORChain Lending</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="alternate" type="text/html" title="THORChain Lending" /><published>2023-06-09T00:00:00+09:30</published><updated>2023-06-09T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/"><![CDATA[<p>THORFi Lending: A Comprehensive Guide.</p>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORChain May 2023 Update",
+  "description": "THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.",
+  "thumbnailUrl": "https://img.youtube.com/vi/B9M1Azpf65k/maxresdefault.jpg",
+  "uploadDate": "2023-06-25T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=B9M1Azpf65k",
+  "embedUrl": "https://www.youtube.com/embed/B9M1Azpf65k"
+}
+</script>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI" /><category term="Cross Chain" /><summary type="html"><![CDATA[THORChain May-June 2023 updates: lending progress, synth cap increase, BSC integration, streaming swaps, and planned obsolescence. Monthly milestones recap.]]></summary></entry><entry><title type="html">THORChain Lending</title><link href="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/" rel="alternate" type="text/html" title="THORChain Lending" /><published>2023-06-09T00:00:00+09:30</published><updated>2023-06-09T00:00:00+09:30</updated><id>https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide</id><content type="html" xml:base="https://grassrootscrypto.io/pages/GrassRootsCrypto/defi/thorchain/thorfi/Lending-Guide/"><![CDATA[<p>THORFi Lending: A Comprehensive Guide.</p>
 
 <p>THORFi Lending, a groundbreaking feature that is set to redefine the lending landscape. I have created a series of informative videos to help you navigate this exciting new development. Whether you’re a seasoned investor or new to decentralized finance, these videos will provide you with invaluable insights to make the most of THORFi Lending.</p>
 
@@ -536,6 +646,19 @@ Let me know if you want anything else covered in next month’s update.</p>
     <iframe src="https://www.youtube-nocookie.com/embed/AaqHG00RJks" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORFi Lending: Design, Terms, and Risks Explained",
+  "description": "Complete THORChain Lending guide: how lending works, terms, risks, and real examples with spreadsheet calculator. Master THORFi collateralized loans.",
+  "thumbnailUrl": "https://img.youtube.com/vi/AaqHG00RJks/maxresdefault.jpg",
+  "uploadDate": "2023-06-09T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=AaqHG00RJks",
+  "embedUrl": "https://www.youtube.com/embed/AaqHG00RJks"
+}
+</script>
+
 <h3 id="lending-with-numbers-and-examples">Lending with Numbers and Examples</h3>
 
 <p>To provide practical clarity, we present real-world examples and numerical scenarios based on the latest design discussed in the previous video. By exploring these examples, you’ll gain a deeper understanding of how THORFi Lending functions and how it can potentially benefit you. Additionally, I provide a spreadsheet for you to experiment with different numbers and explore lending possibilities.</p>
@@ -547,6 +670,19 @@ Let me know if you want anything else covered in next month’s update.</p>
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/PVpYU5kCOHI" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORFi Lending with Numbers: Real Examples and Calculator",
+  "description": "Complete THORChain Lending guide: how lending works, terms, risks, and real examples with spreadsheet calculator. Master THORFi collateralized loans.",
+  "thumbnailUrl": "https://img.youtube.com/vi/PVpYU5kCOHI/maxresdefault.jpg",
+  "uploadDate": "2023-06-09T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=PVpYU5kCOHI",
+  "embedUrl": "https://www.youtube.com/embed/PVpYU5kCOHI"
+}
+</script>
 
 <h3 id="other-resources">Other Resources</h3>
 
@@ -565,8 +701,34 @@ Let me know if you want anything else covered in next month’s update.</p>
     <iframe src="https://www.youtube-nocookie.com/embed/glY_RVYdsfM" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
   </div>
 
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORFi Risks and Concerns (Older Version)",
+  "description": "Complete THORChain Lending guide: how lending works, terms, risks, and real examples with spreadsheet calculator. Master THORFi collateralized loans.",
+  "thumbnailUrl": "https://img.youtube.com/vi/glY_RVYdsfM/maxresdefault.jpg",
+  "uploadDate": "2023-06-09T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=glY_RVYdsfM",
+  "embedUrl": "https://www.youtube.com/embed/glY_RVYdsfM"
+}
+</script>
+
 <!-- Courtesy of embedresponsively.com //-->
 
 <div class="responsive-video-container">
     <iframe src="https://www.youtube-nocookie.com/embed/2jA4DDWxAbk" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-  </div>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Lending" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[THORFi Lending: A Comprehensive Guide.]]></summary></entry></feed>
+  </div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoObject",
+  "name": "THORFi Lending Design (Older Version)",
+  "description": "Complete THORChain Lending guide: how lending works, terms, risks, and real examples with spreadsheet calculator. Master THORFi collateralized loans.",
+  "thumbnailUrl": "https://img.youtube.com/vi/2jA4DDWxAbk/maxresdefault.jpg",
+  "uploadDate": "2023-06-09T00:00:00+09:30",
+  "contentUrl": "https://www.youtube.com/watch?v=2jA4DDWxAbk",
+  "embedUrl": "https://www.youtube.com/embed/2jA4DDWxAbk"
+}
+</script>]]></content><author><name>Chris GRC</name><email>info@grassrootscrypto.io</email></author><category term="DeFi" /><category term="THORChain" /><category term="THORFI" /><category term="THORFI Lending" /><category term="Lending" /><category term="Cross Chain Swaps" /><summary type="html"><![CDATA[Complete THORChain Lending guide: how lending works, terms, risks, and real examples with spreadsheet calculator. Master THORFi collateralized loans.]]></summary></entry></feed>
