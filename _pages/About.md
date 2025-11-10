@@ -22,52 +22,50 @@ GrassRoots Crypto aims to explain what you need to know using common relatable e
 
 I have over 21 years of experience in the IT industry, with 5+ years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read many books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
 
-Based in Adelaide, South Australia, I work with crypto enthusiasts locally and around Australia, as well as offering online consultations globally. Whether you prefer face-to-face sessions in Adelaide or virtual meetings from anywhere in the world, I'm here to help you understand crypto.
+Based in Adelaide, South Australia, I work with crypto enthusiasts locally and around Australia, as well as offering online consultations. Whether you prefer face-to-face sessions in Adelaide or virtual meetings from anywhere in the world, I'm here to help you understand crypto.
 
 I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
-In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn and have some fun.
+In 2020, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn and have some fun.
 
 My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
 
 ---
 
-### Skills
+## Skills
 
-Here's a snapshot of my capabilities:
-
-#### Strategic Capabilities
+### Strategic Capabilities
 
 - Integrated Bitcoin into business operations (balance sheet inclusion, treasury strategy).
 - Managed Self-Managed Super Funds (SMSF) with Bitcoin investments.
 
-#### Understanding of the Australian Business Landscape
+### Understanding of the Australian Business Landscape
 
 - Corporate & Compliance Knowledge: Possess a comprehensive understanding of Australian corporate structures, operational best practices, and relevant compliance frameworks (based on general knowledge and research).
 - Australian Context Guidance: Have a solid grasp of Australian tax principles and business regulations (focused on general understanding).
 - General Guidance Provision: Can provide general information and guidance on structuring operations or integrating technology within the Australian context, drawing on my knowledge, but cannot offer specific financial or tax advice.
 
-#### Educational Leadership
+### Educational Leadership
 
 - Technical Communication: My background in technical writing allows me to explain complex concepts clearly. This includes developing comprehensive educational resources (videos, articles) covering Bitcoin, DeFi, and blockchain strategy.
 - Thought Leadership: My RMIT Certificate in Blockchain Strategy demonstrates a foundational understanding of the field's strategic implications.
 
-#### Bitcoin Infrastructure
+### Bitcoin Infrastructure
 
 - Managed multiple BTC Full Node implementations (MyNode, Umbrel).
 - Designed and deployed a full-stack BTC Full Node environment, integrating Bitcoin Core, Electrs, LND, RTL, Thunderbolt, Mempool, and BTCPay Server, running on my own infrastructure.
 
-#### Cross-Chain Development
+### Cross-Chain Development
 
 - Analysed Bitcoin and 9+ major chains (Ethereum, Solana, Base, etc.) for DeFi integration.
 - Developed and tested wallets, and decentralized exchange (DEX) software.
 
-#### Technical Documentation
+### Technical Documentation
 
 - Created 80+ educational videos covering DeFi from beginner to advanced technical levels.
 - Authored in-depth technical documentation and code documentation for a complex DeFi decentralised exchange.
 - Written 30+ articles for platforms like Medium.
 
-#### Knowledge & Education
+### Knowledge & Education
 
 Short list of my favourite books:
 
@@ -85,7 +83,7 @@ Courses:
 
 ### How it all started
 
-GrassRoots Crypto was founded in 2019 with the mission of providing educational support to newcomers in the world of Blockchain / Crypto. I understand the challenges and frustration newcomers may go through when starting in the Crypto space. There is so much information out there, it is hard to know where to begin. So much new terminology and jargon!
+GrassRoots Crypto was founded in 2020 with the mission of providing educational support to newcomers in the world of Blockchain / Crypto. I understand the challenges and frustration newcomers may go through when starting in the Crypto space. There is so much information out there, it is hard to know where to begin. So much new terminology and jargon!
 
 When I started helping new people enter into Crypto, I noticed many videos used cryptocurrency terminology/jargon which new people just didn't understand. I wanted to do something different and that's how GrassRoots Crypto was born. My first videos were developed after the THORChain community had requested an instructional video series on THORNodes for current and new THORNode operators. This was my first time doing YouTube videos.
 

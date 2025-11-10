@@ -10,7 +10,7 @@ toc_icon: "envelope"
 
 ## Based in Adelaide, South Australia
 
-I'm available for face-to-face consultations in Adelaide or online sessions anywhere in the world. Whether you're starting your crypto journey or looking to deepen your understanding of DeFi and THORChain, I'm here to help.
+I'm available for face-to-face consultations in Adelaide or online sessions anywhere in the world. Whether you're starting your crypto journey or looking to deepen your understanding, I'm here to help.
 
 ---
 

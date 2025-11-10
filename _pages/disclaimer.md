@@ -25,7 +25,7 @@ I teach you HOW to think about crypto and understand the technology - not WHAT t
 
 Information about Bitcoin and cryptocurrency in SMSFs is provided for educational purposes only. SMSF strategies involve complex tax, legal, and regulatory considerations unique to each individual's circumstances.
 
-You must seek professional advice from qualified SMSF accountants, financial advisors, and legal professionals before making any SMSF decisions. The content provided helps you understand the concepts, but implementation requires professional guidance tailored to your situation.
+You must seek professional advice from qualified SMSF accountants and legal professionals before making any SMSF decisions. The content provided helps you understand the concepts, but implementation requires professional guidance tailored to your situation.
 
 ## Disclosure
 
