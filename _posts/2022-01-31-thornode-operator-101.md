@@ -12,9 +12,11 @@ author_profile: false
 classes: wide
 toc: false
 ---
+
 This video covers the required knowledge for a person looking to be a Node Operator.
 
 {% include video id="XXYXNAolPEU" provider="youtube" %}
+{% include video-schema.html id="XXYXNAolPEU" title="THORNode Operations 101: Requirements, Components, and Economics" %}
 
 The the slideshow and images used are below.
 

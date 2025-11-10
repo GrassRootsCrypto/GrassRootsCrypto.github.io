@@ -13,43 +13,43 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 #theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "grc" # air #"default" "grc" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin: "grc" # air #"default" "grc" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # I like default, air, dark
 # Site Settings
-locale                   : "en-US"
-lang                     : en-US
-title                    : GrassRoots Crypto
-title_separator          : "-"
-subtitle                 : "Teaching people about Crypto!" # site tagline that appears below site title in masthead
-name                     : GrassRoots Crypto
-description              : "Crypto Education and Consulting"
-url                      : https://grassrootscrypto.io
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : GrassRootsCrypto/GrassRootsCrypto.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "./assets/images/Grassroots_Crypto_Logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-og_image                 : "./assets/images/Grassroots_Crypto_Logo.png" # Default social share image
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-breadcrumbs              : true # true, false (default)
-words_per_minute         : 200
+locale: "en-US"
+lang: en-US
+title: GrassRoots Crypto
+title_separator: "-"
+subtitle: "Teaching people about Crypto!" # site tagline that appears below site title in masthead
+name: GrassRoots Crypto
+description: "Crypto Education and Consulting"
+url: https://grassrootscrypto.io
+baseurl: # the subpath of your site, e.g. "/blog"
+repository: GrassRootsCrypto/GrassRootsCrypto.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+teaser: # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+logo: "./assets/images/Grassroots_Crypto_Logo.png" # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+og_image: "./assets/images/Grassroots_Crypto_Logo.png" # Default social share image
+masthead_title: # overrides the website title displayed in the masthead, use " " for no title
+breadcrumbs: true # true, false (default)
+words_per_minute: 200
 comments:
-  provider               : false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider: false # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    shortname: # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
   discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+    server: # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   # facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-#     appid                :
-#    num_posts            : # 5 (default)
-#    colorscheme          : # "light" (default), "dark"
+  # https://developers.facebook.com/docs/plugins/comments
+  #     appid                :
+  #    num_posts            : # 5 (default)
+  #    colorscheme          : # "light" (default), "dark"
   utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
+    theme: # "github-light" (default), "github-dark"
+    issue_term: # "pathname" (default)
   staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    branch: # "master"
+    endpoint: # "https://{your Staticman v3 API}/v3/entry/github/"
 
 # Contact Form Settings
 web3forms:
@@ -60,32 +60,32 @@ tawk:
   property_id: 68e76900366f2e1951fd5dfd
   widget_id: 1j73v4ako
 reCaptcha:
-  siteKey                :
-  secret                 :
+  siteKey:
+  secret:
 atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : true
-search_full_content      : true
-search_provider          : # lunr (default), algolia, google
-enable_copy_code_button  : true
+  path: # blank (default) uses feed.xml
+search: true
+search_full_content: true
+search_provider: # lunr (default), algolia, google
+enable_copy_code_button: true
 algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
+  application_id: # YOUR_APPLICATION_ID
+  index_name: # YOUR_INDEX_NAME
+  search_only_api_key: # YOUR_SEARCH_ONLY_API_KEY
+  powered_by: # true (default), false
 google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
+  search_engine_id: # YOUR_SEARCH_ENGINE_ID
+  instant_search: # false (default), true
 # SEO Related
-google_site_verification :
-bing_site_verification   : A767874A5E04B8E7D272281C63A7745E
-yandex_site_verification :
-naver_site_verification  :
+google_site_verification:
+bing_site_verification: A767874A5E04B8E7D272281C63A7745E
+yandex_site_verification:
+naver_site_verification:
 
 # Social Sharing
 twitter:
-  username               : GrassRootsio
-  card                   : summary_large_image
+  username: GrassRootsio
+  card: summary_large_image
 # facebook:
 #  username               :
 #  app_id                 :
@@ -98,24 +98,23 @@ twitter:
 #  links                  : https://www.youtube.com/c/grassrootscrypto
 # social:
 #  type                   : # Person or Organization (defaults to Person)
-  #name                   : # If the user or organization name differs from the site's name
-  #links: # An array of links to social media profiles
+#name                   : # If the user or organization name differs from the site's name
+#links: # An array of links to social media profiles
 
 # Analytics
 analytics:
-  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider: google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : G-NH9NNXEF3M
-    anonymize_ip         : true # Better for privacy
-
+    tracking_id: G-NH9NNXEF3M
+    anonymize_ip: true # Better for privacy
 
 # Site Author
 author:
-  name             : Chris GRC
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : 'Founder of GrassRoots Crypto. 21+ years IT, 5+ years crypto. Teaching people about crypto and DeFi.'
-  location         : Australia
-  email            : info@grassrootscrypto.io
+  name: Chris GRC
+  avatar: # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  bio: "Founder of GrassRoots Crypto. 21+ years IT, 5+ years crypto. Teaching people about crypto."
+  location: "Adelaide, South Australia"
+  email: info@grassrootscrypto.io
   links:
     - label: YouTube
       icon: fab fa-fw fa-youtube
@@ -123,9 +122,9 @@ author:
     - label: Twitter
       icon: fab fa-fw fa-twitter-square
       url: https://twitter.com/GrassRootsio
-    - label: Telegram
-      icon: fab fa-telegram-plane
-      url: https://t.me/GrassRootsCrypto
+    #- label: Telegram
+    #  icon: fab fa-telegram-plane
+    #  url: https://t.me/GrassRootsCrypto
     - label: GitHub
       icon: fab fa-fw fa-github
 
@@ -141,13 +140,12 @@ footer:
     - label: GitLab
       icon: fab fa-fw fa-gitlab
       # url:
-    - label: Telegram
-      icon: fab fa-telegram-plane
-      url: https://t.me/GrassRootsCrypto
+    #- label: Telegram
+    #  icon: fab fa-telegram-plane
+    #  url: https://t.me/GrassRootsCrypto
     - label: Youtube
       icon: fab fa-fw fa-youtube
       url: https://www.youtube.com/c/grassrootscrypto
-
 
 # Reading Files
 include:
@@ -187,14 +185,12 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
-
 # Conversion
 markdown: kramdown
 highlighter: rouge
 lsi: false
 excerpt_separator: "\n\n"
 incremental: false
-
 
 # Markdown Processing
 kramdown:
@@ -207,19 +203,16 @@ kramdown:
   smart_quotes: lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
 
-
 # Sass/SCSS
 sass:
   sass_dir: _sass
   style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
 
 # Outputting
 permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: Australia/Adelaide # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
 
 # Plugins (previously gems:)
 plugins:
@@ -236,7 +229,6 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
-
 
 # Archives
 #  Type
@@ -266,7 +258,6 @@ tag_archive:
 #     category: /categories/:name/
 #     tag: /tags/:name/
 
-
 # HTML Compression
 # - https://jch.penibelst.de/
 compress_html:
@@ -275,7 +266,6 @@ compress_html:
   endings: [html, head, body]
   ignore:
     envs: development
-
 
 # Defaults
 defaults:

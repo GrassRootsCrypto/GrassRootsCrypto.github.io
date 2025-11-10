@@ -18,6 +18,7 @@ As an avid observer of THORChain, I wanted to share a video summarising the sign
 This video covers the updates from July to September 2023.
 
 {% include video id="pxH2ANDHt6k" provider="youtube" %}
+{% include video-schema.html id="pxH2ANDHt6k" title="THORChain June 2023 Update: Lending, BSC, and Streaming Swaps" %}
 
 June Update: A Recap of THORChain's Latest Milestones and What's to Come!
 
@@ -32,8 +33,10 @@ Here's a breakdown of what you can expect from the video:
 7. What is Next
 
 {% include video id="cmopHfCwxMc" provider="youtube" %}
+{% include video-schema.html id="cmopHfCwxMc" title="THORChain Update: Streaming Swaps and Protocol Developments" %}
 
 In addition, I've included the May update below. Take this opportunity to catch up on any previous announcements and ensure you're up to date with all the latest news from THORChain.
 Let me know if you want anything else covered in next month's update.
 
 {% include video id="B9M1Azpf65k" provider="youtube" %}
+{% include video-schema.html id="B9M1Azpf65k" title="THORChain May 2023 Update" %}

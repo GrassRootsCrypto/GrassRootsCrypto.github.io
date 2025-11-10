@@ -5,6 +5,8 @@ layout: splash
 toc: false
 ---
 
+{% include localbusiness-schema.html %}
+
 ## Services
 
 GrassRoots Crypto is a company dedicated to providing education for newcomers in the crypto space. I understand how challenging it can be to find the information you need, even with the power of Google. Sorting through the noise and finding the facts can be frustrating!
@@ -31,4 +33,4 @@ We can help you with:
 At GrassRoots Crypto, we are committed to equipping you with the knowledge and skills necessary to navigate the crypto landscape confidently. Feel free to reach out to us for guidance and support in any of these areas.
 Just reach out and ask!
 
-All sessions are by booking only, please contact me via Twitter/Telegram to inquire about bookings. In this modern world, training and consulting can happen in any location - just ask.
+Based in Adelaide, South Australia, I offer face-to-face consultations for locals and online sessions for anyone worldwide. All sessions are by booking only - [contact me](/contact/) to discuss your needs and schedule a session.

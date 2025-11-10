@@ -1,5 +1,7 @@
 ---
 title: "THORChain - THORFI Lending"
+description: "THORFi Lending explained: step-by-step guide to THORChain's lending design, how collateralized loans work, and protocol mechanics with downloadable graphics."
+excerpt: "Comprehensive walkthrough of THORFi Lending design covering collateralized loans, synths, and lending mechanics on THORChain."
 categories:
   - DeFi
   - THORChain
@@ -18,7 +20,8 @@ Now, let's discuss lending. What are your thoughts on this topic? Let me know in
 
 ### THORFi Lending
 
-{% include video id="2jA4DDWxAbk" provider="youtube" %} 
+{% include video id="2jA4DDWxAbk" provider="youtube" %}
+{% include video-schema.html id="2jA4DDWxAbk" title="THORFi Lending Design Explained: Collateralized Loans on THORChain" %}
 
 ### Graphics Used
 

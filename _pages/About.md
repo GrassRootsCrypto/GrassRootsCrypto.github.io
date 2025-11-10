@@ -6,6 +6,8 @@ author_profile: true
 toc: false
 ---
 
+{% include localbusiness-schema.html %}
+
 ## Education, Training, Consulting, Advice
 
 GrassRoots Crypto is a company dedicated to providing comprehensive education, training, consulting, and advice for users in the crypto space. I understand the challenges of navigating the complex world of cryptocurrencies, even with the vast resources available online.
@@ -20,18 +22,69 @@ GrassRoots Crypto aims to explain what you need to know using common relatable e
 
 I have over 21 years of experience in the IT industry, with 5+ years of experience in the Blockchain / Crypto space. Over this time, I have attended seminars, read many books, undertaken blockchain courses, and presented for the Australian Computer Society (ACS).
 
-I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
-In 2019, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn had have some fun.
+Based in Adelaide, South Australia, I work with crypto enthusiasts locally and around Australia, as well as offering online consultations. Whether you prefer face-to-face sessions in Adelaide or virtual meetings from anywhere in the world, I'm here to help you understand crypto.
 
- My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
+I have an excellent understanding of Bitcoin, have participated in the Ethereum DeFi space using UniSwap, SushiSwap, Compound, mStable and Balancer. I also keep up to date with industry developments.
+In 2020, I started by testing THORChain's BepSwap interface during testnet then decided to run a test thornode for myself - just to learn and have some fun.
+
+My goal is to equip you with the knowledge you need to know to make the best decisions for yourself.
+
+---
+
+## Skills
+
+### Strategic Capabilities
+
+- Integrated Bitcoin into business operations (balance sheet inclusion, treasury strategy).
+- Managed Self-Managed Super Funds (SMSF) with Bitcoin investments.
+
+### Understanding of the Australian Business Landscape
+
+- Corporate & Compliance Knowledge: Possess a comprehensive understanding of Australian corporate structures, operational best practices, and relevant compliance frameworks (based on general knowledge and research).
+- Australian Context Guidance: Have a solid grasp of Australian tax principles and business regulations (focused on general understanding).
+- General Guidance Provision: Can provide general information and guidance on structuring operations or integrating technology within the Australian context, drawing on my knowledge, but cannot offer specific financial or tax advice.
+
+### Educational Leadership
+
+- Technical Communication: My background in technical writing allows me to explain complex concepts clearly. This includes developing comprehensive educational resources (videos, articles) covering Bitcoin, DeFi, and blockchain strategy.
+- Thought Leadership: My RMIT Certificate in Blockchain Strategy demonstrates a foundational understanding of the field's strategic implications.
+
+### Bitcoin Infrastructure
+
+- Managed multiple BTC Full Node implementations (MyNode, Umbrel).
+- Designed and deployed a full-stack BTC Full Node environment, integrating Bitcoin Core, Electrs, LND, RTL, Thunderbolt, Mempool, and BTCPay Server, running on my own infrastructure.
+
+### Cross-Chain Development
+
+- Analysed Bitcoin and 9+ major chains (Ethereum, Solana, Base, etc.) for DeFi integration.
+- Developed and tested wallets, and decentralized exchange (DEX) software.
+
+### Technical Documentation
+
+- Created 80+ educational videos covering DeFi from beginner to advanced technical levels.
+- Authored in-depth technical documentation and code documentation for a complex DeFi decentralised exchange.
+- Written 30+ articles for platforms like Medium.
+
+### Knowledge & Education
+
+Short list of my favourite books:
+
+- The Bitcoin Standard by Saifedean Ammous (History of money and the role of Bitcoin)
+- The Fiat Standard by Saifedean Ammous (Analysis of fiat monetary systems and the Bitcoin alternative)
+- Broken Money, Lyn Alden (Analysis of Bitcoin and portfolio strategy)
+- Mastering Bitcoin by Andreas M. Antonopoulos (Deep dive into Bitcoin technology)
+
+Courses:
+
+- RMIT Certificate in Blockchain Strategy: 2021
 
 ---
 
 ### How it all started
 
-GrassRoots Crypto was founded in 2019 with the mission of providing educational support to newcomers in the world of Blockchain / Crypto. I understand the challenges and frustration newcomers may go through when starting in the Crypto space. There is so much information out there, it is hard to know where to begin. So much new terminology and jargon!
+GrassRoots Crypto was founded in 2020 with the mission of providing educational support to newcomers in the world of Blockchain / Crypto. I understand the challenges and frustration newcomers may go through when starting in the Crypto space. There is so much information out there, it is hard to know where to begin. So much new terminology and jargon!
 
-When I started helping new people enter into Crypto, I noticed many videos used terms cryptocurrency terminology/jargon which new people just didn't understand. I wanted to do something different and that's how GrassRoots Crypto was born. My first videos were developed after the THORChain community had requested an instructional video series on THORNodes for current and new THORNode operators. This was my first time doing YouTube videos.
+When I started helping new people enter into Crypto, I noticed many videos used cryptocurrency terminology/jargon which new people just didn't understand. I wanted to do something different and that's how GrassRoots Crypto was born. My first videos were developed after the THORChain community had requested an instructional video series on THORNodes for current and new THORNode operators. This was my first time doing YouTube videos.
 
 As my knowledge expanded, I felt compelled to delve deeper into various aspects of THORChain and expand my content to encompass fundamental DeFi concepts like Liquidity Pools, catering to newcomers seeking clarity.
 
@@ -43,8 +96,8 @@ Over the years, I have had the privilege of guiding numerous individuals on thei
 
 If you like my videos and want to go beyond a like and a subscription, you can tip me using the below;
 
-1. Bitcoin Address -             bc1qdh8n9h0xu4cxwkkc0pem73j66ckqsyy8sva24r
-1. Ethereum Address (ERC-20) -   0x9647b2c35df9394172c30478be6b3c373d92fd84
-1. THORChain Address -           thor1mjyg60v0jw04jka8vzzlvh5nknhrepl8lwaf7z
-1. Litecoin Address -            ltc1qtwusm7pk5l0d72wm8uc32h9ateh2ryufdz282j
-1. Bitcoin Cash Address  -       qpqgqr73y9w997fdk4d467k7ugrk3xzp35lsa9gt4f
+1. Bitcoin Address - bc1qdh8n9h0xu4cxwkkc0pem73j66ckqsyy8sva24r
+1. Ethereum Address (ERC-20) - 0x9647b2c35df9394172c30478be6b3c373d92fd84
+1. THORChain Address - thor1mjyg60v0jw04jka8vzzlvh5nknhrepl8lwaf7z
+1. Litecoin Address - ltc1qtwusm7pk5l0d72wm8uc32h9ateh2ryufdz282j
+1. Bitcoin Cash Address - qpqgqr73y9w997fdk4d467k7ugrk3xzp35lsa9gt4f

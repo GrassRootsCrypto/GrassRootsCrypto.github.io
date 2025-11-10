@@ -22,7 +22,9 @@ If you have questions, reach out and ask!
 ### What is Bitcoin for Beginners
 
 {% include video id="h3nDaC6XGI0" provider="youtube" %}
+{% include video-schema.html id="h3nDaC6XGI0" title="What is Bitcoin for Beginners: Understanding Crypto Fundamentals" %}
 
 ### Crypto Wallets and Self Custody
 
 {% include video id="orVwCyOIxtI" provider="youtube" %}
+{% include video-schema.html id="orVwCyOIxtI" title="Crypto Wallets and Self Custody Explained for Beginners" %}

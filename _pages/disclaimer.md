@@ -15,6 +15,18 @@ THIS IS NOT FINANCIAL, TAX OR LEGAL ADVICE. DO YOUR OWN RESEARCH, TAKE RESPONSIB
 
 - The website and videos provided serve as a starting point for your learning journey. They may not be fully comprehensive or provide all the facts. It is encouraged that you review additional information and make informed decisions. While efforts are made to maintain accurate content, its accuracy may vary over time. The information presented represents my opinions based on publicly available information.
 
+## Educational Services
+
+GrassRoots Crypto provides educational consulting services focused on helping you understand cryptocurrency technology, DeFi mechanics, self-custody practices, and blockchain concepts. All consultations, whether in-person or online, are educational in nature and do not constitute financial, investment, or tax advice.
+
+I teach you HOW to think about crypto and understand the technology - not WHAT to do with your money. You remain solely responsible for all financial and investment decisions. Any paid consultation or coaching session is for educational purposes only.
+
+## Self-Managed Super Fund (SMSF) Information
+
+Information about Bitcoin and cryptocurrency in SMSFs is provided for educational purposes only. SMSF strategies involve complex tax, legal, and regulatory considerations unique to each individual's circumstances.
+
+You must seek professional advice from qualified SMSF accountants and legal professionals before making any SMSF decisions. The content provided helps you understand the concepts, but implementation requires professional guidance tailored to your situation.
+
 ## Disclosure
 
 - GrassRoots Crypto is an independent company. Please note that GrassRoots Crypto maintains a relationship with the THORChain project and may receive compensation for creating content that benefits the THORChain community.
@@ -37,7 +49,7 @@ All content on our YouTube channel, including videos, descriptions, and any othe
 **Permissions for Paid Content:**
 
 - If you intend to use our YouTube content behind a paywall or in any form of paid content, you must request permission from GrassRoots Crypto.
-- Contact us via [email address or contact form] to obtain permission for such use.
+- Contact us via info@grassrootscrypto.io or our [contact form](/contact/) to obtain permission for such use.
 - For paid content, proper attribution is still required.
 
 By accessing and using our YouTube channel and its content, you agree to abide by these copyright and permission terms. Unauthorized use of our YouTube content may result in legal action.
