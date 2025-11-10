@@ -77,7 +77,6 @@ Short list of my favourite books:
 Courses:
 
 - RMIT Certificate in Blockchain Strategy: 2021
-- Prince2 Practitioner Certification
 
 ---
 
