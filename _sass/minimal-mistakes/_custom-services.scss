@@ -1,0 +1,233 @@
+/* ==========================================================================
+   Services Pages Custom Styles
+
+   This file contains:
+   - Services.md page layout and typography
+   - Service grid and service cards (used on older service displays)
+   - "How It Works" section styling
+
+   Note: Category card styles (used on Services.md) are in _custom-service-category.scss
+   ========================================================================== */
+
+.page--services {
+  // Full-width layout for splash template
+  .page__inner-wrap {
+    max-width: 100% !important;
+    padding: 0 1.5rem;
+
+    @media (max-width: 768px) {
+      padding: 0 1rem;
+    }
+  }
+
+  .page__content {
+    font-size: 15px;
+    line-height: 1.6;
+    max-width: none !important;
+    width: 100%;
+    margin: 0;
+
+    h2 {
+      margin: 1rem 0 0.75rem 0 !important;
+      font-size: 1.3rem;
+      font-weight: 700;
+    }
+
+    h3 {
+      margin-top: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 1.1rem;
+      font-weight: 600;
+    }
+
+    p {
+      margin-bottom: 0.7rem;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 0.7rem;
+    }
+
+    li {
+      margin-bottom: 0.2rem;
+    }
+  }
+
+  // Horizontal rule spacing
+  hr {
+    margin: 1rem 0 !important;
+  }
+
+  // Bigger TOC text
+  .sidebar__right {
+    .toc,
+    .toc__menu {
+      font-size: 15px;
+    }
+
+    .toc .nav__title {
+      font-size: 16px;
+    }
+  }
+
+  // Service grid layout
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  // Service card styling
+  .service-card {
+    background: var(--background-color, #fff);
+    border: 2px solid var(--border-color, #e0e0e0);
+    border-radius: 7px;
+    padding: 1.3rem;
+    text-align: center;
+    transition:
+      transform 0.2s,
+      box-shadow 0.2s,
+      border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 16px rgba(0, 146, 202, 0.2);
+      border-color: var(--primary-color, #7c4dff);
+    }
+
+    &:focus-within {
+      outline: 3px solid var(--primary-color, #7c4dff);
+      outline-offset: 2px;
+      transform: translateY(-4px);
+    }
+  }
+
+  .service-icon {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .service-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0;
+    color: var(--text-color);
+  }
+
+  .service-meta {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color, #7c4dff);
+    margin: 0.5rem 0;
+  }
+
+  .service-description {
+    font-size: 0.95rem;
+    color: var(--muted-text-color); // Use theme color (adapts to dark mode)
+    margin: 1rem 0;
+    flex-grow: 1;
+  }
+
+  .service-cta {
+    display: inline-block;
+    background: var(--primary-color, #7c4dff);
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-top: auto;
+
+    &:hover {
+      background: var(--primary-color-dark, #6a3de8);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+
+  // Section styling
+  .track-header {
+    margin: 3rem 0 1rem 0;
+    font-size: 1.75rem;
+    font-weight: 700;
+    border-bottom: 3px solid var(--primary-color, #7c4dff);
+    padding-bottom: 0.5rem;
+  }
+
+  .intro-section {
+    max-width: 600px;
+    margin: 0.5rem auto;
+    text-align: center;
+    font-size: 1.1rem;
+  }
+
+  // How It Works section
+  .how-it-works {
+    background: var(--code-background-color, #f5f5f5);
+    padding: 1.5rem;
+    border-radius: 6px;
+    margin: 0.75rem 0 1rem 0;
+
+    h2 {
+      text-align: center;
+      margin: 0 0 1.25rem 0 !important;
+      font-size: 1.3rem !important;
+    }
+  }
+
+  .steps {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 400px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .step {
+    text-align: center;
+
+    p {
+      font-size: 0.9rem;
+      line-height: 1.4;
+      margin-bottom: 0;
+    }
+
+    strong {
+      font-size: 0.95rem;
+    }
+  }
+
+  .step-number {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    background: var(--primary-color, #7c4dff);
+    color: #fff;
+    border-radius: 50%;
+    line-height: 45px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+  }
+
+  // Reduce footer spacing for tighter layout
+  & + .page__footer {
+    margin-top: 1.5rem !important;
+  }
+}

@@ -4,7 +4,7 @@
 
 /* Colors */
 $background-color: #ffffff !default;
-$text-color: #101F36 !default;
+$text-color: #101f36 !default;
 $muted-text-color: #393e46 !default;
 $primary-color: #0092ca !default;
 $border-color: mix(#fff, #393e46, 75%) !default;
@@ -13,6 +13,17 @@ $link-color: #393e46 !default;
 $masthead-link-color: $text-color !default;
 $masthead-link-color-hover: $primary-color !default;
 $navicon-link-color-hover: mix(#fff, $text-color, 85%) !default;
+
+/* Export SASS variables as CSS custom properties for use in components */
+:root {
+  --primary-color: #{$primary-color};
+  --primary-color-dark: #{darken($primary-color, 10%)};
+  --text-color: #{$text-color};
+  --muted-text-color: #{$muted-text-color};
+  --background-color: #{$background-color};
+  --border-color: #{$border-color};
+  --code-background-color: #f5f5f5;
+}
 
 /* Enhanced colors for modern design */
 $box-shadow-color: rgba($primary-color, 0.15) !default;
@@ -24,7 +35,11 @@ $accent-light: lighten($primary-color, 45%) !default;
 
 /* Improved buttons with gradients */
 .btn--primary {
-  background: linear-gradient(135deg, $gradient-start, $gradient-end) !important;
+  background: linear-gradient(
+    135deg,
+    $gradient-start,
+    $gradient-end
+  ) !important;
   border: none !important;
   box-shadow: 0 4px 15px $box-shadow-color !important;
   transition: all 0.3s ease !important;
@@ -35,9 +50,24 @@ $accent-light: lighten($primary-color, 45%) !default;
   }
 }
 
-/* Theme transition */
-* {
-  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+/* Theme transitions - specific selectors for better performance */
+body,
+.archive__item,
+.service-card,
+.category-card,
+.service-tile,
+.btn,
+a,
+.masthead,
+.toc,
+.notice,
+.highlight,
+.dark-mode-toggle {
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 /* Enhanced masthead */
@@ -229,6 +259,13 @@ $accent-light: lighten($primary-color, 45%) !default;
 
 /* Dark Mode Styles */
 [data-theme="dark"] {
+  /* Update CSS variables for dark mode */
+  --background-color: #1a1a1a;
+  --text-color: #e8e8e8;
+  --muted-text-color: #b3b3b3;
+  --border-color: #404040;
+  --code-background-color: #2a2a2a;
+
   body {
     background-color: #1a1a1a;
     color: #e8e8e8;
@@ -248,8 +285,15 @@ $accent-light: lighten($primary-color, 45%) !default;
 
   .archive__item-title a,
   .archive__item-excerpt,
-  h1, h2, h3, h4, h5, h6,
-  p, li, td {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p,
+  li,
+  td {
     color: #e8e8e8;
   }
 
@@ -284,5 +328,13 @@ $accent-light: lighten($primary-color, 45%) !default;
   .site-title,
   .greedy-nav a {
     color: #e8e8e8;
+  }
+
+  .how-it-works {
+    background-color: #2a2a2a;
+  }
+
+  .tile-service-subtitle {
+    color: #c9c9c9;
   }
 }

@@ -4,28 +4,24 @@
     "@context": "https://schema.org",
     "@type": "ProfessionalService",
     "name": "GrassRoots Crypto",
-    "description": "Cryptocurrency education and consulting services specialising in Bitcoin, DeFi, and AI. Founded by Chris GRC with 21+ years IT experience and 5+ years in crypto.",
+    "description": "Cryptocurrency education and consulting services specialising in Bitcoin, wallet security, DeFi, and self-custody. Founded by Chris GRC with 21+ years IT experience and 7+ years in crypto. Serving Adelaide and online worldwide.",
     "founder": {
       "@type": "Person",
       "name": "Chris GRC",
       "jobTitle": "Founder & Crypto Education Specialist"
     },
-    "areaServed": {
-      "@type": "City",
-      "name": "Adelaide",
-      "containedIn": {
-        "@type": "State",
-        "name": "South Australia",
-        "containedIn": {
-          "@type": "Country",
-          "name": "Australia"
-        }
-      }
-    },
-    "serviceArea": [
+    "areaServed": [
       {
         "@type": "City",
-        "name": "Adelaide"
+        "name": "Adelaide",
+        "containedIn": {
+          "@type": "State",
+          "name": "South Australia",
+          "containedIn": {
+            "@type": "Country",
+            "name": "Australia"
+          }
+        }
       },
       {
         "@type": "Country",
@@ -40,9 +36,10 @@
     "serviceType": [
       "Cryptocurrency Education",
       "Bitcoin Consulting",
-      "DeFi Training",
-      "SMSF Bitcoin Strategy",
-      "Crypto Coaching"
+      "Wallet Security Training",
+      "Hardware Wallet Setup",
+      "DeFi Education",
+      "Self-Custody Training"
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
@@ -52,24 +49,80 @@
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "One-on-One Crypto Coaching",
-            "description": "Personal coaching on Bitcoin, wallets, DeFi basics, and practical walkthroughs"
+            "name": "Crypto Basics",
+            "description": "Beginner-friendly introduction to Bitcoin and cryptocurrencies. Learn what Bitcoin is, how to buy safely, and security basics in plain English.",
+            "url": "{{ site.url }}{{ site.baseurl }}/services/getting-started/",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "GrassRoots Crypto"
+            }
+          },
+          "price": "75",
+          "priceCurrency": "AUD",
+          "eligibleDuration": {
+            "@type": "QuantitativeValue",
+            "value": 45,
+            "unitCode": "MIN"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Business Crypto Consulting",
-            "description": "Crypto literacy training for teams, risk assessment, and custody playbooks"
+            "name": "Crypto Wallet Setup & Security",
+            "description": "Hands-on session to set up your own self-custody wallet. Learn seed phrase security, backup strategies, and how to send transactions safely.",
+            "url": "{{ site.url }}{{ site.baseurl }}/services/getting-started/",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "GrassRoots Crypto"
+            }
+          },
+          "price": "180",
+          "priceCurrency": "AUD",
+          "eligibleDuration": {
+            "@type": "QuantitativeValue",
+            "value": 90,
+            "unitCode": "MIN"
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "SMSF Bitcoin Strategy",
-            "description": "Guidance for Australians on holding Bitcoin in Self-Managed Super Funds"
+            "name": "Hardware Wallet Setup",
+            "description": "Full walkthrough for setting up cold storage with Ledger, Coldcard, Trezor, or Keystone. Learn seed creation, backup testing, and secure transactions.",
+            "url": "{{ site.url }}{{ site.baseurl }}/services/getting-started/",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "GrassRoots Crypto"
+            }
+          },
+          "price": "125",
+          "priceCurrency": "AUD",
+          "eligibleDuration": {
+            "@type": "QuantitativeValue",
+            "value": 60,
+            "unitCode": "MIN"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Custom Crypto Consulting",
+            "description": "Tailored sessions for your specific needs. Bitcoin nodes, protocol deep-dives, DeFi education, THORChain consulting, business training, and more.",
+            "url": "{{ site.url }}{{ site.baseurl }}/services/getting-started/",
+            "provider": {
+              "@type": "ProfessionalService",
+              "name": "GrassRoots Crypto"
+            }
+          },
+          "price": "130",
+          "priceCurrency": "AUD",
+          "eligibleDuration": {
+            "@type": "QuantitativeValue",
+            "value": 60,
+            "unitCode": "MIN"
           }
         }
       ]

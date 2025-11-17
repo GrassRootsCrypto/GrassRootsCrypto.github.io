@@ -1,0 +1,76 @@
+/* ==========================================================================
+   Legal Pages Custom Styles
+   Compact layout for dense text content (terms, disclaimers, agreements)
+   ========================================================================== */
+
+.page--legal {
+  .page__content {
+    font-size: 0.75em; // 12px instead of 16px
+    line-height: 1.5; // Tighter line height
+
+    // Compact headings
+    h2 {
+      font-size: 1.5em; // 18px
+      margin-top: 1.5em;
+      margin-bottom: 0.5em;
+      padding-top: 0.5em;
+    }
+
+    h3 {
+      font-size: 1.33em; // 16px
+      margin-top: 1.25em;
+      margin-bottom: 0.4em;
+    }
+
+    h4 {
+      font-size: 1.17em; // 14px
+      margin-top: 1em;
+      margin-bottom: 0.3em;
+    }
+
+    // Tighter spacing throughout
+    p {
+      margin-bottom: 0.75em;
+    }
+
+    ul,
+    ol {
+      margin-bottom: 0.75em;
+      padding-left: 1.5em;
+    }
+
+    li {
+      margin-bottom: 0.2em;
+    }
+
+    // Compact horizontal rules
+    hr {
+      margin: 1.5em 0;
+    }
+
+    // Warning/Important sections stay prominent
+    strong {
+      font-weight: 600;
+    }
+  }
+
+  // Make TOC sticky/floating
+  .sidebar__right {
+    position: sticky;
+    top: 2em;
+    float: right;
+
+    .toc {
+      font-size: 15px; // Bigger, more readable TOC text
+
+      .nav__title {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+// Increase max-width for all legal pages to use more screen space
+.page--legal #main {
+  max-width: 1600px; // Much wider than default 1280px
+}
