@@ -4,6 +4,7 @@ title: "THORChain Diagrams and Code Flow"
 layout: splash
 classes: wide
 toc: true
+excerpt: "THORChain protocol diagrams and visual explanations. Swap flows, liquidity pools, and cross-chain architecture illustrated."
 ---
 
 Working pictures of THORChain. Work in progress. Please provide feedback in the Dev discord server - DevOps channel.
@@ -53,7 +54,7 @@ See larger PDF version [ here]({{ site.baseurl }}/assets/documents/THORChain-Swa
 
 ![THORChain add liquidity flow diagram showing deposit transaction, pool addition, and liquidity provider unit calculation]({{ site.baseurl }}/assets/images/TC-AddLiq-Flow.png)
 
-## Add Liquidity  Example Detailed Code Flow
+## Add Liquidity Example Detailed Code Flow
 
 ![THORChain add liquidity message flow diagram showing MsgDeposit processing, add liquidity handler, and pool state updates]({{ site.baseurl }}/assets/images/TC-AddLiq-Msg-Flow.png)
 

@@ -1,15 +1,20 @@
 ---
 permalink: /disclaimer/
 title: "Disclaimer"
-layout: splash
-toc: false
+layout: single
+toc: true
+toc_icon: "file-contract"
+classes: page--legal
+excerpt:
+  "Educational disclaimer for GrassRoots Crypto. Bitcoin and crypto education services are for informational purposes
+  only, not financial advice."
 ---
 
 ## Disclaimer
 
 THIS IS NOT FINANCIAL, TAX OR LEGAL ADVICE. DO YOUR OWN RESEARCH, TAKE RESPONSIBILITY FOR YOUR OWN FINANCES AND DECISIONS.
 
-- GrassRoots Crypto is not a financial advisor. It is recommended that you seek independent legal, financial, taxation, or other advice to evaluate how the information on this website relates to your unique circumstances.
+**Please also read our [Terms of Service](/terms-of-service/) for important information about using this website and our educational services.**
 
 - This is not financial, tax, or legal advice. Do your own research, take responsibility for your own finances and decisions.
 
@@ -25,7 +30,7 @@ I teach you HOW to think about crypto and understand the technology - not WHAT t
 
 Information about Bitcoin and cryptocurrency in SMSFs is provided for educational purposes only. SMSF strategies involve complex tax, legal, and regulatory considerations unique to each individual's circumstances.
 
-You must seek professional advice from qualified SMSF accountants and legal professionals before making any SMSF decisions. The content provided helps you understand the concepts, but implementation requires professional guidance tailored to your situation.
+The content provided helps you understand the concepts and considerations around holding crypto in SMSFs.
 
 ## Disclosure
 
