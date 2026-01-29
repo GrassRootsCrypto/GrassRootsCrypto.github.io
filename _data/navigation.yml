@@ -10,6 +10,9 @@ main:
   - title: "Contact"
     url: /contact/
     description: "Get in touch or book a session"
+  - title: "Payment"
+    url: /payment/
+    description: "Pay with Bitcoin or Lightning"
   - title: "Search"
     url: /search/
   - title: Disclaimer

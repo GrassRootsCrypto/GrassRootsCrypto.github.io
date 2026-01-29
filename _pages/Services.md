@@ -54,4 +54,5 @@ excerpt: "Crypto education services in Adelaide and online. Bitcoin basics, wall
   <h2>Ready to Start Learning?</h2>
   <p style="font-size: 1.1rem; margin: 1rem 0 1.5rem 0;">Explore our beginner services or contact me to discuss your specific needs.</p>
   <a href="/contact/" class="btn btn--primary btn--large">Contact Me</a>
+  <a href="/payment/" class="btn btn--info btn--large" style="margin-left: 1rem;">Pay with Bitcoin ₿</a>
 </div>
